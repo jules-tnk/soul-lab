@@ -99,7 +99,25 @@
         "crew": "Crew Neck",
         "scoop": "Scoop Neck",
         "henley": "Henley",
-        "boat": "Boat Neck"
+        "boat": "Boat Neck",
+        "round": "Round",
+        "square": "Square",
+        "cowl": "Cowl",
+        "keyhole": "Keyhole",
+        "tie-neck": "Tie Neck",
+        "ruffled": "Ruffled",
+        "off-shoulder": "Off-Shoulder",
+        "halter": "Halter",
+        "mock": "Mock Neck",
+        "mandarin": "Mandarin",
+        "surplice": "Surplice",
+        "deep-v": "Deep V-Neck",
+        "mock-wrap": "Mock Wrap",
+        "strapless": "Strapless",
+        "sweetheart": "Sweetheart",
+        "one-shoulder": "One-Shoulder",
+        "waterfall": "Waterfall",
+        "shawl": "Shawl Collar"
       }
     },
     "collar": {
@@ -112,7 +130,14 @@
         "peter-pan": "Peter Pan",
         "wing": "Wing",
         "band": "Band",
-        "club": "Club"
+        "club": "Club",
+        "standard": "Standard",
+        "johnny": "Johnny",
+        "shearling": "Shearling",
+        "storm": "Storm",
+        "stand": "Stand",
+        "funnel": "Funnel",
+        "camp": "Camp"
       }
     },
     "sleeves": {
@@ -125,7 +150,15 @@
         "raglan": "Raglan",
         "puff": "Puff",
         "bishop": "Bishop",
-        "cap": "Cap"
+        "cap": "Cap",
+        "bell": "Bell",
+        "flutter": "Flutter",
+        "balloon": "Balloon",
+        "cape": "Cape",
+        "sleeveless": "Sleeveless",
+        "dolman": "Dolman",
+        "pushed-up": "Pushed-Up",
+        "off-shoulder": "Off-Shoulder"
       }
     },
     "cuffs": {
@@ -136,7 +169,12 @@
         "convertible": "Convertible",
         "turnback": "Turnback",
         "ribbed": "Ribbed",
-        "elastic": "Elastic"
+        "elastic": "Elastic",
+        "ruffle": "Ruffle",
+        "tie": "Tie",
+        "none": "None",
+        "snapped": "Snapped",
+        "rolled": "Rolled"
       }
     },
     "placket": {
@@ -145,7 +183,8 @@
         "standard": "Standard",
         "hidden": "Hidden",
         "french": "French",
-        "half": "Half"
+        "half": "Half",
+        "zipper": "Zipper"
       }
     },
     "hem": {
@@ -154,7 +193,17 @@
         "straight": "Straight",
         "curved": "Curved",
         "split": "Split",
-        "asymmetric": "Asymmetric"
+        "asymmetric": "Asymmetric",
+        "peplum": "Peplum",
+        "raw": "Raw",
+        "cuffed": "Cuffed",
+        "cropped": "Cropped",
+        "ruffled": "Ruffled",
+        "scalloped": "Scalloped",
+        "flounce": "Flounce",
+        "handkerchief": "Handkerchief",
+        "ribbed": "Ribbed",
+        "elastic": "Elastic"
       }
     },
     "pockets": {
@@ -164,7 +213,15 @@
         "chest-single": "Single Chest Pocket",
         "chest-double": "Double Chest Pockets",
         "flap": "Flap Pocket",
-        "welt": "Welt Pocket"
+        "welt": "Welt Pocket",
+        "slash": "Slash Pocket",
+        "patch": "Patch Pocket",
+        "cargo": "Cargo Pocket",
+        "classic": "Classic",
+        "minimal": "Minimal",
+        "kangaroo": "Kangaroo Pocket",
+        "hip": "Hip Pocket",
+        "chest": "Chest Pocket"
       }
     },
     "yoke": {
@@ -182,6 +239,248 @@
         "regular": "Regular",
         "relaxed": "Relaxed",
         "oversized": "Oversized"
+      }
+    },
+    "closure": {
+      "name": "Closure",
+      "variants": {
+        "buttons": "Buttons",
+        "hidden": "Hidden",
+        "tie": "Tie",
+        "none": "None",
+        "zipper": "Zipper",
+        "hook": "Hook",
+        "snap": "Snap",
+        "elastic": "Elastic",
+        "single-button": "Single Button",
+        "double-breasted": "Double-Breasted",
+        "open": "Open",
+        "toggle": "Toggle"
+      }
+    },
+    "embellishments": {
+      "name": "Embellishments",
+      "variants": {
+        "none": "None",
+        "ruffle-front": "Ruffle Front",
+        "lace-panel": "Lace Panel",
+        "pintucks": "Pintucks",
+        "bow": "Bow",
+        "pleats": "Pleats"
+      }
+    },
+    "length": {
+      "name": "Length",
+      "variants": {
+        "cropped": "Cropped",
+        "regular": "Regular",
+        "longline": "Longline",
+        "hip": "Hip",
+        "mid-thigh": "Mid-Thigh",
+        "knee": "Knee",
+        "above-knee": "Above Knee",
+        "mini": "Mini",
+        "midi": "Midi",
+        "maxi": "Maxi",
+        "tea-length": "Tea-Length",
+        "ankle": "Ankle",
+        "short": "Short",
+        "mid": "Mid",
+        "long": "Long",
+        "tunic": "Tunic",
+        "bermuda": "Bermuda"
+      }
+    },
+    "straps": {
+      "name": "Straps",
+      "variants": {
+        "wide": "Wide",
+        "thin": "Thin",
+        "racerback": "Racerback",
+        "spaghetti": "Spaghetti",
+        "halter": "Halter"
+      }
+    },
+    "back": {
+      "name": "Back",
+      "variants": {
+        "standard": "Standard",
+        "racerback": "Racerback",
+        "open": "Open",
+        "low": "Low",
+        "keyhole": "Keyhole"
+      }
+    },
+    "side-slits": {
+      "name": "Side Slits",
+      "variants": {
+        "none": "None",
+        "low": "Low",
+        "high": "High"
+      }
+    },
+    "waistband": {
+      "name": "Waistband",
+      "variants": {
+        "standard": "Standard",
+        "high": "High",
+        "low": "Low",
+        "elastic": "Elastic",
+        "yoke": "Yoke",
+        "corset": "Corset"
+      }
+    },
+    "rise": {
+      "name": "Rise",
+      "variants": {
+        "high": "High",
+        "mid": "Mid",
+        "low": "Low",
+        "ultra-high": "Ultra-High"
+      }
+    },
+    "leg-shape": {
+      "name": "Leg Shape",
+      "variants": {
+        "straight": "Straight",
+        "tapered": "Tapered",
+        "wide": "Wide",
+        "bootcut": "Bootcut",
+        "flared": "Flared",
+        "slim": "Slim",
+        "skinny": "Skinny",
+        "relaxed": "Relaxed"
+      }
+    },
+    "fly": {
+      "name": "Fly",
+      "variants": {
+        "zipper": "Zipper",
+        "button": "Button",
+        "drawstring": "Drawstring"
+      }
+    },
+    "pleat-type": {
+      "name": "Pleat Type",
+      "variants": {
+        "knife": "Knife",
+        "box": "Box",
+        "accordion": "Accordion",
+        "sunburst": "Sunburst",
+        "none": "None",
+        "single": "Single",
+        "double": "Double",
+        "inverted": "Inverted"
+      }
+    },
+    "slit": {
+      "name": "Slit",
+      "variants": {
+        "none": "None",
+        "center": "Center",
+        "side": "Side",
+        "center-back": "Center Back"
+      }
+    },
+    "bodice": {
+      "name": "Bodice",
+      "variants": {
+        "fitted": "Fitted",
+        "relaxed": "Relaxed",
+        "structured": "Structured",
+        "draped": "Draped",
+        "empire": "Empire",
+        "smocked": "Smocked",
+        "corset": "Corset",
+        "darted": "Darted"
+      }
+    },
+    "waistline": {
+      "name": "Waistline",
+      "variants": {
+        "natural": "Natural",
+        "empire": "Empire",
+        "drop": "Drop",
+        "cinched": "Cinched",
+        "belted": "Belted"
+      }
+    },
+    "skirt-length": {
+      "name": "Skirt Length",
+      "variants": {
+        "mini": "Mini",
+        "knee": "Knee",
+        "midi": "Midi",
+        "maxi": "Maxi",
+        "tea-length": "Tea-Length",
+        "above-knee": "Above Knee"
+      }
+    },
+    "skirt-shape": {
+      "name": "Skirt Shape",
+      "variants": {
+        "a-line": "A-Line",
+        "fit-and-flare": "Fit and Flare",
+        "straight": "Straight",
+        "bubble": "Bubble"
+      }
+    },
+    "wrap-direction": {
+      "name": "Wrap Direction",
+      "variants": {
+        "left-over-right": "Left Over Right",
+        "right-over-left": "Right Over Left"
+      }
+    },
+    "tie": {
+      "name": "Tie",
+      "variants": {
+        "self-tie": "Self-Tie",
+        "d-ring": "D-Ring",
+        "snap": "Snap"
+      }
+    },
+    "lapels": {
+      "name": "Lapels",
+      "variants": {
+        "notch": "Notch",
+        "peak": "Peak",
+        "shawl": "Shawl",
+        "none": "None",
+        "gun-flap": "Gun Flap"
+      }
+    },
+    "vents": {
+      "name": "Vents",
+      "variants": {
+        "none": "None",
+        "center": "Center",
+        "side": "Side"
+      }
+    },
+    "hood": {
+      "name": "Hood",
+      "variants": {
+        "standard": "Standard",
+        "fur-trim": "Fur Trim",
+        "detachable": "Detachable",
+        "none": "None"
+      }
+    },
+    "belt": {
+      "name": "Belt",
+      "variants": {
+        "self-tie": "Self-Tie",
+        "buckle": "Buckle",
+        "none": "None"
+      }
+    },
+    "drawstring": {
+      "name": "Drawstring",
+      "variants": {
+        "waist": "Waist",
+        "hem": "Hem",
+        "none": "None"
       }
     }
   },

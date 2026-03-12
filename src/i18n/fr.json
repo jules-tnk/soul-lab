@@ -99,7 +99,25 @@
         "crew": "Encolure ronde",
         "scoop": "Encolure plongeante",
         "henley": "Henley",
-        "boat": "Encolure bateau"
+        "boat": "Encolure bateau",
+        "round": "Ronde",
+        "square": "Carrée",
+        "cowl": "Bénitier",
+        "keyhole": "Trou de serrure",
+        "tie-neck": "Lavallière",
+        "ruffled": "À volants",
+        "off-shoulder": "Épaules dénudées",
+        "halter": "Dos nu",
+        "mock": "Col montant",
+        "mandarin": "Mandarin",
+        "surplice": "Surplis",
+        "deep-v": "Décolleté en V profond",
+        "mock-wrap": "Faux portefeuille",
+        "strapless": "Bustier",
+        "sweetheart": "Cœur",
+        "one-shoulder": "Asymétrique",
+        "waterfall": "Cascade",
+        "shawl": "Col châle"
       }
     },
     "collar": {
@@ -112,7 +130,14 @@
         "peter-pan": "Col Claudine",
         "wing": "Col de plastron",
         "band": "Col droit",
-        "club": "Col club"
+        "club": "Col club",
+        "standard": "Standard",
+        "johnny": "Johnny",
+        "shearling": "Mouton",
+        "storm": "Tempête",
+        "stand": "Montant",
+        "funnel": "Entonnoir",
+        "camp": "Cubain"
       }
     },
     "sleeves": {
@@ -125,7 +150,15 @@
         "raglan": "Raglan",
         "puff": "Bouffantes",
         "bishop": "Évêque",
-        "cap": "Mancheron"
+        "cap": "Mancheron",
+        "bell": "Cloche",
+        "flutter": "Volantées",
+        "balloon": "Ballon",
+        "cape": "Cape",
+        "sleeveless": "Sans manches",
+        "dolman": "Chauve-souris",
+        "pushed-up": "Retroussées",
+        "off-shoulder": "Tombantes"
       }
     },
     "cuffs": {
@@ -136,7 +169,12 @@
         "convertible": "Convertible",
         "turnback": "Revers",
         "ribbed": "Côtelé",
-        "elastic": "Élastique"
+        "elastic": "Élastique",
+        "ruffle": "Volant",
+        "tie": "Nœud",
+        "none": "Aucun",
+        "snapped": "À pression",
+        "rolled": "Roulé"
       }
     },
     "placket": {
@@ -145,7 +183,8 @@
         "standard": "Standard",
         "hidden": "Cachée",
         "french": "Française",
-        "half": "Demi"
+        "half": "Demi",
+        "zipper": "Fermeture éclair"
       }
     },
     "hem": {
@@ -154,7 +193,17 @@
         "straight": "Droit",
         "curved": "Arrondi",
         "split": "Fendu",
-        "asymmetric": "Asymétrique"
+        "asymmetric": "Asymétrique",
+        "peplum": "Péplum",
+        "raw": "Brut",
+        "cuffed": "Revers",
+        "cropped": "Court",
+        "ruffled": "À volants",
+        "scalloped": "Festonné",
+        "flounce": "Volant",
+        "handkerchief": "Mouchoir",
+        "ribbed": "Côtelé",
+        "elastic": "Élastique"
       }
     },
     "pockets": {
@@ -164,7 +213,15 @@
         "chest-single": "Une poche poitrine",
         "chest-double": "Deux poches poitrine",
         "flap": "Poche à rabat",
-        "welt": "Poche passepoilée"
+        "welt": "Poche passepoilée",
+        "slash": "Poche passepoilée",
+        "patch": "Poche plaquée",
+        "cargo": "Poche cargo",
+        "classic": "Classiques",
+        "minimal": "Minimalistes",
+        "kangaroo": "Poche kangourou",
+        "hip": "Poche hanche",
+        "chest": "Poche poitrine"
       }
     },
     "yoke": {
@@ -182,6 +239,248 @@
         "regular": "Droite",
         "relaxed": "Décontractée",
         "oversized": "Oversize"
+      }
+    },
+    "closure": {
+      "name": "Fermeture",
+      "variants": {
+        "buttons": "Boutons",
+        "hidden": "Cachée",
+        "tie": "Cravate",
+        "none": "Aucune",
+        "zipper": "Fermeture éclair",
+        "hook": "Crochet",
+        "snap": "Pression",
+        "elastic": "Élastique",
+        "single-button": "Un bouton",
+        "double-breasted": "Croisé",
+        "open": "Ouvert",
+        "toggle": "Brandebourg"
+      }
+    },
+    "embellishments": {
+      "name": "Ornements",
+      "variants": {
+        "none": "Aucun",
+        "ruffle-front": "Volants devant",
+        "lace-panel": "Panneau de dentelle",
+        "pintucks": "Nervures",
+        "bow": "Nœud",
+        "pleats": "Plis"
+      }
+    },
+    "length": {
+      "name": "Longueur",
+      "variants": {
+        "cropped": "Courte",
+        "regular": "Standard",
+        "longline": "Longue",
+        "hip": "Hanches",
+        "mid-thigh": "Mi-cuisse",
+        "knee": "Genou",
+        "above-knee": "Au-dessus du genou",
+        "mini": "Mini",
+        "midi": "Midi",
+        "maxi": "Maxi",
+        "tea-length": "Mi-mollet",
+        "ankle": "Cheville",
+        "short": "Court",
+        "mid": "Mi-long",
+        "long": "Long",
+        "tunic": "Tunique",
+        "bermuda": "Bermuda"
+      }
+    },
+    "straps": {
+      "name": "Bretelles",
+      "variants": {
+        "wide": "Larges",
+        "thin": "Fines",
+        "racerback": "Nageur",
+        "spaghetti": "Spaghetti",
+        "halter": "Dos nu"
+      }
+    },
+    "back": {
+      "name": "Dos",
+      "variants": {
+        "standard": "Standard",
+        "racerback": "Nageur",
+        "open": "Ouvert",
+        "low": "Plongeant",
+        "keyhole": "Trou de serrure"
+      }
+    },
+    "side-slits": {
+      "name": "Fentes latérales",
+      "variants": {
+        "none": "Aucune",
+        "low": "Basses",
+        "high": "Hautes"
+      }
+    },
+    "waistband": {
+      "name": "Ceinture",
+      "variants": {
+        "standard": "Standard",
+        "high": "Haute",
+        "low": "Basse",
+        "elastic": "Élastique",
+        "yoke": "Empiècement",
+        "corset": "Corset"
+      }
+    },
+    "rise": {
+      "name": "Taille",
+      "variants": {
+        "high": "Haute",
+        "mid": "Moyenne",
+        "low": "Basse",
+        "ultra-high": "Très haute"
+      }
+    },
+    "leg-shape": {
+      "name": "Forme de jambe",
+      "variants": {
+        "straight": "Droite",
+        "tapered": "Fuselée",
+        "wide": "Large",
+        "bootcut": "Bootcut",
+        "flared": "Évasée",
+        "slim": "Slim",
+        "skinny": "Skinny",
+        "relaxed": "Décontractée"
+      }
+    },
+    "fly": {
+      "name": "Braguette",
+      "variants": {
+        "zipper": "Fermeture éclair",
+        "button": "Bouton",
+        "drawstring": "Cordon"
+      }
+    },
+    "pleat-type": {
+      "name": "Type de pli",
+      "variants": {
+        "knife": "Plat",
+        "box": "Creux",
+        "accordion": "Accordéon",
+        "sunburst": "Éventail",
+        "none": "Aucun",
+        "single": "Simple",
+        "double": "Double",
+        "inverted": "Inversé"
+      }
+    },
+    "slit": {
+      "name": "Fente",
+      "variants": {
+        "none": "Aucune",
+        "center": "Centre",
+        "side": "Côté",
+        "center-back": "Centre dos"
+      }
+    },
+    "bodice": {
+      "name": "Corsage",
+      "variants": {
+        "fitted": "Ajusté",
+        "relaxed": "Décontracté",
+        "structured": "Structuré",
+        "draped": "Drapé",
+        "empire": "Empire",
+        "smocked": "Froncé",
+        "corset": "Corset",
+        "darted": "Pincé"
+      }
+    },
+    "waistline": {
+      "name": "Taille",
+      "variants": {
+        "natural": "Naturelle",
+        "empire": "Empire",
+        "drop": "Basse",
+        "cinched": "Cintrée",
+        "belted": "Ceinturée"
+      }
+    },
+    "skirt-length": {
+      "name": "Longueur de jupe",
+      "variants": {
+        "mini": "Mini",
+        "knee": "Genou",
+        "midi": "Midi",
+        "maxi": "Maxi",
+        "tea-length": "Mi-mollet",
+        "above-knee": "Au-dessus du genou"
+      }
+    },
+    "skirt-shape": {
+      "name": "Forme de jupe",
+      "variants": {
+        "a-line": "Trapèze",
+        "fit-and-flare": "Évasée",
+        "straight": "Droite",
+        "bubble": "Boule"
+      }
+    },
+    "wrap-direction": {
+      "name": "Sens du croisement",
+      "variants": {
+        "left-over-right": "Gauche sur droit",
+        "right-over-left": "Droit sur gauche"
+      }
+    },
+    "tie": {
+      "name": "Lien",
+      "variants": {
+        "self-tie": "Ceinture nouée",
+        "d-ring": "Anneau",
+        "snap": "Pression"
+      }
+    },
+    "lapels": {
+      "name": "Revers",
+      "variants": {
+        "notch": "Cranté",
+        "peak": "En pointe",
+        "shawl": "Châle",
+        "none": "Aucun",
+        "gun-flap": "Rabat"
+      }
+    },
+    "vents": {
+      "name": "Fentes",
+      "variants": {
+        "none": "Aucune",
+        "center": "Centre",
+        "side": "Côtés"
+      }
+    },
+    "hood": {
+      "name": "Capuche",
+      "variants": {
+        "standard": "Standard",
+        "fur-trim": "Bordée de fourrure",
+        "detachable": "Amovible",
+        "none": "Aucune"
+      }
+    },
+    "belt": {
+      "name": "Ceinture",
+      "variants": {
+        "self-tie": "Nouée",
+        "buckle": "Boucle",
+        "none": "Aucune"
+      }
+    },
+    "drawstring": {
+      "name": "Cordon",
+      "variants": {
+        "waist": "Taille",
+        "hem": "Ourlet",
+        "none": "Aucun"
       }
     }
   },

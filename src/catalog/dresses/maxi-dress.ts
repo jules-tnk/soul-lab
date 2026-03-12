@@ -1,0 +1,91 @@
+import type { GarmentType } from '../../types'
+
+export const maxiDress: GarmentType = {
+  id: 'maxi-dress',
+  categoryId: 'dresses',
+  nameKey: 'garments.dresses.maxi-dress.name',
+  svgViewBox: '0 0 200 300',
+  parts: [
+    {
+      id: 'bodice',
+      nameKey: 'parts.bodice.name',
+      required: true,
+      layerOrder: 0,
+      defaultVariantId: 'fitted',
+      variants: [
+        { id: 'fitted', nameKey: 'parts.bodice.variants.fitted', svgPath: '' },
+        { id: 'relaxed', nameKey: 'parts.bodice.variants.relaxed', svgPath: '' },
+        { id: 'empire', nameKey: 'parts.bodice.variants.empire', svgPath: '' },
+        { id: 'smocked', nameKey: 'parts.bodice.variants.smocked', svgPath: '' },
+      ],
+    },
+    {
+      id: 'waistline',
+      nameKey: 'parts.waistline.name',
+      required: true,
+      layerOrder: 1,
+      defaultVariantId: 'natural',
+      variants: [
+        { id: 'natural', nameKey: 'parts.waistline.variants.natural', svgPath: '' },
+        { id: 'empire', nameKey: 'parts.waistline.variants.empire', svgPath: '' },
+        { id: 'drop', nameKey: 'parts.waistline.variants.drop', svgPath: '' },
+      ],
+    },
+    {
+      id: 'hem',
+      nameKey: 'parts.hem.name',
+      required: true,
+      layerOrder: 1,
+      defaultVariantId: 'straight',
+      variants: [
+        { id: 'straight', nameKey: 'parts.hem.variants.straight', svgPath: '' },
+        { id: 'ruffled', nameKey: 'parts.hem.variants.ruffled', svgPath: '' },
+        { id: 'handkerchief', nameKey: 'parts.hem.variants.handkerchief', svgPath: '' },
+      ],
+    },
+    {
+      id: 'slit',
+      nameKey: 'parts.slit.name',
+      required: false,
+      layerOrder: 1,
+      defaultVariantId: 'none',
+      variants: [
+        { id: 'none', nameKey: 'parts.slit.variants.none', svgPath: '' },
+        { id: 'center', nameKey: 'parts.slit.variants.center', svgPath: '' },
+        { id: 'side', nameKey: 'parts.slit.variants.side', svgPath: '' },
+      ],
+    },
+    {
+      id: 'neckline',
+      nameKey: 'parts.neckline.name',
+      required: true,
+      layerOrder: 3,
+      defaultVariantId: 'round',
+      variants: [
+        { id: 'round', nameKey: 'parts.neckline.variants.round', svgPath: '' },
+        { id: 'v-neck', nameKey: 'parts.neckline.variants.v-neck', svgPath: '' },
+        { id: 'scoop', nameKey: 'parts.neckline.variants.scoop', svgPath: '' },
+        { id: 'halter', nameKey: 'parts.neckline.variants.halter', svgPath: '' },
+        { id: 'strapless', nameKey: 'parts.neckline.variants.strapless', svgPath: '' },
+        { id: 'sweetheart', nameKey: 'parts.neckline.variants.sweetheart', svgPath: '' },
+        { id: 'off-shoulder', nameKey: 'parts.neckline.variants.off-shoulder', svgPath: '' },
+        { id: 'one-shoulder', nameKey: 'parts.neckline.variants.one-shoulder', svgPath: '' },
+      ],
+    },
+    {
+      id: 'sleeves',
+      nameKey: 'parts.sleeves.name',
+      required: true,
+      layerOrder: 5,
+      defaultVariantId: 'sleeveless',
+      variants: [
+        { id: 'long', nameKey: 'parts.sleeves.variants.long', svgPath: '' },
+        { id: 'short', nameKey: 'parts.sleeves.variants.short', svgPath: '' },
+        { id: 'three-quarter', nameKey: 'parts.sleeves.variants.three-quarter', svgPath: '' },
+        { id: 'flutter', nameKey: 'parts.sleeves.variants.flutter', svgPath: '' },
+        { id: 'cap', nameKey: 'parts.sleeves.variants.cap', svgPath: '' },
+        { id: 'sleeveless', nameKey: 'parts.sleeves.variants.sleeveless', svgPath: '' },
+      ],
+    },
+  ],
+}

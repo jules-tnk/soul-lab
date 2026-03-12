@@ -1,0 +1,90 @@
+import type { GarmentType } from '../../types'
+
+export const shirtDress: GarmentType = {
+  id: 'shirt-dress',
+  categoryId: 'dresses',
+  nameKey: 'garments.dresses.shirt-dress.name',
+  svgViewBox: '0 0 200 300',
+  parts: [
+    {
+      id: 'waistline',
+      nameKey: 'parts.waistline.name',
+      required: true,
+      layerOrder: 1,
+      defaultVariantId: 'natural',
+      variants: [
+        { id: 'natural', nameKey: 'parts.waistline.variants.natural', svgPath: '' },
+        { id: 'belted', nameKey: 'parts.waistline.variants.belted', svgPath: '' },
+        { id: 'cinched', nameKey: 'parts.waistline.variants.cinched', svgPath: '' },
+        { id: 'drop', nameKey: 'parts.waistline.variants.drop', svgPath: '' },
+      ],
+    },
+    {
+      id: 'skirt-length',
+      nameKey: 'parts.skirt-length.name',
+      required: true,
+      layerOrder: 1,
+      defaultVariantId: 'knee',
+      variants: [
+        { id: 'above-knee', nameKey: 'parts.skirt-length.variants.above-knee', svgPath: '' },
+        { id: 'knee', nameKey: 'parts.skirt-length.variants.knee', svgPath: '' },
+        { id: 'midi', nameKey: 'parts.skirt-length.variants.midi', svgPath: '' },
+        { id: 'maxi', nameKey: 'parts.skirt-length.variants.maxi', svgPath: '' },
+      ],
+    },
+    {
+      id: 'pockets',
+      nameKey: 'parts.pockets.name',
+      required: false,
+      layerOrder: 3,
+      defaultVariantId: 'none',
+      variants: [
+        { id: 'none', nameKey: 'parts.pockets.variants.none', svgPath: '' },
+        { id: 'chest', nameKey: 'parts.pockets.variants.chest', svgPath: '' },
+        { id: 'hip', nameKey: 'parts.pockets.variants.hip', svgPath: '' },
+      ],
+    },
+    {
+      id: 'collar',
+      nameKey: 'parts.collar.name',
+      required: true,
+      layerOrder: 4,
+      defaultVariantId: 'classic',
+      variants: [
+        { id: 'classic', nameKey: 'parts.collar.variants.classic', svgPath: '' },
+        { id: 'mandarin', nameKey: 'parts.collar.variants.mandarin', svgPath: '' },
+        { id: 'band', nameKey: 'parts.collar.variants.band', svgPath: '' },
+        { id: 'peter-pan', nameKey: 'parts.collar.variants.peter-pan', svgPath: '' },
+        { id: 'button-down', nameKey: 'parts.collar.variants.button-down', svgPath: '' },
+        { id: 'camp', nameKey: 'parts.collar.variants.camp', svgPath: '' },
+      ],
+    },
+    {
+      id: 'sleeves',
+      nameKey: 'parts.sleeves.name',
+      required: true,
+      layerOrder: 5,
+      defaultVariantId: 'long',
+      variants: [
+        { id: 'long', nameKey: 'parts.sleeves.variants.long', svgPath: '' },
+        { id: 'short', nameKey: 'parts.sleeves.variants.short', svgPath: '' },
+        { id: 'rolled', nameKey: 'parts.sleeves.variants.rolled', svgPath: '' },
+        { id: 'three-quarter', nameKey: 'parts.sleeves.variants.three-quarter', svgPath: '' },
+        { id: 'cap', nameKey: 'parts.sleeves.variants.cap', svgPath: '' },
+      ],
+    },
+    {
+      id: 'cuffs',
+      nameKey: 'parts.cuffs.name',
+      required: false,
+      layerOrder: 6,
+      defaultVariantId: 'barrel',
+      variants: [
+        { id: 'barrel', nameKey: 'parts.cuffs.variants.barrel', svgPath: '' },
+        { id: 'french', nameKey: 'parts.cuffs.variants.french', svgPath: '' },
+        { id: 'elastic', nameKey: 'parts.cuffs.variants.elastic', svgPath: '' },
+        { id: 'rolled', nameKey: 'parts.cuffs.variants.rolled', svgPath: '' },
+      ],
+    },
+  ],
+}
