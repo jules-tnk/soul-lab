@@ -1,0 +1,246 @@
+{
+  "app": {
+    "name": "Soul Lab",
+    "subtitle": "Votre Atelier Créatif"
+  },
+  "nav": {
+    "atelier": "Atelier",
+    "gallery": "Mes Créations"
+  },
+  "actions": {
+    "save": "Sauvegarder",
+    "export": "Exporter",
+    "import": "Importer",
+    "new": "Nouveau",
+    "delete": "Supprimer",
+    "duplicate": "Dupliquer",
+    "cancel": "Annuler",
+    "confirm": "Confirmer"
+  },
+  "categories": {
+    "tops": "Hauts",
+    "bottoms": "Bas",
+    "dresses": "Robes",
+    "outerwear": "Vestes & Manteaux"
+  },
+  "metadata": {
+    "fabric": "Tissu",
+    "pattern": "Motif",
+    "decorations": "Ornements",
+    "notes": "Notes",
+    "tags": "Étiquettes",
+    "color": "Couleur",
+    "garmentType": "Type de vêtement"
+  },
+  "gallery": {
+    "empty": "Aucune création pour le moment. Commencez à créer dans l'Atelier.",
+    "noResults": "Aucune création ne correspond à votre recherche.",
+    "clearFilters": "Effacer les filtres",
+    "search": "Rechercher des créations…"
+  },
+  "errors": {
+    "importFailed": "L'importation a échoué. Veuillez vérifier le fichier et réessayer.",
+    "orphanedPart": "Cette pièce n'a pas de vêtement correspondant et a été ignorée."
+  },
+  "import": {
+    "success": "Création importée avec succès."
+  },
+  "unsaved": {
+    "title": "Modifications non sauvegardées",
+    "message": "Vous avez des modifications non sauvegardées. Voulez-vous les abandonner ?",
+    "discard": "Abandonner les modifications"
+  },
+  "garments": {
+    "tops": {
+      "shirt": { "name": "Chemise" },
+      "blouse": { "name": "Blouse" },
+      "tshirt": { "name": "T-Shirt" },
+      "polo": { "name": "Polo" },
+      "tank-top": { "name": "Débardeur" },
+      "tunic": { "name": "Tunique" }
+    },
+    "bottoms": {
+      "trousers": { "name": "Pantalon" },
+      "jeans": { "name": "Jean" },
+      "shorts": { "name": "Short" },
+      "a-line-skirt": { "name": "Jupe trapèze" },
+      "pencil-skirt": { "name": "Jupe crayon" },
+      "pleated-skirt": { "name": "Jupe plissée" }
+    },
+    "dresses": {
+      "a-line-dress": { "name": "Robe trapèze" },
+      "sheath-dress": { "name": "Robe fourreau" },
+      "wrap-dress": { "name": "Robe portefeuille" },
+      "maxi-dress": { "name": "Robe longue" },
+      "shirt-dress": { "name": "Robe chemise" },
+      "cocktail-dress": { "name": "Robe de cocktail" }
+    },
+    "outerwear": {
+      "blazer": { "name": "Blazer" },
+      "bomber": { "name": "Blouson bomber" },
+      "trench-coat": { "name": "Trench-coat" },
+      "parka": { "name": "Parka" },
+      "cardigan": { "name": "Cardigan" },
+      "vest": { "name": "Gilet" }
+    }
+  },
+  "parts": {
+    "body": {
+      "name": "Corps",
+      "variants": {
+        "standard": "Standard"
+      }
+    },
+    "neckline": {
+      "name": "Encolure",
+      "variants": {
+        "standard": "Standard",
+        "v-neck": "Encolure en V",
+        "crew": "Encolure ronde",
+        "scoop": "Encolure plongeante",
+        "henley": "Henley",
+        "boat": "Encolure bateau"
+      }
+    },
+    "collar": {
+      "name": "Col",
+      "variants": {
+        "classic": "Col classique",
+        "mandarin": "Col mandarin",
+        "mao": "Col Mao",
+        "button-down": "Col boutonné",
+        "peter-pan": "Col Claudine",
+        "wing": "Col de plastron",
+        "band": "Col droit",
+        "club": "Col club"
+      }
+    },
+    "sleeves": {
+      "name": "Manches",
+      "variants": {
+        "long": "Longues",
+        "short": "Courtes",
+        "three-quarter": "Trois quarts",
+        "rolled": "Retroussées",
+        "raglan": "Raglan",
+        "puff": "Bouffantes",
+        "bishop": "Évêque",
+        "cap": "Mancheron"
+      }
+    },
+    "cuffs": {
+      "name": "Poignets",
+      "variants": {
+        "barrel": "Simple",
+        "french": "Mousquetaire",
+        "convertible": "Convertible",
+        "turnback": "Revers",
+        "ribbed": "Côtelé",
+        "elastic": "Élastique"
+      }
+    },
+    "placket": {
+      "name": "Patte de boutonnage",
+      "variants": {
+        "standard": "Standard",
+        "hidden": "Cachée",
+        "french": "Française",
+        "half": "Demi"
+      }
+    },
+    "hem": {
+      "name": "Ourlet",
+      "variants": {
+        "straight": "Droit",
+        "curved": "Arrondi",
+        "split": "Fendu",
+        "asymmetric": "Asymétrique"
+      }
+    },
+    "pockets": {
+      "name": "Poches",
+      "variants": {
+        "none": "Aucune",
+        "chest-single": "Une poche poitrine",
+        "chest-double": "Deux poches poitrine",
+        "flap": "Poche à rabat",
+        "welt": "Poche passepoilée"
+      }
+    },
+    "yoke": {
+      "name": "Empiècement",
+      "variants": {
+        "standard": "Standard",
+        "split": "Fendu",
+        "none": "Aucun"
+      }
+    },
+    "fit": {
+      "name": "Coupe",
+      "variants": {
+        "slim": "Ajustée",
+        "regular": "Droite",
+        "relaxed": "Décontractée",
+        "oversized": "Oversize"
+      }
+    }
+  },
+  "fabrics": {
+    "cotton": "Coton",
+    "linen": "Lin",
+    "silk": "Soie",
+    "wool": "Laine",
+    "cashmere": "Cachemire",
+    "polyester": "Polyester",
+    "denim": "Denim",
+    "chiffon": "Mousseline",
+    "satin": "Satin",
+    "velvet": "Velours",
+    "tweed": "Tweed",
+    "jersey": "Jersey",
+    "organza": "Organza",
+    "lace": "Dentelle",
+    "leather": "Cuir",
+    "suede": "Daim"
+  },
+  "patterns": {
+    "solid": "Uni",
+    "stripes": "Rayures",
+    "plaid": "Tartan",
+    "checks": "Carreaux",
+    "houndstooth": "Pied-de-poule",
+    "herringbone": "Chevron",
+    "polka-dots": "Pois",
+    "floral": "Floral",
+    "paisley": "Cachemire",
+    "animal-print": "Imprimé animalier",
+    "camouflage": "Camouflage",
+    "tie-dye": "Tie-dye",
+    "ombre": "Dégradé",
+    "color-block": "Color block",
+    "geometric": "Géométrique",
+    "raw": "Brut",
+    "light-wash": "Délavé clair",
+    "medium-wash": "Délavé moyen",
+    "dark-wash": "Délavé foncé",
+    "distressed": "Déchiré",
+    "acid-wash": "Délavé acide"
+  },
+  "decorations": {
+    "embroidery": "Broderie",
+    "beading": "Perles",
+    "sequins": "Sequins",
+    "applique": "Appliqué",
+    "lace-trim": "Bordure en dentelle",
+    "fringe": "Franges",
+    "piping": "Passepoil",
+    "pleats": "Plis",
+    "ruffles": "Volants",
+    "buttons-decorative": "Boutons décoratifs",
+    "studs": "Clous",
+    "rhinestones": "Strass",
+    "patches": "Écussons",
+    "ribbon": "Ruban",
+    "tassels": "Glands"
+  }
+}

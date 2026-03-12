@@ -1,0 +1,246 @@
+{
+  "app": {
+    "name": "Soul Lab",
+    "subtitle": "Your Design Atelier"
+  },
+  "nav": {
+    "atelier": "Workshop",
+    "gallery": "My Designs"
+  },
+  "actions": {
+    "save": "Save",
+    "export": "Export",
+    "import": "Import",
+    "new": "New",
+    "delete": "Delete",
+    "duplicate": "Duplicate",
+    "cancel": "Cancel",
+    "confirm": "Confirm"
+  },
+  "categories": {
+    "tops": "Tops",
+    "bottoms": "Bottoms",
+    "dresses": "Dresses",
+    "outerwear": "Outerwear"
+  },
+  "metadata": {
+    "fabric": "Fabric",
+    "pattern": "Pattern",
+    "decorations": "Decorations",
+    "notes": "Notes",
+    "tags": "Tags",
+    "color": "Color",
+    "garmentType": "Garment Type"
+  },
+  "gallery": {
+    "empty": "No designs yet. Start creating in the Workshop.",
+    "noResults": "No designs match your search.",
+    "clearFilters": "Clear Filters",
+    "search": "Search designs…"
+  },
+  "errors": {
+    "importFailed": "Import failed. Please check the file and try again.",
+    "orphanedPart": "This part has no matching garment and was skipped."
+  },
+  "import": {
+    "success": "Design imported successfully."
+  },
+  "unsaved": {
+    "title": "Unsaved Changes",
+    "message": "You have unsaved changes. Do you want to discard them?",
+    "discard": "Discard Changes"
+  },
+  "garments": {
+    "tops": {
+      "shirt": { "name": "Shirt" },
+      "blouse": { "name": "Blouse" },
+      "tshirt": { "name": "T-Shirt" },
+      "polo": { "name": "Polo" },
+      "tank-top": { "name": "Tank Top" },
+      "tunic": { "name": "Tunic" }
+    },
+    "bottoms": {
+      "trousers": { "name": "Trousers" },
+      "jeans": { "name": "Jeans" },
+      "shorts": { "name": "Shorts" },
+      "a-line-skirt": { "name": "A-Line Skirt" },
+      "pencil-skirt": { "name": "Pencil Skirt" },
+      "pleated-skirt": { "name": "Pleated Skirt" }
+    },
+    "dresses": {
+      "a-line-dress": { "name": "A-Line Dress" },
+      "sheath-dress": { "name": "Sheath Dress" },
+      "wrap-dress": { "name": "Wrap Dress" },
+      "maxi-dress": { "name": "Maxi Dress" },
+      "shirt-dress": { "name": "Shirt Dress" },
+      "cocktail-dress": { "name": "Cocktail Dress" }
+    },
+    "outerwear": {
+      "blazer": { "name": "Blazer" },
+      "bomber": { "name": "Bomber Jacket" },
+      "trench-coat": { "name": "Trench Coat" },
+      "parka": { "name": "Parka" },
+      "cardigan": { "name": "Cardigan" },
+      "vest": { "name": "Vest" }
+    }
+  },
+  "parts": {
+    "body": {
+      "name": "Body",
+      "variants": {
+        "standard": "Standard"
+      }
+    },
+    "neckline": {
+      "name": "Neckline",
+      "variants": {
+        "standard": "Standard",
+        "v-neck": "V-Neck",
+        "crew": "Crew Neck",
+        "scoop": "Scoop Neck",
+        "henley": "Henley",
+        "boat": "Boat Neck"
+      }
+    },
+    "collar": {
+      "name": "Collar",
+      "variants": {
+        "classic": "Classic Spread",
+        "mandarin": "Mandarin",
+        "mao": "Mao",
+        "button-down": "Button-Down",
+        "peter-pan": "Peter Pan",
+        "wing": "Wing",
+        "band": "Band",
+        "club": "Club"
+      }
+    },
+    "sleeves": {
+      "name": "Sleeves",
+      "variants": {
+        "long": "Long",
+        "short": "Short",
+        "three-quarter": "Three-Quarter",
+        "rolled": "Rolled",
+        "raglan": "Raglan",
+        "puff": "Puff",
+        "bishop": "Bishop",
+        "cap": "Cap"
+      }
+    },
+    "cuffs": {
+      "name": "Cuffs",
+      "variants": {
+        "barrel": "Barrel",
+        "french": "French",
+        "convertible": "Convertible",
+        "turnback": "Turnback",
+        "ribbed": "Ribbed",
+        "elastic": "Elastic"
+      }
+    },
+    "placket": {
+      "name": "Placket",
+      "variants": {
+        "standard": "Standard",
+        "hidden": "Hidden",
+        "french": "French",
+        "half": "Half"
+      }
+    },
+    "hem": {
+      "name": "Hem",
+      "variants": {
+        "straight": "Straight",
+        "curved": "Curved",
+        "split": "Split",
+        "asymmetric": "Asymmetric"
+      }
+    },
+    "pockets": {
+      "name": "Pockets",
+      "variants": {
+        "none": "None",
+        "chest-single": "Single Chest Pocket",
+        "chest-double": "Double Chest Pockets",
+        "flap": "Flap Pocket",
+        "welt": "Welt Pocket"
+      }
+    },
+    "yoke": {
+      "name": "Yoke",
+      "variants": {
+        "standard": "Standard",
+        "split": "Split",
+        "none": "None"
+      }
+    },
+    "fit": {
+      "name": "Fit",
+      "variants": {
+        "slim": "Slim",
+        "regular": "Regular",
+        "relaxed": "Relaxed",
+        "oversized": "Oversized"
+      }
+    }
+  },
+  "fabrics": {
+    "cotton": "Cotton",
+    "linen": "Linen",
+    "silk": "Silk",
+    "wool": "Wool",
+    "cashmere": "Cashmere",
+    "polyester": "Polyester",
+    "denim": "Denim",
+    "chiffon": "Chiffon",
+    "satin": "Satin",
+    "velvet": "Velvet",
+    "tweed": "Tweed",
+    "jersey": "Jersey",
+    "organza": "Organza",
+    "lace": "Lace",
+    "leather": "Leather",
+    "suede": "Suede"
+  },
+  "patterns": {
+    "solid": "Solid",
+    "stripes": "Stripes",
+    "plaid": "Plaid",
+    "checks": "Checks",
+    "houndstooth": "Houndstooth",
+    "herringbone": "Herringbone",
+    "polka-dots": "Polka Dots",
+    "floral": "Floral",
+    "paisley": "Paisley",
+    "animal-print": "Animal Print",
+    "camouflage": "Camouflage",
+    "tie-dye": "Tie-Dye",
+    "ombre": "Ombré",
+    "color-block": "Color Block",
+    "geometric": "Geometric",
+    "raw": "Raw",
+    "light-wash": "Light Wash",
+    "medium-wash": "Medium Wash",
+    "dark-wash": "Dark Wash",
+    "distressed": "Distressed",
+    "acid-wash": "Acid Wash"
+  },
+  "decorations": {
+    "embroidery": "Embroidery",
+    "beading": "Beading",
+    "sequins": "Sequins",
+    "applique": "Appliqué",
+    "lace-trim": "Lace Trim",
+    "fringe": "Fringe",
+    "piping": "Piping",
+    "pleats": "Pleats",
+    "ruffles": "Ruffles",
+    "buttons-decorative": "Decorative Buttons",
+    "studs": "Studs",
+    "rhinestones": "Rhinestones",
+    "patches": "Patches",
+    "ribbon": "Ribbon",
+    "tassels": "Tassels"
+  }
+}
