@@ -3,7 +3,7 @@ import type { GarmentType } from '../../types'
 export const shirt: GarmentType = {
   id: 'shirt',
   categoryId: 'tops',
-  nameKey: 'garments.shirt',
+  nameKey: 'garments.tops.shirt.name',
   svgViewBox: '0 0 200 300',
   parts: [
     {
