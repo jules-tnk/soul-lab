@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Relaxed fit: wider body, less taper -->
+  <path d="M58,65 L25,90 L20,110 L35,115 L36,250 L164,250 L165,115 L180,110 L175,90 L142,65 Q121,70 100,70 Q79,70 58,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Slight outward side indicators -->
+  <line x1="36" y1="130" x2="38" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+  <line x1="164" y1="130" x2="162" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+</svg>

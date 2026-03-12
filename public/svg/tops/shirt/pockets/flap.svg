@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Flap pocket: chest pocket with a covering flap over the opening -->
+  <!-- Pocket body -->
+  <rect x="72" y="110" width="22" height="18"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Flap covering top opening -->
+  <path d="M70,105 L96,105 L96,113 Q84,116 72,113 Z"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Flap button -->
+  <circle cx="83" cy="111" r="2" fill="none" stroke="currentColor" stroke-width="1"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Mandarin collar: small upright band around neck, no fold-down, slight gap at front -->
+  <path d="M84,46 Q100,42 116,46 L116,57 Q100,53 84,57 Z"
+    fill="currentColor" fill-opacity="0.09" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Small gap at front center -->
+  <line x1="100" y1="46" x2="100" y2="57" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <!-- Top edge of stand -->
+  <path d="M84,46 Q100,42 116,46" stroke="currentColor" stroke-width="1.5" fill="none"/>
+</svg>

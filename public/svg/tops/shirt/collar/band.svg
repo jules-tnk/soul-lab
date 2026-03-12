@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Band collar: collarless, just a plain finished neckband/stand without any fold -->
+  <path d="M84,50 Q100,46 116,50 L116,62 Q100,58 84,62 Z"
+    fill="currentColor" fill-opacity="0.09" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Topstitching along top edge -->
+  <path d="M84,50 Q100,46 116,50" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2" fill="none"/>
+  <!-- Topstitching along bottom edge -->
+  <path d="M84,62 Q100,58 116,62" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2" fill="none"/>
+  <!-- Single button at front -->
+  <circle cx="100" cy="56" r="2" fill="none" stroke="currentColor" stroke-width="1"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Wing collar: standing collar with small pointed tips folded outward (tuxedo style) -->
+  <!-- Collar stand band -->
+  <path d="M84,47 Q100,43 116,47 L116,58 Q100,54 84,58 Z"
+    fill="currentColor" fill-opacity="0.09" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Left wing tip folded outward and down -->
+  <path d="M84,47 L74,44 L76,52 L84,58 Z"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right wing tip folded outward and down -->
+  <path d="M116,47 L126,44 L124,52 L116,58 Z"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>

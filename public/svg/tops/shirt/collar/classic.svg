@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Classic spread collar: pointed collar tips spread wide, folded back -->
+  <!-- Left collar leaf -->
+  <path d="M100,58 L78,50 L62,72 L82,68 L100,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right collar leaf -->
+  <path d="M100,58 L122,50 L138,72 L118,68 L100,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Collar stand band -->
+  <path d="M82,58 Q100,54 118,58 L118,64 Q100,60 82,64 Z"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
+</svg>

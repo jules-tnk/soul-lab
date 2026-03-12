@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Split yoke: two panels divided at center back with slight V -->
+  <path d="M40,65 Q100,75 160,65 L160,82 Q130,90 100,88 Q70,90 40,82 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Left panel seam -->
+  <path d="M40,82 Q70,90 100,88" stroke="currentColor" stroke-width="1" stroke-dasharray="5,3" fill="none"/>
+  <!-- Right panel seam -->
+  <path d="M100,88 Q130,90 160,82" stroke="currentColor" stroke-width="1" stroke-dasharray="5,3" fill="none"/>
+  <!-- Center split line -->
+  <line x1="100" y1="68" x2="100" y2="88" stroke="currentColor" stroke-width="1" stroke-dasharray="3,3"/>
+</svg>

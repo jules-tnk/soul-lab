@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Standard yoke: single horizontal panel across upper back/shoulders -->
+  <path d="M40,65 Q100,75 160,65 L160,82 Q100,92 40,82 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Single horizontal seam line -->
+  <line x1="40" y1="82" x2="160" y2="82" stroke="currentColor" stroke-width="1" stroke-dasharray="5,3"/>
+</svg>

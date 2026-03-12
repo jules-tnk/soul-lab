@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- V-neck: deep V-shaped opening pointing downward -->
+  <path d="M82,42 L100,90 L118,42"
+    stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <path d="M82,42 L100,90 L118,42 L115,42 Q100,85 85,42 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="none"/>
+  <line x1="82" y1="42" x2="100" y2="90" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="118" y1="42" x2="100" y2="90" stroke="currentColor" stroke-width="1.5"/>
+</svg>

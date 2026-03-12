@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Oversized fit: very wide body, boxy shape, drops off shoulder -->
+  <path d="M52,60 L15,88 L12,110 L28,115 L30,252 L170,252 L172,115 L188,110 L185,88 L148,60 Q124,68 100,68 Q76,68 52,60 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Boxy outward side seams -->
+  <line x1="30" y1="130" x2="33" y2="248" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+  <line x1="170" y1="130" x2="167" y2="248" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- French cuff: double-length cuff folded back, fastened with cufflinks (4-hole pattern) -->
+  <!-- Left double cuff -->
+  <rect x="36" y="192" width="34" height="20"
+    fill="currentColor" fill-opacity="0.09" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Fold line at middle -->
+  <line x1="36" y1="202" x2="70" y2="202" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Cufflink holes (4-hole square pattern) -->
+  <circle cx="48" cy="197" r="1.5" fill="none" stroke="currentColor" stroke-width="1"/>
+  <circle cx="58" cy="197" r="1.5" fill="none" stroke="currentColor" stroke-width="1"/>
+  <circle cx="48" cy="207" r="1.5" fill="none" stroke="currentColor" stroke-width="1"/>
+  <circle cx="58" cy="207" r="1.5" fill="none" stroke="currentColor" stroke-width="1"/>
+  <!-- Right double cuff -->
+  <rect x="130" y="192" width="34" height="20"
+    fill="currentColor" fill-opacity="0.09" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="130" y1="202" x2="164" y2="202" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="142" cy="197" r="1.5" fill="none" stroke="currentColor" stroke-width="1"/>
+  <circle cx="152" cy="197" r="1.5" fill="none" stroke="currentColor" stroke-width="1"/>
+  <circle cx="142" cy="207" r="1.5" fill="none" stroke="currentColor" stroke-width="1"/>
+  <circle cx="152" cy="207" r="1.5" fill="none" stroke="currentColor" stroke-width="1"/>
+</svg>

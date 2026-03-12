@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Rolled sleeves: long sleeves rolled up to elbow, showing cuff roll -->
+  <!-- Left sleeve: long sleeve with roll at elbow level -->
+  <path d="M60,65 L30,90 L25,110 L40,115 L52,160 L68,160 L72,115 L72,90 L60,65 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Roll fold visible: thicker band at elbow -->
+  <rect x="40" y="147" width="30" height="13"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
+  <!-- Roll lines suggesting cuff is turned back -->
+  <line x1="40" y1="151" x2="70" y2="151" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
+  <line x1="40" y1="156" x2="70" y2="156" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
+  <!-- Right sleeve: long sleeve with roll at elbow level -->
+  <path d="M140,65 L170,90 L175,110 L160,115 L148,160 L132,160 L128,115 L128,90 L140,65 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <rect x="130" y="147" width="30" height="13"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
+  <line x1="130" y1="151" x2="160" y2="151" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
+  <line x1="130" y1="156" x2="160" y2="156" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
+</svg>

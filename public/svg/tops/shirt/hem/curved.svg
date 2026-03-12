@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Curved hem: lower at sides, higher at center (shirt-tail style) -->
+  <path d="M40,240 Q70,255 100,250 Q130,255 160,240 L160,250 Q130,265 100,260 Q70,265 40,250 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M40,240 Q70,255 100,250 Q130,255 160,240"
+    stroke="currentColor" stroke-width="1" stroke-dasharray="5,3" fill="none"/>
+</svg>

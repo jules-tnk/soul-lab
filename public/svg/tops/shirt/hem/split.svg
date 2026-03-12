@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Split hem: side vents/slits at lower sides -->
+  <rect x="40" y="242" width="120" height="8"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Left side vent -->
+  <path d="M40,242 L40,265" stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <path d="M52,242 L52,265" stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <!-- Right side vent -->
+  <path d="M148,242 L148,265" stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <path d="M160,242 L160,265" stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <!-- Vent fill -->
+  <rect x="40" y="242" width="12" height="23" fill="currentColor" fill-opacity="0.05"/>
+  <rect x="148" y="242" width="12" height="23" fill="currentColor" fill-opacity="0.05"/>
+</svg>

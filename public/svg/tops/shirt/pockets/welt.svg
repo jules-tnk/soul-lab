@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Welt pocket: slim, tailored pocket with only a narrow welt/lip visible (no patch) -->
+  <!-- Narrow welt lip only -->
+  <rect x="72" y="112" width="22" height="4"
+    fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Top stitch line above and below welt -->
+  <line x1="72" y1="111" x2="94" y2="111" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
+  <line x1="72" y1="117" x2="94" y2="117" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
+  <!-- Small side bar tacks (reinforcement) -->
+  <line x1="72" y1="110" x2="72" y2="118" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="94" y1="110" x2="94" y2="118" stroke="currentColor" stroke-width="1.5"/>
+</svg>

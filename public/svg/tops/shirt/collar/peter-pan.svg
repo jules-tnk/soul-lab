@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Peter Pan collar: flat, rounded collar lying flat on shoulders -->
+  <!-- Left rounded collar panel -->
+  <path d="M100,60 Q84,58 68,64 Q58,70 62,80 Q72,85 88,78 L100,68 Z"
+    fill="currentColor" fill-opacity="0.09" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right rounded collar panel -->
+  <path d="M100,60 Q116,58 132,64 Q142,70 138,80 Q128,85 112,78 L100,68 Z"
+    fill="currentColor" fill-opacity="0.09" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- No visible stand — collar is flat -->
+  <line x1="88" y1="60" x2="112" y2="60" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

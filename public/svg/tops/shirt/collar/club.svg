@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Club collar: rounded collar tips (not pointed), spread wide, classic shirt shape but with round ends -->
+  <!-- Left collar leaf with rounded tip -->
+  <path d="M100,58 L80,52 Q62,60 64,74 Q70,80 82,70 L100,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right collar leaf with rounded tip -->
+  <path d="M100,58 L120,52 Q138,60 136,74 Q130,80 118,70 L100,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Collar stand -->
+  <path d="M84,58 Q100,54 116,58 L116,64 Q100,60 84,64 Z"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
+</svg>

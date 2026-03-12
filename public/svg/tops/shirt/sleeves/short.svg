@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Short sleeves: end at mid-upper arm -->
+  <!-- Left sleeve -->
+  <path d="M60,65 L30,90 L28,108 L42,112 L58,130 L72,130 L72,90 L60,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right sleeve -->
+  <path d="M140,65 L170,90 L172,108 L158,112 L142,130 L128,130 L128,90 L140,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Hem fold line at sleeve bottom -->
+  <line x1="42" y1="126" x2="72" y2="126" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="128" y1="126" x2="158" y2="126" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

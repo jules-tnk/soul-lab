@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Convertible cuff: can be worn as barrel OR as French cuff, has both button and link holes -->
+  <!-- Left cuff -->
+  <rect x="36" y="195" width="34" height="14"
+    fill="currentColor" fill-opacity="0.09" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Button hole on one side -->
+  <circle cx="46" cy="202" r="2.2" fill="none" stroke="currentColor" stroke-width="1"/>
+  <!-- Cufflink holes on the other -->
+  <circle cx="58" cy="198" r="1.5" fill="none" stroke="currentColor" stroke-width="1"/>
+  <circle cx="58" cy="205" r="1.5" fill="none" stroke="currentColor" stroke-width="1"/>
+  <!-- Convertible indicator line -->
+  <line x1="52" y1="196" x2="52" y2="208" stroke="currentColor" stroke-width="0.75" stroke-dasharray="2,2"/>
+  <!-- Right cuff -->
+  <rect x="130" y="195" width="34" height="14"
+    fill="currentColor" fill-opacity="0.09" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="140" cy="202" r="2.2" fill="none" stroke="currentColor" stroke-width="1"/>
+  <circle cx="152" cy="198" r="1.5" fill="none" stroke="currentColor" stroke-width="1"/>
+  <circle cx="152" cy="205" r="1.5" fill="none" stroke="currentColor" stroke-width="1"/>
+  <line x1="146" y1="196" x2="146" y2="208" stroke="currentColor" stroke-width="0.75" stroke-dasharray="2,2"/>
+</svg>

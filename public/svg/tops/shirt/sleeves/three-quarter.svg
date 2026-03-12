@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Three-quarter sleeves: end between elbow and wrist -->
+  <!-- Left sleeve -->
+  <path d="M60,65 L30,90 L25,110 L40,115 L52,168 L68,168 L72,115 L72,90 L60,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right sleeve -->
+  <path d="M140,65 L170,90 L175,110 L160,115 L148,168 L132,168 L128,115 L128,90 L140,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Hem fold at sleeve end -->
+  <line x1="40" y1="164" x2="68" y2="164" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="132" y1="164" x2="160" y2="164" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

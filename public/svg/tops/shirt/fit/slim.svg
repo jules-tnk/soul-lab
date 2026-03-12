@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Slim fit: narrower through torso, tapered sides -->
+  <path d="M65,65 L35,90 L30,110 L45,115 L48,250 L152,250 L155,115 L170,110 L165,90 L135,65 Q117,70 100,70 Q83,70 65,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Side seam taper indicators -->
+  <line x1="48" y1="130" x2="50" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+  <line x1="152" y1="130" x2="150" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+</svg>

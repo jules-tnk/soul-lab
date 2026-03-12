@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Regular fit: standard width, gentle taper -->
+  <path d="M60,65 L30,90 L25,110 L40,115 L42,250 L158,250 L160,115 L175,110 L170,90 L140,65 Q120,70 100,70 Q80,70 60,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Straight side seam indicators -->
+  <line x1="42" y1="130" x2="42" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+  <line x1="158" y1="130" x2="158" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+</svg>

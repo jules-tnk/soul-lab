@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Button-down collar: pointed tips that button down to the shirt front -->
+  <!-- Left collar leaf with button at tip -->
+  <path d="M100,58 L76,52 L60,76 L80,70 L100,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right collar leaf with button at tip -->
+  <path d="M100,58 L124,52 L140,76 L120,70 L100,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Collar stand -->
+  <path d="M82,58 Q100,54 118,58 L118,64 Q100,60 82,64 Z"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
+  <!-- Collar tip buttons -->
+  <circle cx="62" cy="74" r="2.2" fill="none" stroke="currentColor" stroke-width="1.2"/>
+  <circle cx="138" cy="74" r="2.2" fill="none" stroke="currentColor" stroke-width="1.2"/>
+</svg>
