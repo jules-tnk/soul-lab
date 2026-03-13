@@ -5,6 +5,8 @@ import { useTranslation } from 'react-i18next'
 import { useDesignStore } from '../../stores/designStore'
 import { useUIStore } from '../../stores/uiStore'
 import { exportDesigns, parseImportFile } from '../../utils/importExport'
+import { getGarmentType } from '../../catalog'
+import { createTemplateElements } from '../../utils/templateLayouts'
 
 export default function ActionBar() {
   const { t } = useTranslation()
@@ -21,7 +23,18 @@ export default function ActionBar() {
   const setDirty = useUIStore(s => s.setDirty)
 
   const handleSave = () => {
-    updateCurrentDesign({ updatedAt: new Date().toISOString() })
+    // Capture thumbnail from Konva stage
+    const stage = (window as any).__soulLabStage
+    if (stage) {
+      try {
+        const thumbnail = stage.toDataURL({ pixelRatio: 0.5 })
+        updateCurrentDesign({ thumbnail, updatedAt: new Date().toISOString() })
+      } catch {
+        updateCurrentDesign({ updatedAt: new Date().toISOString() })
+      }
+    } else {
+      updateCurrentDesign({ updatedAt: new Date().toISOString() })
+    }
     setDirty(false)
   }
 
@@ -39,65 +52,35 @@ export default function ActionBar() {
     try {
       const imported = await parseImportFile(file)
       importDesigns(imported)
-      toast({
-        title: t('import.success'),
-        status: 'success',
-        duration: 3000,
-        isClosable: true,
-      })
+      toast({ title: t('import.success'), status: 'success', duration: 3000, isClosable: true })
     } catch {
-      toast({
-        title: t('errors.importFailed'),
-        status: 'error',
-        duration: 4000,
-        isClosable: true,
-      })
+      toast({ title: t('errors.importFailed'), status: 'error', duration: 4000, isClosable: true })
     }
     e.target.value = ''
   }
 
   const handleNew = () => {
-    createDesign('shirt', 'New Design')
+    const gt = getGarmentType('shirt')
+    if (gt) {
+      const elements = createTemplateElements(gt)
+      createDesign('shirt', 'New Design', elements)
+    }
   }
 
   return (
     <HStack spacing={2} justify="flex-end" pt={3} borderTop="1px solid" borderColor="gray.200">
-      <input
-        ref={fileInputRef}
-        type="file"
-        accept=".json"
-        style={{ display: 'none' }}
-        onChange={handleFileChange}
-      />
-      <Button
-        size="sm"
-        variant="solid"
-        colorScheme="brand"
-        isDisabled={!isDirty || !currentDesignId}
-        onClick={handleSave}
-      >
+      <input ref={fileInputRef} type="file" accept=".json" style={{ display: 'none' }} onChange={handleFileChange} />
+      <Button size="sm" variant="solid" colorScheme="brand" isDisabled={!isDirty || !currentDesignId} onClick={handleSave}>
         {t('actions.save')}
       </Button>
       <Tooltip label={t('actions.export')}>
-        <IconButton
-          aria-label={t('actions.export')}
-          icon={<DownloadIcon />}
-          size="sm"
-          variant="outline"
-          onClick={handleExport}
-        />
+        <IconButton aria-label={t('actions.export')} icon={<DownloadIcon />} size="sm" variant="outline" onClick={handleExport} />
       </Tooltip>
       <Button size="sm" variant="outline" onClick={handleImportClick}>
         {t('actions.import')}
       </Button>
       <Tooltip label={t('actions.new')}>
-        <IconButton
-          aria-label={t('actions.new')}
-          icon={<AddIcon />}
-          size="sm"
-          variant="ghost"
-          onClick={handleNew}
-        />
+        <IconButton aria-label={t('actions.new')} icon={<AddIcon />} size="sm" variant="ghost" onClick={handleNew} />
       </Tooltip>
     </HStack>
   )

@@ -1,16 +1,13 @@
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import {
-  Box,
-  Grid,
-  Input,
-  VStack,
-} from '@chakra-ui/react'
+import { Box, HStack } from '@chakra-ui/react'
 import { useDesignStore } from '../../stores/designStore'
 import { useUIStore } from '../../stores/uiStore'
-import { getGarmentType, getDefaultParts } from '../../catalog'
-import GarmentPreview from './GarmentPreview'
-import ConfigPanel from './ConfigPanel'
+import { getGarmentType } from '../../catalog'
+import { createTemplateElements } from '../../utils/templateLayouts'
+import PartsLibrary from '../sidebar/PartsLibrary'
+import DesignCanvas from '../canvas/DesignCanvas'
+import PropertiesPanel from '../properties/PropertiesPanel'
 import ActionBar from './ActionBar'
 import UnsavedChangesGuard from '../common/UnsavedChangesGuard'
 
@@ -21,63 +18,52 @@ export default function AtelierPage() {
   const currentDesignId = useDesignStore(s => s.currentDesignId)
   const createDesign = useDesignStore(s => s.createDesign)
   const loadDesign = useDesignStore(s => s.loadDesign)
-  const updateCurrentDesign = useDesignStore(s => s.updateCurrentDesign)
-
-  const setDirty = useUIStore(s => s.setDirty)
-
-  const design = designs.find(d => d.id === currentDesignId)
 
   useEffect(() => {
     if (id) {
       const found = designs.find(d => d.id === id)
-      if (found) {
-        loadDesign(id)
-      }
+      if (found) loadDesign(id)
     } else if (!currentDesignId) {
       const garmentType = getGarmentType('shirt')
-      const newId = createDesign('shirt', 'New Shirt')
       if (garmentType) {
-        const store = useDesignStore.getState()
-        const created = store.designs.find(d => d.id === newId)
-        if (created) {
-          store.updateCurrentDesign({ parts: getDefaultParts(garmentType) })
-        }
+        const elements = createTemplateElements(garmentType)
+        createDesign('shirt', 'New Shirt', elements)
       }
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id])
 
-  const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    updateCurrentDesign({ name: e.target.value })
-    setDirty(true)
-  }
-
   return (
-    <Box px={{ base: 3, md: 6 }} py={4} maxW="1100px" mx="auto">
+    <Box h="calc(100vh - 64px)" overflow="hidden">
       <UnsavedChangesGuard />
-      <VStack spacing={4} align="stretch">
-        <Input
-          value={design?.name ?? ''}
-          onChange={handleNameChange}
-          variant="flushed"
-          textAlign="center"
-          fontSize="xl"
-          fontWeight="semibold"
-          placeholder="Design name"
-          isDisabled={!design}
-          maxW="400px"
-          mx="auto"
-        />
-        <Grid
-          templateColumns={{ base: '1fr', md: '3fr 2fr' }}
-          gap={6}
-          alignItems="start"
+      <HStack h="100%" spacing={0} align="stretch">
+        {/* Left sidebar */}
+        <PartsLibrary />
+
+        {/* Center: canvas + action bar */}
+        <Box flex={1} display="flex" flexDir="column" overflow="hidden">
+          <Box flex={1} overflow="auto" display="flex" justifyContent="center" alignItems="flex-start" p={4}>
+            <DesignCanvas />
+          </Box>
+          <Box px={4} pb={3}>
+            <ActionBar />
+          </Box>
+        </Box>
+
+        {/* Right: properties panel */}
+        <Box
+          w="260px"
+          minW="260px"
+          h="100%"
+          overflowY="auto"
+          bg="white"
+          borderLeft="1px solid"
+          borderColor="gray.100"
+          p={3}
         >
-          <GarmentPreview />
-          <ConfigPanel />
-        </Grid>
-        <ActionBar />
-      </VStack>
+          <PropertiesPanel />
+        </Box>
+      </HStack>
     </Box>
   )
 }
