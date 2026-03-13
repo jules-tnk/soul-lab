@@ -37,7 +37,14 @@ Pattern: ${design.pattern}
 Decorations: ${decorations}
 Colors: ${colorStr}
 
-The attached image shows the flat technical sketch of the design. Render it as a photorealistic 3D garment with proper fabric draping, texture, and lighting. Show the full garment on the mannequin from a 3/4 front view angle.`
+The attached image shows the flat technical sketch of the design. Render it as a photorealistic 3D garment with proper fabric draping, texture, and lighting.
+
+Generate a single image containing three side-by-side views of the garment on the mannequin:
+1. Front view (center)
+2. Side view (left)
+3. Back view (right)
+
+Arrange the three views in a horizontal layout with equal spacing, all against the same clean studio background.`
 }
 
 export function buildSuggestionsSystemPrompt(
