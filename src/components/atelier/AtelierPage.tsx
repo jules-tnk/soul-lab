@@ -12,6 +12,7 @@ import { getGarmentType, getDefaultParts } from '../../catalog'
 import GarmentPreview from './GarmentPreview'
 import ConfigPanel from './ConfigPanel'
 import ActionBar from './ActionBar'
+import UnsavedChangesGuard from '../common/UnsavedChangesGuard'
 
 export default function AtelierPage() {
   const { id } = useParams<{ id?: string }>()
@@ -53,6 +54,7 @@ export default function AtelierPage() {
 
   return (
     <Box px={{ base: 3, md: 6 }} py={4} maxW="1100px" mx="auto">
+      <UnsavedChangesGuard />
       <VStack spacing={4} align="stretch">
         <Input
           value={design?.name ?? ''}
