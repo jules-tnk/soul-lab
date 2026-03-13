@@ -71,7 +71,7 @@ export const COLOR_SWATCHES = [
 
 // === Canvas Element Types (NEW) ===
 
-interface BaseCanvasElement {
+export interface BaseCanvasElement {
   id: string
   x: number
   y: number

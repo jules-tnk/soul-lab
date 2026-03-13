@@ -44,7 +44,7 @@ export function createTemplateElements(garmentType: GarmentType): GarmentPartEle
       const defaultVariant = part.variants.find(v => v.id === part.defaultVariantId)
       return defaultVariant && defaultVariant.svgPath !== ''
     })
-    .map((part, index) => {
+    .map((part) => {
       const pos = DEFAULT_POSITIONS[part.id] || { x: 100, y: 150 }
       return {
         id: uuid(),

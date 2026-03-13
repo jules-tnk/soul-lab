@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useRef } from 'react'
 
 interface ShortcutHandlers {
   onDelete: () => void
@@ -10,6 +10,9 @@ interface ShortcutHandlers {
 }
 
 export function useKeyboardShortcuts(handlers: ShortcutHandlers) {
+  const handlersRef = useRef(handlers)
+  useEffect(() => { handlersRef.current = handlers })
+
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       const tag = (e.target as HTMLElement)?.tagName
@@ -17,27 +20,27 @@ export function useKeyboardShortcuts(handlers: ShortcutHandlers) {
 
       if (e.key === 'Delete' || e.key === 'Backspace') {
         e.preventDefault()
-        handlers.onDelete()
+        handlersRef.current.onDelete()
       } else if (e.key === 'z' && (e.ctrlKey || e.metaKey) && !e.shiftKey) {
         e.preventDefault()
-        handlers.onUndo()
+        handlersRef.current.onUndo()
       } else if (
         (e.key === 'y' && (e.ctrlKey || e.metaKey)) ||
         (e.key === 'z' && (e.ctrlKey || e.metaKey) && e.shiftKey)
       ) {
         e.preventDefault()
-        handlers.onRedo()
+        handlersRef.current.onRedo()
       } else if (e.key === 'd' && (e.ctrlKey || e.metaKey)) {
         e.preventDefault()
-        handlers.onDuplicate()
+        handlersRef.current.onDuplicate()
       } else if (e.key === 'a' && (e.ctrlKey || e.metaKey)) {
         e.preventDefault()
-        handlers.onSelectAll()
+        handlersRef.current.onSelectAll()
       } else if (e.key === 'Escape') {
-        handlers.onDeselect()
+        handlersRef.current.onDeselect()
       }
     }
     window.addEventListener('keydown', handler)
     return () => window.removeEventListener('keydown', handler)
-  }, [handlers])
+  }, [])
 }

@@ -22,7 +22,9 @@ export async function parseImportFile(file: File): Promise<Design[]> {
   const valid = data.designs.filter(
     (d: unknown): d is Design =>
       typeof d === 'object' && d !== null &&
-      'id' in d && 'garmentTypeId' in d && 'elements' in d
+      'id' in d && 'garmentTypeId' in d &&
+      'elements' in d && Array.isArray((d as any).elements) &&
+      (d as any).version === 2
   )
   if (valid.length === 0) throw new Error('No valid designs found in file')
   return valid

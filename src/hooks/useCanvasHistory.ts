@@ -20,14 +20,14 @@ export function useCanvasHistory() {
     if (pastRef.current.length === 0) return null
     const prev = pastRef.current.pop()!
     futureRef.current.push(JSON.parse(JSON.stringify(currentElements)))
-    return prev
+    return JSON.parse(JSON.stringify(prev))
   }, [])
 
   const redo = useCallback((currentElements: CanvasElement[]): CanvasElement[] | null => {
     if (futureRef.current.length === 0) return null
     const next = futureRef.current.pop()!
     pastRef.current.push(JSON.parse(JSON.stringify(currentElements)))
-    return next
+    return JSON.parse(JSON.stringify(next))
   }, [])
 
   const canUndo = useCallback(() => pastRef.current.length > 0, [])
