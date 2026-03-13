@@ -204,6 +204,7 @@ export default function DesignCanvas() {
   }, [selectedIds, elements, history, updateDesign, setDirty])
 
   const handleBringToFront = useCallback(() => {
+    if (elements.length === 0) return
     const maxZ = Math.max(...elements.map(e => e.zIndex))
     history.pushSnapshot(elements)
     const newElements = elements.map(el =>
@@ -214,6 +215,7 @@ export default function DesignCanvas() {
   }, [elements, selectedIds, history, updateDesign, setDirty])
 
   const handleSendToBack = useCallback(() => {
+    if (elements.length === 0) return
     const minZ = Math.min(...elements.map(e => e.zIndex))
     history.pushSnapshot(elements)
     const newElements = elements.map(el =>

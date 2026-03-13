@@ -24,10 +24,12 @@ function trimSvgViewBox(svgText: string): string {
     document.body.appendChild(svg)
 
     const bbox = svg.getBBox()
-    document.body.removeChild(svg)
 
     // Fallback: if bbox is zero-size, return original
-    if (bbox.width <= 0 || bbox.height <= 0) return svgText
+    if (bbox.width <= 0 || bbox.height <= 0) {
+      document.body.removeChild(svg)
+      return svgText
+    }
 
     const pad = 2
     const x = bbox.x - pad
@@ -40,7 +42,9 @@ function trimSvgViewBox(svgText: string): string {
     svg.setAttribute('height', String(h))
 
     const serializer = new XMLSerializer()
-    return serializer.serializeToString(svg)
+    const result = serializer.serializeToString(svg)
+    document.body.removeChild(svg)
+    return result
   } catch {
     return svgText
   }

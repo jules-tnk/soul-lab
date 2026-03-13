@@ -1,4 +1,4 @@
-import { useCallback, useRef, useEffect } from 'react'
+import { useCallback, useRef, useEffect, useState } from 'react'
 import { useUIStore } from '../stores/uiStore'
 import type Konva from 'konva'
 
@@ -18,6 +18,7 @@ export function useViewport(): ViewportHandlers {
   const position = useUIStore(s => s.viewportPosition)
   const setPosition = useUIStore(s => s.setViewportPosition)
 
+  const [isPanning, setIsPanning] = useState(false)
   const isPanningRef = useRef(false)
   const panStartRef = useRef({ x: 0, y: 0 })
   const spaceHeldRef = useRef(false)
@@ -36,6 +37,7 @@ export function useViewport(): ViewportHandlers {
       if (e.code === 'Space') {
         spaceHeldRef.current = false
         isPanningRef.current = false
+        setIsPanning(false)
       }
     }
     window.addEventListener('keydown', onKeyDown)
@@ -86,6 +88,7 @@ export function useViewport(): ViewportHandlers {
       // Middle-click or Space+left-click
       if (e.evt.button === 1 || (spaceHeldRef.current && e.evt.button === 0)) {
         isPanningRef.current = true
+        setIsPanning(true)
         panStartRef.current = { x: e.evt.clientX - position.x, y: e.evt.clientY - position.y }
         e.evt.preventDefault()
       }
@@ -106,6 +109,7 @@ export function useViewport(): ViewportHandlers {
 
   const onMouseUp = useCallback(() => {
     isPanningRef.current = false
+    setIsPanning(false)
   }, [])
 
   const screenToCanvas = useCallback(
@@ -153,7 +157,7 @@ export function useViewport(): ViewportHandlers {
     onMouseDown,
     onMouseMove,
     onMouseUp,
-    isPanning: isPanningRef.current,
+    isPanning,
     screenToCanvas,
     fitAll,
   }
