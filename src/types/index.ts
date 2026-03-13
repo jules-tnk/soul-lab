@@ -69,14 +69,65 @@ export const COLOR_SWATCHES = [
   { id: 'coral', hex: '#FF7F50' },
 ] as const
 
-// === Design Type (Layer 2 — user-created) ===
+// === Canvas Element Types (NEW) ===
+
+interface BaseCanvasElement {
+  id: string
+  x: number
+  y: number
+  scaleX: number
+  scaleY: number
+  rotation: number
+  color: string
+  opacity: number
+  zIndex: number
+  locked: boolean
+  visible: boolean
+}
+
+export interface GarmentPartElement extends BaseCanvasElement {
+  type: 'garment-part'
+  partId: string
+  variantId: string
+  garmentTypeId: string
+}
+
+export interface TextElement extends BaseCanvasElement {
+  type: 'text'
+  text: string
+  fontSize: number
+  fontFamily: string
+}
+
+export interface ShapeElement extends BaseCanvasElement {
+  type: 'shape'
+  shapeType: 'rect' | 'circle' | 'star' | 'line'
+  width: number
+  height: number
+  strokeColor: string
+  strokeWidth: number
+}
+
+export interface ImageElement extends BaseCanvasElement {
+  type: 'image'
+  dataUrl: string
+  width: number
+  height: number
+}
+
+export type CanvasElement = GarmentPartElement | TextElement | ShapeElement | ImageElement
+
+// === Design Type (Layer 2 — v2) ===
 
 export interface Design {
   id: string
+  version: 2
   name: string
   garmentTypeId: string
-  parts: Record<string, string>
-  color: string
+  elements: CanvasElement[]
+  thumbnail: string
+  canvasWidth: number
+  canvasHeight: number
   fabric: FabricType
   pattern: PatternType
   decorations: DecorationType[]
@@ -87,7 +138,6 @@ export interface Design {
 }
 
 // === Import/Export ===
-
 export interface ExportEnvelope {
   version: 1
   designs: Design[]
