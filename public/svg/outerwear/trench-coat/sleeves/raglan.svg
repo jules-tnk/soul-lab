@@ -1,13 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Raglan sleeves on trench: diagonal seam from neckline -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="22 40 156 172">
+  <!-- Raglan sleeves: rectangle from neckline, diagonal seam -->
   <!-- Left raglan sleeve -->
-  <path d="M85,70 L22,115 L20,250 L50,250 L54,130 Z"
-    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M84,54 Q58,52 26,82 L26,205 L52,205 L52,82 Q62,52 84,54 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
   <!-- Right raglan sleeve -->
-  <path d="M115,70 L178,115 L180,250 L150,250 L146,130 Z"
-    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
-  <!-- Left raglan seam line -->
-  <line x1="85" y1="70" x2="54" y2="130" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <!-- Right raglan seam line -->
-  <line x1="115" y1="70" x2="146" y2="130" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <path d="M116,54 Q142,52 174,82 L174,205 L148,205 L148,82 Q138,52 116,54 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Raglan diagonal seam lines -->
+  <line x1="84" y1="54" x2="52" y2="82" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="116" y1="54" x2="148" y2="82" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5,3"/>
 </svg>

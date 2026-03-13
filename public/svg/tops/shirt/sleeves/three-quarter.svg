@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Three-quarter sleeves: end between elbow and wrist -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="22 40 156 128">
+  <!-- Three-quarter sleeves: 3/4 rectangle with curved cap -->
   <!-- Left sleeve -->
-  <path d="M60,65 L30,90 L25,110 L40,115 L52,168 L68,168 L72,115 L72,90 L60,65 Z"
+  <path d="M58,62 Q40,58 26,82 L26,162 L52,162 L52,82 Q62,58 62,62 Z"
     fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
   <!-- Right sleeve -->
-  <path d="M140,65 L170,90 L175,110 L160,115 L148,168 L132,168 L128,115 L128,90 L140,65 Z"
+  <path d="M142,62 Q160,58 174,82 L174,162 L148,162 L148,82 Q138,58 138,62 Z"
     fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-  <!-- Hem fold at sleeve end -->
-  <line x1="40" y1="164" x2="68" y2="164" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="132" y1="164" x2="160" y2="164" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Hem fold -->
+  <line x1="26" y1="159" x2="52" y2="159" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="174" y1="159" x2="148" y2="159" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
 </svg>

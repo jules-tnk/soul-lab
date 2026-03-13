@@ -1,19 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Rolled sleeves: long sleeves rolled up to elbow, showing cuff roll -->
-  <!-- Left sleeve: long sleeve with roll at elbow level -->
-  <path d="M60,65 L30,90 L25,110 L40,115 L52,160 L68,160 L72,115 L72,90 L60,65 Z"
-    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-  <!-- Roll fold visible: thicker band at elbow -->
-  <rect x="40" y="147" width="30" height="13"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="18 40 164 142">
+  <!-- Rolled sleeves: 3/4 rectangle with cuff roll at end -->
+  <!-- Left sleeve -->
+  <path d="M58,62 Q40,58 26,82 L26,162 L52,162 L52,82 Q62,58 62,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Left roll band -->
+  <path d="M24,162 L22,170 L26,175 L52,175 L54,170 L52,162"
     fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
-  <!-- Roll lines suggesting cuff is turned back -->
-  <line x1="40" y1="151" x2="70" y2="151" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
-  <line x1="40" y1="156" x2="70" y2="156" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
-  <!-- Right sleeve: long sleeve with roll at elbow level -->
-  <path d="M140,65 L170,90 L175,110 L160,115 L148,160 L132,160 L128,115 L128,90 L140,65 Z"
-    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-  <rect x="130" y="147" width="30" height="13"
+  <line x1="23" y1="167" x2="53" y2="167" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
+  <line x1="24" y1="172" x2="52" y2="172" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
+  <!-- Right sleeve -->
+  <path d="M142,62 Q160,58 174,82 L174,162 L148,162 L148,82 Q138,58 138,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right roll band -->
+  <path d="M176,162 L178,170 L174,175 L148,175 L146,170 L148,162"
     fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
-  <line x1="130" y1="151" x2="160" y2="151" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
-  <line x1="130" y1="156" x2="160" y2="156" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
+  <line x1="177" y1="167" x2="147" y2="167" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
+  <line x1="176" y1="172" x2="148" y2="172" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
 </svg>

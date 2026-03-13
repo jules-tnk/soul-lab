@@ -1,16 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Three-quarter sleeves: ending mid-forearm -->
-  <!-- Left sleeve 3/4 length -->
-  <path d="M50,115 L28,125 L28,195 L52,195 L54,125 Z"
-    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
-  <!-- Right sleeve 3/4 length -->
-  <path d="M150,115 L172,125 L172,195 L148,195 L146,125 Z"
-    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
-  <!-- Left clean hem edge -->
-  <line x1="28" y1="195" x2="52" y2="195" stroke="currentColor" stroke-width="1.5"/>
-  <!-- Right clean hem edge -->
-  <line x1="148" y1="195" x2="172" y2="195" stroke="currentColor" stroke-width="1.5"/>
-  <!-- Stitching at hem -->
-  <line x1="29" y1="192" x2="51" y2="192" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="149" y1="192" x2="171" y2="192" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="22 40 156 128">
+  <!-- Three-quarter sleeves: 3/4 rectangle with curved cap -->
+  <!-- Left sleeve -->
+  <path d="M58,62 Q40,58 26,82 L26,162 L52,162 L52,82 Q62,58 62,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right sleeve -->
+  <path d="M142,62 Q160,58 174,82 L174,162 L148,162 L148,82 Q138,58 138,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Hem fold -->
+  <line x1="26" y1="159" x2="52" y2="159" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="174" y1="159" x2="148" y2="159" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
 </svg>

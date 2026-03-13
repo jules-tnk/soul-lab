@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Raglan sleeves on parka: diagonal seam from collar -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="22 40 156 172">
+  <!-- Raglan sleeves: rectangle from neckline, diagonal seam -->
   <!-- Left raglan sleeve -->
-  <path d="M84,72 L24,118 L22,235 L52,235 L56,132 Z"
-    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M84,54 Q58,52 26,82 L26,205 L52,205 L52,82 Q62,52 84,54 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
   <!-- Right raglan sleeve -->
-  <path d="M116,72 L176,118 L178,235 L148,235 L144,132 Z"
-    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
-  <!-- Raglan seam lines -->
-  <line x1="84" y1="72" x2="56" y2="132" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,2"/>
-  <line x1="116" y1="72" x2="144" y2="132" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <path d="M116,54 Q142,52 174,82 L174,205 L148,205 L148,82 Q138,52 116,54 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Raglan diagonal seam lines -->
+  <line x1="84" y1="54" x2="52" y2="82" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="116" y1="54" x2="148" y2="82" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5,3"/>
 </svg>

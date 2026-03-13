@@ -109,7 +109,7 @@ export default function TransformableElement({ element, isSelected, onSelect, on
         <Transformer
           ref={trRef}
           rotateEnabled={true}
-          enabledAnchors={['top-left', 'top-right', 'bottom-left', 'bottom-right']}
+          enabledAnchors={['top-left', 'top-center', 'top-right', 'middle-left', 'middle-right', 'bottom-left', 'bottom-center', 'bottom-right']}
           boundBoxFunc={(oldBox, newBox) => {
             if (Math.abs(newBox.width) < 10 || Math.abs(newBox.height) < 10) {
               return oldBox

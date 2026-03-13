@@ -1,10 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Flutter sleeves: short, loose, flowing cap-like -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="22 40 156 72">
+  <!-- Flutter sleeves: short rectangle with wavy hem -->
   <!-- Left flutter -->
-  <path d="M60,75 C52,76 42,80 36,92 C34,98 36,104 40,106 C44,108 50,105 54,100 C54,108 54,114 56,118 L64,118 C64,114 64,108 65,100 C68,90 66,80 60,75 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M58,62 Q40,58 26,80 L26,100 Q32,108 38,100 Q44,108 50,100 L52,80 Q62,58 62,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
   <!-- Right flutter -->
-  <path d="M140,75 C148,76 158,80 164,92 C166,98 164,104 160,106 C156,108 150,105 146,100 C146,108 146,114 144,118 L136,118 C136,114 136,108 135,100 C132,90 134,80 140,75 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- Flutter wave hem -->
-  <path d="M37,104 C39,108 43,110 47,108 C51,106 53,103 55,100" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <path d="M163,104 C161,108 157,110 153,108 C149,106 147,103 145,100" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M142,62 Q160,58 174,80 L174,100 Q168,108 162,100 Q156,108 150,100 L148,80 Q138,58 138,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
 </svg>

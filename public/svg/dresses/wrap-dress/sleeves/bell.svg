@@ -1,6 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <path d="M60,75 C54,80 48,90 46,105 C44,118 40,135 32,155 L57,155 C57,140 58,125 58,110 C59,96 62,84 70,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M140,75 C146,80 152,90 154,105 C156,118 160,135 168,155 L143,155 C143,140 142,125 142,110 C141,96 138,84 130,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M33,153 L55,153" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <path d="M145,153 L167,153" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 40 196 172">
+  <!-- Bell sleeves: rectangle upper arm, flares from elbow -->
+  <!-- Left bell sleeve -->
+  <path d="M58,62 Q40,58 26,82 L26,145 L6,205 L54,205 L52,145 L52,82 Q62,58 62,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Flare fold line at elbow -->
+  <line x1="26" y1="145" x2="52" y2="145" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
+  <!-- Right bell sleeve -->
+  <path d="M142,62 Q160,58 174,82 L174,145 L194,205 L146,205 L148,145 L148,82 Q138,58 138,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="174" y1="145" x2="148" y2="145" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
 </svg>

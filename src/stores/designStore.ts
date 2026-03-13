@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { v4 as uuid } from 'uuid'
-import type { Design, CanvasElement, FabricType, PatternType } from '../types'
+import type { Design, CanvasElement, FabricType, PatternType, GenderType } from '../types'
 
 interface DesignState {
   designs: Design[]
@@ -20,6 +20,7 @@ const makeDefaultDesign = (garmentTypeId: string, name: string, elements: Canvas
   version: 2,
   name,
   garmentTypeId,
+  gender: 'unisex' as GenderType,
   elements,
   thumbnail: '',
   canvasWidth: 600,
@@ -104,10 +105,11 @@ export const useDesignStore = create<DesignState>()(
           state.designs = []
           state.currentDesignId = null
         }
-        // Ensure groupId exists on all elements (migration for pre-grouping designs)
+        // Migrations for older designs
         if (state.designs) {
           state.designs = state.designs.map(d => ({
             ...d,
+            gender: (d as any).gender ?? 'unisex',
             elements: d.elements.map(el => ({
               ...el,
               groupId: el.groupId ?? null,

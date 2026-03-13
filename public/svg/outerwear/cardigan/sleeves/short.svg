@@ -1,14 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Short sleeves on cardigan: ending just below shoulder -->
-  <!-- Left short sleeve -->
-  <path d="M52,110 L32,118 L32,148 L56,148 L58,118 Z"
-    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
-  <!-- Right short sleeve -->
-  <path d="M148,110 L168,118 L168,148 L144,148 L142,118 Z"
-    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
-  <!-- Ribbed sleeve hem -->
-  <line x1="32" y1="148" x2="56" y2="148" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="144" y1="148" x2="168" y2="148" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="33" y1="145" x2="55" y2="145" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="145" y1="145" x2="167" y2="145" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="22 40 156 72">
+  <!-- Short sleeves: short rectangle with curved cap -->
+  <!-- Left sleeve -->
+  <path d="M58,62 Q40,58 26,82 L26,106 L52,106 L52,82 Q62,58 62,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right sleeve -->
+  <path d="M142,62 Q160,58 174,82 L174,106 L148,106 L148,82 Q138,58 138,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Hem fold -->
+  <line x1="26" y1="103" x2="52" y2="103" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="174" y1="103" x2="148" y2="103" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
 </svg>

@@ -1,14 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Short polo sleeves: end at mid-upper arm with ribbed hem band -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="22 40 156 72">
+  <!-- Short sleeves: short rectangle with curved cap -->
   <!-- Left sleeve -->
-  <path d="M62,68 L32,90 L30,108 L44,112 L60,128 L74,128 L74,90 L62,68 Z"
+  <path d="M58,62 Q40,58 26,82 L26,106 L52,106 L52,82 Q62,58 62,62 Z"
     fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
   <!-- Right sleeve -->
-  <path d="M138,68 L168,90 L170,108 L156,112 L140,128 L126,128 L126,90 L138,68 Z"
+  <path d="M142,62 Q160,58 174,82 L174,106 L148,106 L148,82 Q138,58 138,62 Z"
     fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-  <!-- Ribbed hem band at sleeve bottom -->
-  <line x1="44" y1="122" x2="74" y2="122" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="44" y1="125" x2="74" y2="125" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="126" y1="122" x2="156" y2="122" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="126" y1="125" x2="156" y2="125" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Hem fold -->
+  <line x1="26" y1="103" x2="52" y2="103" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="174" y1="103" x2="148" y2="103" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
 </svg>

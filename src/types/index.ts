@@ -52,6 +52,9 @@ export const DECORATIONS = [
 ] as const
 export type DecorationType = typeof DECORATIONS[number]
 
+export const GENDERS = ['women', 'men', 'unisex'] as const
+export type GenderType = typeof GENDERS[number]
+
 // === Color Swatches ===
 
 export const COLOR_SWATCHES = [
@@ -125,6 +128,7 @@ export interface Design {
   version: 2
   name: string
   garmentTypeId: string
+  gender: GenderType
   elements: CanvasElement[]
   thumbnail: string
   canvasWidth: number

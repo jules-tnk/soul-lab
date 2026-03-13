@@ -1,13 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Rolled sleeves: long sleeve with rolled cuff detail -->
-  <path d="M60,75 C52,80 44,90 40,110 C36,130 36,160 38,175 L52,175 C50,160 50,130 54,112 C58,92 64,82 70,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M140,75 C148,80 156,90 160,110 C164,130 164,160 162,175 L148,175 C150,160 150,130 146,112 C142,92 136,82 130,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- Roll detail at cuff end -->
-  <path d="M38,165 L52,165" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-  <path d="M38,170 L52,170" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-  <!-- Roll fold edge -->
-  <path d="M38,165 C38,162 40,160 44,160 C48,160 52,162 52,165" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1"/>
-  <path d="M148,165 L162,165" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-  <path d="M148,170 L162,170" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-  <path d="M148,165 C148,162 150,160 155,160 C160,160 162,162 162,165" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="18 40 164 142">
+  <!-- Rolled sleeves: 3/4 rectangle with cuff roll at end -->
+  <!-- Left sleeve -->
+  <path d="M58,62 Q40,58 26,82 L26,162 L52,162 L52,82 Q62,58 62,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Left roll band -->
+  <path d="M24,162 L22,170 L26,175 L52,175 L54,170 L52,162"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
+  <line x1="23" y1="167" x2="53" y2="167" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
+  <line x1="24" y1="172" x2="52" y2="172" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
+  <!-- Right sleeve -->
+  <path d="M142,62 Q160,58 174,82 L174,162 L148,162 L148,82 Q138,58 138,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right roll band -->
+  <path d="M176,162 L178,170 L174,175 L148,175 L146,170 L148,162"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
+  <line x1="177" y1="167" x2="147" y2="167" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
+  <line x1="176" y1="172" x2="148" y2="172" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
 </svg>

@@ -1,10 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Bell sleeves: fitted at top, flares out widely at hem -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="2 40 196 172">
+  <!-- Bell sleeves: rectangle upper arm, flares from elbow -->
   <!-- Left bell sleeve -->
-  <path d="M58,75 C52,80 46,90 44,105 C42,118 38,135 30,155 L55,155 C55,140 56,125 56,110 C57,96 60,84 68,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M58,62 Q40,58 26,82 L26,145 L6,205 L54,205 L52,145 L52,82 Q62,58 62,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Flare fold line at elbow -->
+  <line x1="26" y1="145" x2="52" y2="145" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
   <!-- Right bell sleeve -->
-  <path d="M142,75 C148,80 154,90 156,105 C158,118 162,135 170,155 L145,155 C145,140 144,125 144,110 C143,96 140,84 132,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- Hem stitch -->
-  <path d="M32,153 L53,153" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <path d="M147,153 L168,153" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M142,62 Q160,58 174,82 L174,145 L194,205 L146,205 L148,145 L148,82 Q138,58 138,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="174" y1="145" x2="148" y2="145" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
 </svg>

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { Image as KonvaImage } from 'react-konva'
 import type { GarmentPartElement } from '../../types'
 import { getGarmentType } from '../../catalog'
-import { loadSvgAsImage } from '../../utils/svgToImage'
+import { loadSvgWithMeta } from '../../utils/svgToImage'
 
 interface Props {
   element: GarmentPartElement
@@ -10,6 +10,7 @@ interface Props {
 
 export default function GarmentPartNode({ element }: Props) {
   const [image, setImage] = useState<HTMLImageElement | null>(null)
+  const [offset, setOffset] = useState({ x: 0, y: 0 })
 
   const garmentType = getGarmentType(element.garmentTypeId)
   const part = garmentType?.parts.find(p => p.id === element.partId)
@@ -19,8 +20,11 @@ export default function GarmentPartNode({ element }: Props) {
   useEffect(() => {
     if (!svgPath) { setImage(null); return }
     let cancelled = false
-    loadSvgAsImage(svgPath, element.color).then(img => {
-      if (!cancelled) setImage(img)
+    loadSvgWithMeta(svgPath, element.color).then(result => {
+      if (!cancelled) {
+        setImage(result.image)
+        setOffset({ x: result.offsetX, y: result.offsetY })
+      }
     }).catch(() => {
       if (!cancelled) setImage(null)
     })
@@ -32,8 +36,8 @@ export default function GarmentPartNode({ element }: Props) {
   return (
     <KonvaImage
       image={image}
-      x={0}
-      y={0}
+      x={offset.x}
+      y={offset.y}
       opacity={element.opacity}
     />
   )

@@ -31,7 +31,13 @@
     "tags": "Tags",
     "color": "Color",
     "garmentType": "Garment Type",
-    "designName": "Name"
+    "designName": "Name",
+    "gender": "Gender"
+  },
+  "genders": {
+    "women": "Women",
+    "men": "Men",
+    "unisex": "Unisex"
   },
   "canvas": {
     "templates": "Templates",

@@ -20,7 +20,7 @@ import Konva from 'konva'
 function getElementBounds(el: CanvasElement) {
   let w = 100, h = 100
   switch (el.type) {
-    case 'garment-part': w = 200; h = 200; break
+    case 'garment-part': w = 200; h = 300; break
     case 'text': w = el.fontSize * Math.max(el.text.length * 0.6, 1); h = el.fontSize * 1.4; break
     case 'shape': w = el.width; h = el.height; break
     case 'image': w = el.width ?? 100; h = el.height ?? 100; break

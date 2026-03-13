@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Raglan sleeves: seam runs diagonally from neck to underarm (no shoulder seam) -->
-  <!-- Left raglan sleeve with diagonal seam from neck to underarm -->
-  <path d="M86,58 L30,90 L25,110 L40,115 L55,200 L70,200 L72,115 L86,58 Z"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="22 40 156 172">
+  <!-- Raglan sleeves: rectangle from neckline, diagonal seam -->
+  <!-- Left raglan sleeve -->
+  <path d="M84,54 Q58,52 26,82 L26,205 L52,205 L52,82 Q62,52 84,54 Z"
     fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
   <!-- Right raglan sleeve -->
-  <path d="M114,58 L170,90 L175,110 L160,115 L145,200 L130,200 L128,115 L114,58 Z"
+  <path d="M116,54 Q142,52 174,82 L174,205 L148,205 L148,82 Q138,52 116,54 Z"
     fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-  <!-- Signature raglan diagonal seam lines -->
-  <line x1="86" y1="58" x2="40" y2="115" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5,3"/>
-  <line x1="114" y1="58" x2="160" y2="115" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <!-- Raglan diagonal seam lines -->
+  <line x1="84" y1="54" x2="52" y2="82" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <line x1="116" y1="54" x2="148" y2="82" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5,3"/>
 </svg>

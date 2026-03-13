@@ -1,4 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <path d="M60,75 C52,80 44,90 40,110 C36,130 36,180 38,220 L52,220 C50,182 50,132 54,112 C58,92 64,82 70,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M140,75 C148,80 156,90 160,110 C164,130 164,180 162,220 L148,220 C150,182 150,132 146,112 C142,92 136,82 130,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="22 40 156 172">
+  <!-- Long sleeves: vertical rectangle with curved cap -->
+  <!-- Left sleeve -->
+  <path d="M58,62 Q40,58 26,82 L26,205 L52,205 L52,82 Q62,58 62,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right sleeve -->
+  <path d="M142,62 Q160,58 174,82 L174,205 L148,205 L148,82 Q138,58 138,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Inner seam lines -->
+  <line x1="52" y1="82" x2="52" y2="205" stroke="currentColor" stroke-width="0.75" stroke-dasharray="4,3"/>
+  <line x1="148" y1="82" x2="148" y2="205" stroke="currentColor" stroke-width="0.75" stroke-dasharray="4,3"/>
 </svg>

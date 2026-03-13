@@ -50,6 +50,25 @@ export default function TextProperties({ element }: Props) {
           <SliderThumb />
         </Slider>
       </Box>
+      <Box>
+        <Text fontSize="2xs" fontWeight="700" textTransform="uppercase" letterSpacing="1px" color="gray.500" mb={1}>
+          {t('canvas.scale', 'Scale')}
+        </Text>
+        <HStack spacing={2}>
+          <Box flex={1}>
+            <Text fontSize="2xs" color="gray.500" mb={1}>H</Text>
+            <Input size="sm" type="number" min={0.1} step={0.05}
+              value={Math.round(element.scaleX * 100) / 100}
+              onChange={e => updateElement({ scaleX: Math.max(0.1, Number(e.target.value)) })} />
+          </Box>
+          <Box flex={1}>
+            <Text fontSize="2xs" color="gray.500" mb={1}>V</Text>
+            <Input size="sm" type="number" min={0.1} step={0.05}
+              value={Math.round(element.scaleY * 100) / 100}
+              onChange={e => updateElement({ scaleY: Math.max(0.1, Number(e.target.value)) })} />
+          </Box>
+        </HStack>
+      </Box>
       <HStack>
         <Tooltip label={element.locked ? 'Unlock' : 'Lock'}>
           <IconButton aria-label="lock" icon={element.locked ? <LockIcon /> : <UnlockIcon />} size="xs" variant="ghost"

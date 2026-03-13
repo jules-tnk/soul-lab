@@ -1,16 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Long sleeves: full-length to wrist with button cuffs -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="22 40 156 172">
+  <!-- Long sleeves: vertical rectangle with curved cap -->
   <!-- Left sleeve -->
-  <path d="M50,115 L28,125 L26,240 L50,240 L54,125 Z"
-    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M58,62 Q40,58 26,82 L26,205 L52,205 L52,82 Q62,58 62,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
   <!-- Right sleeve -->
-  <path d="M150,115 L172,125 L174,240 L150,240 L146,125 Z"
-    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
-  <!-- Left cuff band -->
-  <rect x="26" y="232" width="24" height="10" fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
-  <!-- Right cuff band -->
-  <rect x="150" y="232" width="24" height="10" fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
-  <!-- Cuff stitching -->
-  <line x1="27" y1="234" x2="49" y2="234" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="151" y1="234" x2="173" y2="234" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M142,62 Q160,58 174,82 L174,205 L148,205 L148,82 Q138,58 138,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Inner seam lines -->
+  <line x1="52" y1="82" x2="52" y2="205" stroke="currentColor" stroke-width="0.75" stroke-dasharray="4,3"/>
+  <line x1="148" y1="82" x2="148" y2="205" stroke="currentColor" stroke-width="0.75" stroke-dasharray="4,3"/>
 </svg>

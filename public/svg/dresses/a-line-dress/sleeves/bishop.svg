@@ -1,13 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Bishop sleeves: full/puffed throughout, gathered at cuff -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="4 40 192 178">
+  <!-- Bishop sleeves: wide flowing body, gathered at wrist -->
   <!-- Left bishop sleeve -->
-  <path d="M58,75 C50,80 40,92 36,115 C32,138 32,175 34,195 L34,202 L52,202 L52,195 C54,175 54,138 56,115 C58,94 62,82 68,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M58,62 Q38,58 22,82 L10,155 L26,205 L52,205 L52,155 L52,82 Q62,58 62,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Gather at wrist -->
+  <path d="M26,205 Q38,212 52,205" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3,2" fill="none"/>
+  <!-- Volume line -->
+  <line x1="22" y1="130" x2="12" y2="170" stroke="currentColor" stroke-width="0.75" stroke-dasharray="2,3"/>
   <!-- Right bishop sleeve -->
-  <path d="M142,75 C150,80 160,92 164,115 C168,138 168,175 166,195 L166,202 L148,202 L148,195 C146,175 146,138 144,115 C142,94 138,82 132,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- Full sleeve body lines -->
-  <path d="M40,110 C40,140 40,170 40,193" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <path d="M160,110 C160,140 160,170 160,193" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <!-- Cuff gather -->
-  <path d="M34,197 L52,197" fill="none" stroke="currentColor" stroke-width="1"/>
-  <path d="M148,197 L166,197" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M142,62 Q162,58 178,82 L190,155 L174,205 L148,205 L148,155 L148,82 Q138,58 138,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M174,205 Q162,212 148,205" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3,2" fill="none"/>
+  <line x1="178" y1="130" x2="188" y2="170" stroke="currentColor" stroke-width="0.75" stroke-dasharray="2,3"/>
 </svg>

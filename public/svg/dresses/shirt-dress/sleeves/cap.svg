@@ -1,6 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <path d="M60,75 C54,74 48,76 44,82 L44,90 C48,86 56,82 64,80 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M140,75 C146,74 152,76 156,82 L156,90 C152,86 144,82 136,80 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M45,88 L64,83" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <path d="M136,83 L155,88" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="28 45 144 54">
+  <!-- Cap sleeves: small rectangle just covering shoulder -->
+  <!-- Left cap -->
+  <path d="M58,62 Q44,56 32,72 L32,92 L56,92 L56,72 Q64,56 62,62 Z"
+    fill="currentColor" fill-opacity="0.09" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right cap -->
+  <path d="M142,62 Q156,56 168,72 L168,92 L144,92 L144,72 Q136,56 138,62 Z"
+    fill="currentColor" fill-opacity="0.09" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Hem -->
+  <line x1="32" y1="89" x2="56" y2="89" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="168" y1="89" x2="144" y2="89" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
 </svg>

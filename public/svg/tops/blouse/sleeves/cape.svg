@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Cape sleeves: draped cape-like panels flowing from shoulders -->
-  <!-- Left cape panel -->
-  <path d="M62,65 Q40,80 20,100 Q16,116 24,120 Q44,108 66,108 L70,88 L62,65 Z"
-    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-  <!-- Cape drape fold lines -->
-  <path d="M42,80 Q32,96 28,112" stroke="currentColor" stroke-width="1" stroke-dasharray="4,3" fill="none"/>
-  <!-- Right cape panel -->
-  <path d="M138,65 Q160,80 180,100 Q184,116 176,120 Q156,108 134,108 L130,88 L138,65 Z"
-    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M158,80 Q168,96 172,112" stroke="currentColor" stroke-width="1" stroke-dasharray="4,3" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="8 40 184 168">
+  <!-- Cape sleeves: wide flowing panel from shoulder -->
+  <!-- Left cape -->
+  <path d="M58,62 Q36,56 20,82 L12,162 L10,200 L48,200 L52,162 L52,82 Q62,56 62,62 Z"
+    fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Flowing detail -->
+  <line x1="20" y1="82" x2="12" y2="162" stroke="currentColor" stroke-width="0.75" stroke-dasharray="4,3"/>
+  <!-- Right cape -->
+  <path d="M142,62 Q164,56 180,82 L188,162 L190,200 L152,200 L148,162 L148,82 Q138,56 138,62 Z"
+    fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="180" y1="82" x2="188" y2="162" stroke="currentColor" stroke-width="0.75" stroke-dasharray="4,3"/>
 </svg>

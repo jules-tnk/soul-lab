@@ -1,18 +1,24 @@
-const svgCache = new Map<string, string>()
+export interface SvgCacheEntry {
+  text: string
+  offsetX: number
+  offsetY: number
+}
 
-export async function fetchSvgText(svgPath: string): Promise<string> {
+const svgCache = new Map<string, SvgCacheEntry>()
+
+export async function fetchSvgText(svgPath: string): Promise<SvgCacheEntry> {
   const cached = svgCache.get(svgPath)
   if (cached) return cached
   const base = import.meta.env.BASE_URL
   const res = await fetch(`${base}svg/${svgPath}`)
   if (!res.ok) throw new Error(`Failed to fetch SVG: ${svgPath}`)
   const raw = await res.text()
-  const trimmed = trimSvgViewBox(raw)
-  svgCache.set(svgPath, trimmed)
-  return trimmed
+  const entry = trimSvgViewBox(raw)
+  svgCache.set(svgPath, entry)
+  return entry
 }
 
-function trimSvgViewBox(svgText: string): string {
+function trimSvgViewBox(svgText: string): SvgCacheEntry {
   try {
     const parser = new DOMParser()
     const doc = parser.parseFromString(svgText, 'image/svg+xml')
@@ -29,7 +35,7 @@ function trimSvgViewBox(svgText: string): string {
     // Fallback: if bbox is zero-size, return original
     if (bbox.width <= 0 || bbox.height <= 0) {
       document.body.removeChild(svg)
-      return svgText
+      return { text: svgText, offsetX: 0, offsetY: 0 }
     }
 
     const pad = 2
@@ -39,14 +45,9 @@ function trimSvgViewBox(svgText: string): string {
     const h = bbox.height + pad * 2
 
     svg.setAttribute('viewBox', `${x} ${y} ${w} ${h}`)
-
-    // Scale width/height so the largest dimension normalizes to 200px.
-    // This keeps images at a usable natural size while the tight viewBox
-    // ensures the Transformer fits tightly around visible content.
-    const BASE = 200
-    const scale = BASE / Math.max(w, h)
-    svg.setAttribute('width', String(Math.round(w * scale)))
-    svg.setAttribute('height', String(Math.round(h * scale)))
+    // 1:1 pixel-per-SVG-unit ratio so all parts share consistent scale
+    svg.setAttribute('width', String(Math.round(w)))
+    svg.setAttribute('height', String(Math.round(h)))
 
     // Remove measurement styles before serializing
     svg.removeAttribute('style')
@@ -54,9 +55,9 @@ function trimSvgViewBox(svgText: string): string {
     const serializer = new XMLSerializer()
     const result = serializer.serializeToString(svg)
     document.body.removeChild(svg)
-    return result
+    return { text: result, offsetX: x, offsetY: y }
   } catch {
-    return svgText
+    return { text: svgText, offsetX: 0, offsetY: 0 }
   }
 }
 
@@ -85,6 +86,15 @@ export async function loadSvgAsImage(
   svgPath: string,
   color: string
 ): Promise<HTMLImageElement> {
-  const text = await fetchSvgText(svgPath)
-  return svgTextToImage(text, color)
+  const entry = await fetchSvgText(svgPath)
+  return svgTextToImage(entry.text, color)
+}
+
+export async function loadSvgWithMeta(
+  svgPath: string,
+  color: string
+): Promise<{ image: HTMLImageElement; offsetX: number; offsetY: number }> {
+  const entry = await fetchSvgText(svgPath)
+  const image = await svgTextToImage(entry.text, color)
+  return { image, offsetX: entry.offsetX, offsetY: entry.offsetY }
 }

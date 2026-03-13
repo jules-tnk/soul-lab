@@ -1,11 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Long sleeves: full-length sleeves extending to wrist -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="22 40 156 172">
+  <!-- Long sleeves: vertical rectangle with curved cap -->
   <!-- Left sleeve -->
-  <path d="M62,65 L32,88 L26,112 L38,118 L52,220 L68,220 L70,118 L70,88 L62,65 Z"
+  <path d="M58,62 Q40,58 26,82 L26,205 L52,205 L52,82 Q62,58 62,62 Z"
     fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
   <!-- Right sleeve -->
-  <path d="M138,65 L168,88 L174,112 L162,118 L148,220 L132,220 L130,118 L130,88 L138,65 Z"
+  <path d="M142,62 Q160,58 174,82 L174,205 L148,205 L148,82 Q138,58 138,62 Z"
     fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-  <line x1="38" y1="118" x2="52" y2="218" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="162" y1="118" x2="148" y2="218" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Inner seam lines -->
+  <line x1="52" y1="82" x2="52" y2="205" stroke="currentColor" stroke-width="0.75" stroke-dasharray="4,3"/>
+  <line x1="148" y1="82" x2="148" y2="205" stroke="currentColor" stroke-width="0.75" stroke-dasharray="4,3"/>
 </svg>

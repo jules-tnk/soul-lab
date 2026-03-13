@@ -1,15 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Puff sleeves: gathered/inflated at shoulder, narrow at elbow -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 38 180 173">
+  <!-- Puff sleeves: large puffed cap, then straight tube -->
   <!-- Left puff sleeve -->
-  <path d="M58,75 C48,75 38,80 34,92 C30,104 36,115 48,118 L54,120 C52,112 50,102 52,92 C54,84 56,78 62,76 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M58,62 Q24,46 14,84 Q18,100 28,102 L26,205 L52,205 L52,102 Q62,100 66,84 Q76,46 62,62 Z"
+    fill="currentColor" fill-opacity="0.09" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Gather line at base of puff -->
+  <path d="M28,102 Q40,108 52,102" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3,2" fill="none"/>
   <!-- Right puff sleeve -->
-  <path d="M142,75 C152,75 162,80 166,92 C170,104 164,115 152,118 L146,120 C148,112 150,102 148,92 C146,84 144,78 138,76 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- Gather lines at shoulder -->
-  <path d="M42,82 C44,86 44,92 44,96" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <path d="M50,78 C51,84 51,90 51,96" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <path d="M158,82 C156,86 156,92 156,96" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <path d="M150,78 C149,84 149,90 149,96" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <!-- Cuff band -->
-  <path d="M48,116 L56,120 L56,124 L48,121 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1"/>
-  <path d="M152,116 L144,120 L144,124 L152,121 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1"/>
+  <path d="M142,62 Q176,46 186,84 Q182,100 172,102 L174,205 L148,205 L148,102 Q138,100 134,84 Q124,46 138,62 Z"
+    fill="currentColor" fill-opacity="0.09" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M172,102 Q160,108 148,102" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3,2" fill="none"/>
 </svg>

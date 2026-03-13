@@ -1,19 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Pushed-up/rolled sleeves: bunched fabric pushed up the forearm -->
-  <!-- Left sleeve upper portion -->
-  <path d="M50,115 L28,125 L30,200 L52,200 L54,125 Z"
-    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
-  <!-- Right sleeve upper portion -->
-  <path d="M150,115 L172,125 L170,200 L148,200 L146,125 Z"
-    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
-  <!-- Left rolled/pushed-up bunched fabric -->
-  <path d="M29,185 Q40,180 51,185 Q40,188 29,185 Z"
-    fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1"/>
-  <path d="M29,192 Q40,187 51,192 Q40,195 29,192 Z"
-    fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1"/>
-  <!-- Right rolled/pushed-up bunched fabric -->
-  <path d="M149,185 Q160,180 171,185 Q160,188 149,185 Z"
-    fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1"/>
-  <path d="M149,192 Q160,187 171,192 Q160,195 149,192 Z"
-    fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="22 40 156 172">
+  <!-- Pushed-up sleeves: long rectangle with forearm gather -->
+  <!-- Left sleeve -->
+  <path d="M58,62 Q40,58 26,82 L26,205 L52,205 L52,82 Q62,58 62,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Gather/scrunch lines at forearm -->
+  <line x1="26" y1="140" x2="52" y2="140" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="26" y1="148" x2="52" y2="148" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="26" y1="156" x2="52" y2="156" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <!-- Right sleeve -->
+  <path d="M142,62 Q160,58 174,82 L174,205 L148,205 L148,82 Q138,58 138,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="174" y1="140" x2="148" y2="140" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="174" y1="148" x2="148" y2="148" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="174" y1="156" x2="148" y2="156" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
 </svg>

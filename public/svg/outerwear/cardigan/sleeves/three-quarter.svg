@@ -1,15 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Three-quarter sleeves on cardigan -->
-  <!-- Left sleeve ending at mid-forearm -->
-  <path d="M52,110 L30,122 L30,195 L56,195 L58,122 Z"
-    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="22 40 156 128">
+  <!-- Three-quarter sleeves: 3/4 rectangle with curved cap -->
+  <!-- Left sleeve -->
+  <path d="M58,62 Q40,58 26,82 L26,162 L52,162 L52,82 Q62,58 62,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
   <!-- Right sleeve -->
-  <path d="M148,110 L170,122 L170,195 L144,195 L142,122 Z"
-    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
-  <!-- Clean hem edges -->
-  <line x1="30" y1="195" x2="56" y2="195" stroke="currentColor" stroke-width="1.5"/>
-  <line x1="144" y1="195" x2="170" y2="195" stroke="currentColor" stroke-width="1.5"/>
-  <!-- Stitching at hem -->
-  <line x1="31" y1="192" x2="55" y2="192" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="145" y1="192" x2="169" y2="192" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M142,62 Q160,58 174,82 L174,162 L148,162 L148,82 Q138,58 138,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Hem fold -->
+  <line x1="26" y1="159" x2="52" y2="159" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="174" y1="159" x2="148" y2="159" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
 </svg>

@@ -1,10 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Short sleeves: ending above elbow ~y120 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="22 40 156 72">
+  <!-- Short sleeves: short rectangle with curved cap -->
   <!-- Left sleeve -->
-  <path d="M58,75 C50,80 44,88 40,105 L40,120 L55,120 C55,112 56,100 62,88 C66,80 68,78 68,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M58,62 Q40,58 26,82 L26,106 L52,106 L52,82 Q62,58 62,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
   <!-- Right sleeve -->
-  <path d="M142,75 C150,80 156,88 160,105 L160,120 L145,120 C145,112 144,100 138,88 C134,80 132,78 132,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <!-- Hem stitch lines -->
-  <path d="M41,118 L54,118" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <path d="M146,118 L159,118" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M142,62 Q160,58 174,82 L174,106 L148,106 L148,82 Q138,58 138,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Hem fold -->
+  <line x1="26" y1="103" x2="52" y2="103" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="174" y1="103" x2="148" y2="103" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
 </svg>

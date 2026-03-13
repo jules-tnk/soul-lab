@@ -18,8 +18,8 @@ export default function SvgPreview({ svgPath, color = '#000000', size = 28 }: Pr
     const cacheKey = `${svgPath}::${color}`
     const cached = tintedUrlCache.get(cacheKey)
     if (cached) { setSrc(cached); return }
-    fetchSvgText(svgPath).then(text => {
-      const tinted = text.replace(/currentColor/g, color)
+    fetchSvgText(svgPath).then(entry => {
+      const tinted = entry.text.replace(/currentColor/g, color)
       const blob = new Blob([tinted], { type: 'image/svg+xml;charset=utf-8' })
       const url = URL.createObjectURL(blob)
       tintedUrlCache.set(cacheKey, url)

@@ -1,14 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Dolman sleeves: wide bat-wing, cut-in-one with body -->
-  <!-- Left dolman sleeve: wide drop from body -->
-  <path d="M100,78 Q78,90 45,105 L38,175 L62,175 L70,135 Q80,118 100,115 Z"
-    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="22 40 156 172">
+  <!-- Dolman sleeves: bat-wing, inner edge connects low on body -->
+  <!-- Left dolman sleeve -->
+  <path d="M58,62 Q40,58 26,82 L26,205 L52,205 L52,112 L62,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Dolman seam line (diagonal) -->
+  <line x1="52" y1="112" x2="62" y2="62" stroke="currentColor" stroke-width="1" stroke-dasharray="4,3"/>
   <!-- Right dolman sleeve -->
-  <path d="M100,78 Q122,90 155,105 L162,175 L138,175 L130,135 Q120,118 100,115 Z"
-    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
-  <!-- Wide dolman seam curves -->
-  <path d="M100,78 Q78,90 50,107"
-    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <path d="M100,78 Q122,90 150,107"
-    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M142,62 Q160,58 174,82 L174,205 L148,205 L148,112 L138,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="148" y1="112" x2="138" y2="62" stroke="currentColor" stroke-width="1" stroke-dasharray="4,3"/>
 </svg>

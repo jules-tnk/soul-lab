@@ -1,15 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Long polo sleeves: full wrist-length sleeves with ribbed cuff band -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="22 40 156 172">
+  <!-- Long sleeves: vertical rectangle with curved cap -->
   <!-- Left sleeve -->
-  <path d="M62,68 L32,90 L27,110 L42,114 L56,198 L72,198 L74,114 L74,90 L62,68 Z"
+  <path d="M58,62 Q40,58 26,82 L26,205 L52,205 L52,82 Q62,58 62,62 Z"
     fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
   <!-- Right sleeve -->
-  <path d="M138,68 L168,90 L173,110 L158,114 L144,198 L128,198 L126,114 L126,90 L138,68 Z"
+  <path d="M142,62 Q160,58 174,82 L174,205 L148,205 L148,82 Q138,58 138,62 Z"
     fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-  <!-- Ribbed cuff band left -->
-  <line x1="42" y1="192" x2="72" y2="192" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="42" y1="195" x2="72" y2="195" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <!-- Ribbed cuff band right -->
-  <line x1="128" y1="192" x2="158" y2="192" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
-  <line x1="128" y1="195" x2="158" y2="195" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Inner seam lines -->
+  <line x1="52" y1="82" x2="52" y2="205" stroke="currentColor" stroke-width="0.75" stroke-dasharray="4,3"/>
+  <line x1="148" y1="82" x2="148" y2="205" stroke="currentColor" stroke-width="0.75" stroke-dasharray="4,3"/>
 </svg>

@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <!-- Puff sleeves: dramatically gathered/puffed at shoulder, narrow below -->
-  <!-- Left puff sleeve: balloon shape at top, narrowing down -->
-  <path d="M60,65 Q40,68 22,85 Q18,100 30,108 Q38,114 50,112 L56,200 L70,200 L68,110 Q78,108 78,95 Q80,75 60,65 Z"
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="10 38 180 173">
+  <!-- Puff sleeves: large puffed cap, then straight tube -->
+  <!-- Left puff sleeve -->
+  <path d="M58,62 Q24,46 14,84 Q18,100 28,102 L26,205 L52,205 L52,102 Q62,100 66,84 Q76,46 62,62 Z"
     fill="currentColor" fill-opacity="0.09" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-  <!-- Gather line at bottom of puff -->
-  <path d="M30,108 Q50,116 68,110" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3,2" fill="none"/>
+  <!-- Gather line at base of puff -->
+  <path d="M28,102 Q40,108 52,102" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3,2" fill="none"/>
   <!-- Right puff sleeve -->
-  <path d="M140,65 Q160,68 178,85 Q182,100 170,108 Q162,114 150,112 L144,200 L130,200 L132,110 Q122,108 122,95 Q120,75 140,65 Z"
+  <path d="M142,62 Q176,46 186,84 Q182,100 172,102 L174,205 L148,205 L148,102 Q138,100 134,84 Q124,46 138,62 Z"
     fill="currentColor" fill-opacity="0.09" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-  <path d="M170,108 Q150,116 132,110" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3,2" fill="none"/>
+  <path d="M172,102 Q160,108 148,102" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3,2" fill="none"/>
 </svg>

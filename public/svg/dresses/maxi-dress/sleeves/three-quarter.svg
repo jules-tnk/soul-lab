@@ -1,4 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
-  <path d="M60,75 C52,82 44,96 40,120 C37,145 37,165 39,175 L52,175 C51,165 51,145 54,120 C57,98 62,84 70,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M140,75 C148,82 156,96 160,120 C163,145 163,165 161,175 L148,175 C149,165 149,145 146,120 C143,98 138,84 130,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="22 40 156 128">
+  <!-- Three-quarter sleeves: 3/4 rectangle with curved cap -->
+  <!-- Left sleeve -->
+  <path d="M58,62 Q40,58 26,82 L26,162 L52,162 L52,82 Q62,58 62,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right sleeve -->
+  <path d="M142,62 Q160,58 174,82 L174,162 L148,162 L148,82 Q138,58 138,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Hem fold -->
+  <line x1="26" y1="159" x2="52" y2="159" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="174" y1="159" x2="148" y2="159" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
 </svg>

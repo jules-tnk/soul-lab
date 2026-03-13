@@ -29,15 +29,22 @@ export function buildPreviewPrompt(design: Design, garmentTypeName: string): str
   const colors = [...new Set(design.elements.map((el: CanvasElement) => el.color).filter(Boolean))]
   const colorStr = colors.length > 0 ? colors.join(', ') : 'default'
 
+  const genderNote = design.gender === 'unisex'
+    ? 'This is a unisex garment. Use a gender-neutral mannequin.'
+    : `This is a ${design.gender}'s garment. Use a ${design.gender}'s mannequin and ensure the fit, proportions, and silhouette are appropriate for ${design.gender}'s wear.`
+
   return `Generate a realistic 3D visualization of this garment design displayed on a plastic mannequin against a clean white/light gray studio background.
 
 Garment: ${garmentTypeName}
+Gender: ${design.gender}
 Fabric: ${design.fabric}
 Pattern: ${design.pattern}
 Decorations: ${decorations}
 Colors: ${colorStr}
 
-The attached image shows the flat technical sketch of the design. Render it as a photorealistic 3D garment with proper fabric draping, texture, and lighting.
+${genderNote}
+
+The attached image shows the flat technical sketch of the design. Render it as a photorealistic 3D garment with proper fabric draping, texture, and lighting. The garment's cut, proportions, and styling must reflect ${design.gender}'s fashion.
 
 Generate a single image containing three side-by-side views of the garment on the mannequin:
 1. Front view (center)
@@ -61,13 +68,16 @@ export function buildSuggestionsSystemPrompt(
   const lang = locale === 'fr' ? 'French' : 'English'
 
   return `You are a fashion design assistant for Soul Lab, a garment design application.
-The user is designing a ${garmentTypeName}.
+The user is designing a ${design.gender}'s ${garmentTypeName}.
 
 Current design state:
+- Gender: ${design.gender}
 - Fabric: ${design.fabric}
 - Pattern: ${design.pattern}
 - Decorations: ${decorations}
 - ${context}
+
+All suggestions must be appropriate for ${design.gender}'s fashion. Consider typical ${design.gender}'s sizing, silhouettes, and styling conventions when making recommendations.
 
 Available options:
 - Fabrics: ${FABRICS.join(', ')}

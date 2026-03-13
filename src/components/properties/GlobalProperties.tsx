@@ -1,7 +1,7 @@
 import { VStack, Box, Text, Input, Select, HStack, Tag, TagLabel, TagCloseButton, Textarea } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
-import { FABRICS, PATTERNS, DECORATIONS } from '../../types'
-import type { FabricType, PatternType, DecorationType } from '../../types'
+import { FABRICS, PATTERNS, DECORATIONS, GENDERS } from '../../types'
+import type { FabricType, PatternType, DecorationType, GenderType } from '../../types'
 import { useDesignStore } from '../../stores/designStore'
 import { useUIStore } from '../../stores/uiStore'
 
@@ -25,6 +25,23 @@ export default function GlobalProperties() {
           {t('metadata.designName', 'Name')}
         </Text>
         <Input size="sm" value={design.name} onChange={e => update({ name: e.target.value })} />
+      </Box>
+
+      <Box>
+        <Text fontSize="2xs" fontWeight="700" textTransform="uppercase" letterSpacing="1px" color="gray.500" mb={1}>
+          {t('metadata.gender')}
+        </Text>
+        <HStack spacing={1}>
+          {GENDERS.map(g => (
+            <Tag key={g} size="sm" cursor="pointer" borderRadius="full" fontSize="2xs"
+              colorScheme={design.gender === g ? 'brand' : 'gray'}
+              variant={design.gender === g ? 'solid' : 'subtle'}
+              onClick={() => update({ gender: g as GenderType })}
+            >
+              {t(`genders.${g}`)}
+            </Tag>
+          ))}
+        </HStack>
       </Box>
 
       <Box>
