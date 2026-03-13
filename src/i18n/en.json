@@ -566,6 +566,54 @@
     "distressed": "Distressed",
     "acid-wash": "Acid Wash"
   },
+  "panel": {
+    "properties": "Properties",
+    "ai": "AI Assistant"
+  },
+  "ai": {
+    "title": "AI Assistant",
+    "apiKey": {
+      "label": "OpenRouter API Key",
+      "placeholder": "Enter your API key",
+      "save": "Save Key",
+      "saved": "Key saved",
+      "remove": "Remove Key",
+      "missing": "Add your OpenRouter API key to use AI features.",
+      "show": "Show",
+      "hide": "Hide"
+    },
+    "preview": {
+      "title": "Design Preview",
+      "generate": "Generate Preview",
+      "regenerate": "Regenerate",
+      "download": "Download",
+      "loading": "Generating preview...",
+      "error": "Preview generation failed. Please try again.",
+      "noDesign": "Open a design to generate a preview."
+    },
+    "suggestions": {
+      "title": "Design Suggestions",
+      "placeholder": "Ask for design advice...",
+      "send": "Send",
+      "clearChat": "Clear Chat",
+      "loading": "Thinking...",
+      "error": "Failed to get suggestions. Please try again.",
+      "apply": "Apply",
+      "applied": "Applied",
+      "noDesign": "Open a design to get suggestions."
+    },
+    "action": {
+      "previewTitle": "Change Preview",
+      "confirm": "Confirm & Apply",
+      "cancel": "Cancel",
+      "fabricChange": "Fabric: {{from}} \u2192 {{to}}",
+      "patternChange": "Pattern: {{from}} \u2192 {{to}}",
+      "decorationAdd": "Add decoration: {{value}}",
+      "decorationRemove": "Remove decoration: {{value}}",
+      "colorChange": "Color: {{from}} \u2192 {{to}}",
+      "colorAll": "all elements"
+    }
+  },
   "decorations": {
     "embroidery": "Embroidery",
     "beading": "Beading",

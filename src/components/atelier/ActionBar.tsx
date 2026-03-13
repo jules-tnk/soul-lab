@@ -7,6 +7,7 @@ import { useUIStore } from '../../stores/uiStore'
 import { exportDesigns, parseImportFile } from '../../utils/importExport'
 import { getGarmentType } from '../../catalog'
 import { createTemplateElements } from '../../utils/templateLayouts'
+import { captureCanvasSnapshot } from '../../utils/canvasSnapshot'
 
 export default function ActionBar() {
   const { t } = useTranslation()
@@ -23,18 +24,8 @@ export default function ActionBar() {
   const setDirty = useUIStore(s => s.setDirty)
 
   const handleSave = () => {
-    // Capture thumbnail from Konva stage
-    const stage = (window as any).__soulLabStage
-    if (stage) {
-      try {
-        const thumbnail = stage.toDataURL({ pixelRatio: 0.5 })
-        updateCurrentDesign({ thumbnail, updatedAt: new Date().toISOString() })
-      } catch {
-        updateCurrentDesign({ updatedAt: new Date().toISOString() })
-      }
-    } else {
-      updateCurrentDesign({ updatedAt: new Date().toISOString() })
-    }
+    const thumbnail = captureCanvasSnapshot(0.5)
+    updateCurrentDesign({ thumbnail: thumbnail ?? undefined, updatedAt: new Date().toISOString() })
     setDirty(false)
   }
 

@@ -566,6 +566,54 @@
     "distressed": "Déchiré",
     "acid-wash": "Délavé acide"
   },
+  "panel": {
+    "properties": "Propri\u00e9t\u00e9s",
+    "ai": "Assistant IA"
+  },
+  "ai": {
+    "title": "Assistant IA",
+    "apiKey": {
+      "label": "Cl\u00e9 API OpenRouter",
+      "placeholder": "Entrez votre cl\u00e9 API",
+      "save": "Enregistrer",
+      "saved": "Cl\u00e9 enregistr\u00e9e",
+      "remove": "Supprimer la cl\u00e9",
+      "missing": "Ajoutez votre cl\u00e9 API OpenRouter pour utiliser les fonctionnalit\u00e9s IA.",
+      "show": "Afficher",
+      "hide": "Masquer"
+    },
+    "preview": {
+      "title": "Aper\u00e7u du design",
+      "generate": "G\u00e9n\u00e9rer l'aper\u00e7u",
+      "regenerate": "R\u00e9g\u00e9n\u00e9rer",
+      "download": "T\u00e9l\u00e9charger",
+      "loading": "G\u00e9n\u00e9ration de l'aper\u00e7u...",
+      "error": "La g\u00e9n\u00e9ration a \u00e9chou\u00e9. Veuillez r\u00e9essayer.",
+      "noDesign": "Ouvrez un design pour g\u00e9n\u00e9rer un aper\u00e7u."
+    },
+    "suggestions": {
+      "title": "Suggestions de design",
+      "placeholder": "Demandez des conseils de design...",
+      "send": "Envoyer",
+      "clearChat": "Effacer la conversation",
+      "loading": "R\u00e9flexion en cours...",
+      "error": "Impossible d'obtenir des suggestions. Veuillez r\u00e9essayer.",
+      "apply": "Appliquer",
+      "applied": "Appliqu\u00e9",
+      "noDesign": "Ouvrez un design pour obtenir des suggestions."
+    },
+    "action": {
+      "previewTitle": "Aper\u00e7u du changement",
+      "confirm": "Confirmer et appliquer",
+      "cancel": "Annuler",
+      "fabricChange": "Tissu : {{from}} \u2192 {{to}}",
+      "patternChange": "Motif : {{from}} \u2192 {{to}}",
+      "decorationAdd": "Ajouter ornement : {{value}}",
+      "decorationRemove": "Retirer ornement : {{value}}",
+      "colorChange": "Couleur : {{from}} \u2192 {{to}}",
+      "colorAll": "tous les \u00e9l\u00e9ments"
+    }
+  },
   "decorations": {
     "embroidery": "Broderie",
     "beading": "Perles",

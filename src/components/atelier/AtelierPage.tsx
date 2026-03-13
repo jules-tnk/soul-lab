@@ -1,16 +1,19 @@
 import { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { Box, HStack } from '@chakra-ui/react'
+import { Box, HStack, Tabs, TabList, TabPanels, TabPanel, Tab } from '@chakra-ui/react'
+import { useTranslation } from 'react-i18next'
 import { useDesignStore } from '../../stores/designStore'
 import { getGarmentType } from '../../catalog'
 import { createTemplateElements } from '../../utils/templateLayouts'
 import PartsLibrary from '../sidebar/PartsLibrary'
 import DesignCanvas from '../canvas/DesignCanvas'
 import PropertiesPanel from '../properties/PropertiesPanel'
+import AIPanel from '../ai/AIPanel'
 import ActionBar from './ActionBar'
 import UnsavedChangesGuard from '../common/UnsavedChangesGuard'
 
 export default function AtelierPage() {
+  const { t } = useTranslation()
   const { id } = useParams<{ id?: string }>()
 
   const designs = useDesignStore(s => s.designs)
@@ -49,18 +52,22 @@ export default function AtelierPage() {
           </Box>
         </Box>
 
-        {/* Right: properties panel */}
-        <Box
-          w="260px"
-          minW="260px"
-          h="100%"
-          overflowY="auto"
-          bg="white"
-          borderLeft="1px solid"
-          borderColor="gray.100"
-          p={3}
-        >
-          <PropertiesPanel />
+        {/* Right: properties + AI panel */}
+        <Box w="260px" minW="260px" h="100%" bg="white" borderLeft="1px solid" borderColor="gray.100">
+          <Tabs variant="enclosed" size="sm" h="100%" display="flex" flexDir="column">
+            <TabList flexShrink={0}>
+              <Tab fontSize="xs">{t('panel.properties')}</Tab>
+              <Tab fontSize="xs">{t('panel.ai')}</Tab>
+            </TabList>
+            <TabPanels flex={1} minH={0} overflowY="auto">
+              <TabPanel p={3} h="100%">
+                <PropertiesPanel />
+              </TabPanel>
+              <TabPanel p={3} h="100%">
+                <AIPanel />
+              </TabPanel>
+            </TabPanels>
+          </Tabs>
         </Box>
       </HStack>
     </Box>
