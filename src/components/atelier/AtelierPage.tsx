@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState, useCallback, useRef } from 'react'
 import { useParams } from 'react-router-dom'
 import { Box, HStack, Tabs, TabList, TabPanels, TabPanel, Tab } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
@@ -12,6 +12,10 @@ import AIPanel from '../ai/AIPanel'
 import ActionBar from './ActionBar'
 import UnsavedChangesGuard from '../common/UnsavedChangesGuard'
 
+const MIN_PANEL_W = 220
+const MAX_PANEL_W = 480
+const DEFAULT_PANEL_W = 260
+
 export default function AtelierPage() {
   const { t } = useTranslation()
   const { id } = useParams<{ id?: string }>()
@@ -20,6 +24,25 @@ export default function AtelierPage() {
   const currentDesignId = useDesignStore(s => s.currentDesignId)
   const createDesign = useDesignStore(s => s.createDesign)
   const loadDesign = useDesignStore(s => s.loadDesign)
+
+  const [panelW, setPanelW] = useState(DEFAULT_PANEL_W)
+  const dragging = useRef(false)
+
+  const onPointerDown = useCallback((e: React.PointerEvent) => {
+    e.preventDefault()
+    dragging.current = true
+    ;(e.target as HTMLElement).setPointerCapture(e.pointerId)
+  }, [])
+
+  const onPointerMove = useCallback((e: React.PointerEvent) => {
+    if (!dragging.current) return
+    const newW = window.innerWidth - e.clientX
+    setPanelW(Math.min(MAX_PANEL_W, Math.max(MIN_PANEL_W, newW)))
+  }, [])
+
+  const onPointerUp = useCallback(() => {
+    dragging.current = false
+  }, [])
 
   useEffect(() => {
     if (id) {
@@ -52,8 +75,21 @@ export default function AtelierPage() {
           </Box>
         </Box>
 
+        {/* Resize handle */}
+        <Box
+          w="4px"
+          cursor="col-resize"
+          bg="transparent"
+          _hover={{ bg: 'brand.200' }}
+          transition="background 0.15s"
+          flexShrink={0}
+          onPointerDown={onPointerDown}
+          onPointerMove={onPointerMove}
+          onPointerUp={onPointerUp}
+        />
+
         {/* Right: properties + AI panel */}
-        <Box w="260px" minW="260px" h="100%" bg="white" borderLeft="1px solid" borderColor="gray.100">
+        <Box w={`${panelW}px`} minW={`${MIN_PANEL_W}px`} h="100%" bg="white" borderLeft="1px solid" borderColor="gray.100">
           <Tabs variant="enclosed" size="sm" h="100%" display="flex" flexDir="column">
             <TabList flexShrink={0}>
               <Tab fontSize="xs">{t('panel.properties')}</Tab>

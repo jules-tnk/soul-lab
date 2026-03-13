@@ -598,20 +598,7 @@
       "clearChat": "Clear Chat",
       "loading": "Thinking...",
       "error": "Failed to get suggestions. Please try again.",
-      "apply": "Apply",
-      "applied": "Applied",
       "noDesign": "Open a design to get suggestions."
-    },
-    "action": {
-      "previewTitle": "Change Preview",
-      "confirm": "Confirm & Apply",
-      "cancel": "Cancel",
-      "fabricChange": "Fabric: {{from}} \u2192 {{to}}",
-      "patternChange": "Pattern: {{from}} \u2192 {{to}}",
-      "decorationAdd": "Add decoration: {{value}}",
-      "decorationRemove": "Remove decoration: {{value}}",
-      "colorChange": "Color: {{from}} \u2192 {{to}}",
-      "colorAll": "all elements"
     }
   },
   "decorations": {

@@ -20,7 +20,6 @@ interface AIState {
   setSuggestionsLoading: (v: boolean) => void
   setSuggestionsError: (err: string | null) => void
   clearChat: (designId: string) => void
-  markActionApplied: (designId: string, messageId: string, actionId: string) => void
   getChatHistory: (designId: string) => ChatMessage[]
 }
 
@@ -59,27 +58,6 @@ export const useAIStore = create<AIState>()(
         set(s => {
           const { [designId]: _, ...rest } = s.chatHistories
           return { chatHistories: rest }
-        }),
-
-      markActionApplied: (designId, messageId, actionId) =>
-        set(s => {
-          const history = s.chatHistories[designId]
-          if (!history) return s
-          return {
-            chatHistories: {
-              ...s.chatHistories,
-              [designId]: history.map(msg =>
-                msg.id === messageId
-                  ? {
-                      ...msg,
-                      actions: msg.actions?.map(a =>
-                        a.id === actionId ? { ...a, applied: true } : a
-                      ),
-                    }
-                  : msg
-              ),
-            },
-          }
         }),
 
       getChatHistory: (designId) => get().chatHistories[designId] ?? EMPTY_HISTORY,

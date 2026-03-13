@@ -598,20 +598,7 @@
       "clearChat": "Effacer la conversation",
       "loading": "R\u00e9flexion en cours...",
       "error": "Impossible d'obtenir des suggestions. Veuillez r\u00e9essayer.",
-      "apply": "Appliquer",
-      "applied": "Appliqu\u00e9",
       "noDesign": "Ouvrez un design pour obtenir des suggestions."
-    },
-    "action": {
-      "previewTitle": "Aper\u00e7u du changement",
-      "confirm": "Confirmer et appliquer",
-      "cancel": "Annuler",
-      "fabricChange": "Tissu : {{from}} \u2192 {{to}}",
-      "patternChange": "Motif : {{from}} \u2192 {{to}}",
-      "decorationAdd": "Ajouter ornement : {{value}}",
-      "decorationRemove": "Retirer ornement : {{value}}",
-      "colorChange": "Couleur : {{from}} \u2192 {{to}}",
-      "colorAll": "tous les \u00e9l\u00e9ments"
     }
   },
   "decorations": {

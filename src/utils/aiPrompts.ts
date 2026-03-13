@@ -68,24 +68,5 @@ Available options:
 - Decorations: ${DECORATIONS.join(', ')}
 - Color swatches: ${swatches}
 
-Respond with helpful, creative suggestions in ${lang}.
-After your explanation, include a JSON block with actionable suggestions the user can apply:
-
-\`\`\`json
-{
-  "suggestions": [
-    { "type": "fabric", "value": "silk", "label": "Change to silk fabric" },
-    { "type": "pattern", "value": "floral", "label": "Apply floral pattern" },
-    { "type": "color", "value": "#F5E6D3", "target": "all", "label": "Use warm ivory" },
-    { "type": "decoration", "value": "embroidery", "label": "Add embroidery" }
-  ]
-}
-\`\`\`
-
-Valid action types: fabric, pattern, decoration, color, palette.
-For "fabric", "value" must be one of the available fabrics.
-For "pattern", "value" must be one of the available patterns.
-For "decoration", "value" must be one of the available decorations.
-For "color", "value" must be a hex color string (e.g. "#FF7F50"), and "target" is "all" or an element ID.
-For "palette", "value" is an array of hex color strings.`
+Respond with helpful, creative suggestions in ${lang}. Use markdown formatting for readability (headings, bullet lists, bold for key terms). When suggesting specific changes, clearly name the option from the available lists above so the user can find and apply it themselves.`
 }

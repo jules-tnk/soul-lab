@@ -1,19 +1,18 @@
 import { useState, useRef, useEffect } from 'react'
 import {
-  Box, Text, VStack, HStack, Input, IconButton, Button, Spinner, Alert, AlertIcon,
+  Box, Text, VStack, HStack, Input, IconButton, Spinner, Alert, AlertIcon,
 } from '@chakra-ui/react'
-import { ArrowForwardIcon, DeleteIcon, CheckIcon } from '@chakra-ui/icons'
+import { ArrowForwardIcon, DeleteIcon } from '@chakra-ui/icons'
 import { useTranslation } from 'react-i18next'
+import Markdown from 'react-markdown'
 import { v4 as uuid } from 'uuid'
 import { useAIStore } from '../../stores/aiStore'
 import { useDesignStore } from '../../stores/designStore'
 import { useUIStore } from '../../stores/uiStore'
 import { getGarmentType } from '../../catalog'
 import { buildSuggestionsSystemPrompt } from '../../utils/aiPrompts'
-import { sendChatMessage, parseActionsFromResponse } from '../../services/openrouter'
-import { pushSnapshot } from '../../stores/canvasHistoryRef'
-import ActionPreview from './ActionPreview'
-import type { ChatMessage, AIAction, FabricType, PatternType, DecorationType, CanvasElement } from '../../types'
+import { sendChatMessage } from '../../services/openrouter'
+import type { ChatMessage } from '../../types'
 
 export default function DesignSuggestions() {
   const { t } = useTranslation()
@@ -24,16 +23,12 @@ export default function DesignSuggestions() {
   const setSuggestionsError = useAIStore(s => s.setSuggestionsError)
   const addChatMessage = useAIStore(s => s.addChatMessage)
   const clearChat = useAIStore(s => s.clearChat)
-  const markActionApplied = useAIStore(s => s.markActionApplied)
   const getChatHistory = useAIStore(s => s.getChatHistory)
 
   const design = useDesignStore(s => s.getCurrentDesign())
-  const updateDesign = useDesignStore(s => s.updateCurrentDesign)
   const locale = useUIStore(s => s.locale)
-  const setDirty = useUIStore(s => s.setDirty)
 
   const [inputValue, setInputValue] = useState('')
-  const [previewingAction, setPreviewingAction] = useState<{ messageId: string; actionId: string } | null>(null)
   const scrollRef = useRef<HTMLDivElement>(null)
 
   const designId = design?.id
@@ -73,13 +68,11 @@ export default function DesignSuggestions() {
       ]
 
       const responseText = await sendChatMessage(apiKey, apiMessages)
-      const actions = parseActionsFromResponse(responseText)
 
       const assistantMessage: ChatMessage = {
         id: uuid(),
         role: 'assistant',
         content: responseText,
-        actions: actions.length > 0 ? actions : undefined,
         timestamp: new Date().toISOString(),
       }
 
@@ -89,69 +82,6 @@ export default function DesignSuggestions() {
     } finally {
       setSuggestionsLoading(false)
     }
-  }
-
-  const handleApplyAction = (action: AIAction, messageId: string) => {
-    if (!design || !designId) return
-
-    pushSnapshot(design.elements)
-
-    switch (action.type) {
-      case 'fabric':
-        updateDesign({ fabric: action.value as FabricType })
-        break
-      case 'pattern':
-        updateDesign({ pattern: action.value as PatternType })
-        break
-      case 'decoration': {
-        const val = action.value as DecorationType
-        const exists = design.decorations.includes(val)
-        updateDesign({
-          decorations: exists
-            ? design.decorations.filter(d => d !== val)
-            : [...design.decorations, val],
-        })
-        break
-      }
-      case 'color': {
-        if (action.target === 'all') {
-          updateDesign({
-            elements: design.elements.map(el => ({
-              ...el,
-              color: action.value as string,
-            })) as CanvasElement[],
-          })
-        } else if (action.target) {
-          updateDesign({
-            elements: design.elements.map(el =>
-              el.id === action.target
-                ? { ...el, color: action.value as string }
-                : el
-            ) as CanvasElement[],
-          })
-        }
-        break
-      }
-      case 'palette': {
-        const colors = action.value as string[]
-        updateDesign({
-          elements: design.elements.map((el, i) => ({
-            ...el,
-            color: colors[i % colors.length],
-          })) as CanvasElement[],
-        })
-        break
-      }
-    }
-
-    markActionApplied(designId, messageId, action.id)
-    setPreviewingAction(null)
-    setDirty(true)
-  }
-
-  const getDisplayContent = (content: string): string => {
-    // Strip the JSON block from display
-    return content.replace(/```json\s*\n?[\s\S]*?```/g, '').trim()
   }
 
   if (!design) {
@@ -183,52 +113,22 @@ export default function DesignSuggestions() {
       <Box ref={scrollRef} flex={1} overflowY="auto" mb={2} minH={0}>
         <VStack spacing={2} align="stretch">
           {messages.filter(m => m.role !== 'system').map(msg => (
-            <Box key={msg.id}>
-              <Box
-                bg={msg.role === 'user' ? 'brand.50' : 'gray.50'}
-                borderRadius="lg"
-                px={3}
-                py={2}
-                maxW="85%"
-                ml={msg.role === 'user' ? 'auto' : 0}
-                mr={msg.role === 'assistant' ? 'auto' : 0}
-              >
-                <Text fontSize="xs" whiteSpace="pre-wrap">
-                  {msg.role === 'assistant' ? getDisplayContent(msg.content) : msg.content}
-                </Text>
-              </Box>
-
-              {/* Action buttons for assistant messages */}
-              {msg.role === 'assistant' && msg.actions && msg.actions.length > 0 && (
-                <VStack spacing={1} mt={1} align="stretch" pl={1}>
-                  {msg.actions.map(action => (
-                    <Box key={action.id}>
-                      {action.applied ? (
-                        <HStack spacing={1}>
-                          <CheckIcon color="green.500" boxSize={3} />
-                          <Text fontSize="2xs" color="green.600">{action.label} — {t('ai.suggestions.applied')}</Text>
-                        </HStack>
-                      ) : (
-                        <Button
-                          size="xs"
-                          variant="outline"
-                          onClick={() => setPreviewingAction({ messageId: msg.id, actionId: action.id })}
-                        >
-                          {action.label} — {t('ai.suggestions.apply')}
-                        </Button>
-                      )}
-
-                      {previewingAction?.messageId === msg.id && previewingAction?.actionId === action.id && (
-                        <ActionPreview
-                          action={action}
-                          design={design}
-                          onConfirm={() => handleApplyAction(action, msg.id)}
-                          onCancel={() => setPreviewingAction(null)}
-                        />
-                      )}
-                    </Box>
-                  ))}
-                </VStack>
+            <Box
+              key={msg.id}
+              bg={msg.role === 'user' ? 'brand.50' : 'gray.50'}
+              borderRadius="lg"
+              px={3}
+              py={2}
+              maxW="85%"
+              ml={msg.role === 'user' ? 'auto' : 0}
+              mr={msg.role === 'assistant' ? 'auto' : 0}
+            >
+              {msg.role === 'assistant' ? (
+                <Box className="ai-markdown" fontSize="xs">
+                  <Markdown>{msg.content}</Markdown>
+                </Box>
+              ) : (
+                <Text fontSize="xs" whiteSpace="pre-wrap">{msg.content}</Text>
               )}
             </Box>
           ))}

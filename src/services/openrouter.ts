@@ -1,15 +1,6 @@
 import { OpenRouter } from '@openrouter/sdk'
-import { v4 as uuid } from 'uuid'
-import { FABRICS, PATTERNS, DECORATIONS } from '../types'
-import type { AIAction } from '../types'
 
 const MODEL = 'google/gemini-3.1-flash-image-preview'
-
-const VALID_TYPES = new Set(['fabric', 'pattern', 'decoration', 'color', 'palette'])
-const FABRIC_SET = new Set<string>(FABRICS)
-const PATTERN_SET = new Set<string>(PATTERNS)
-const DECORATION_SET = new Set<string>(DECORATIONS)
-const HEX_REGEX = /^#[0-9A-Fa-f]{6}$/
 
 function createClient(apiKey: string) {
   return new OpenRouter({ apiKey })
@@ -90,59 +81,4 @@ export function extractImageFromResponse(content: string): string | null {
   }
 
   return null
-}
-
-export function parseActionsFromResponse(content: string): AIAction[] {
-  // Try to extract JSON block from markdown code fence
-  const fenceMatch = content.match(/```json\s*\n?([\s\S]*?)```/)
-  let jsonStr = fenceMatch?.[1]?.trim()
-
-  // Fallback: try bare JSON object
-  if (!jsonStr) {
-    const bareMatch = content.match(/\{\s*"suggestions"\s*:\s*\[[\s\S]*?\]\s*\}/)
-    jsonStr = bareMatch?.[0]
-  }
-
-  if (!jsonStr) return []
-
-  try {
-    const parsed = JSON.parse(jsonStr)
-    const suggestions: unknown[] = parsed.suggestions
-    if (!Array.isArray(suggestions)) return []
-
-    return suggestions
-      .filter((s): s is Record<string, unknown> => {
-        if (!s || typeof s !== 'object') return false
-        const item = s as Record<string, unknown>
-        if (typeof item.type !== 'string' || !VALID_TYPES.has(item.type)) return false
-        if (typeof item.label !== 'string') return false
-
-        switch (item.type) {
-          case 'fabric':
-            return typeof item.value === 'string' && FABRIC_SET.has(item.value)
-          case 'pattern':
-            return typeof item.value === 'string' && PATTERN_SET.has(item.value)
-          case 'decoration':
-            return typeof item.value === 'string' && DECORATION_SET.has(item.value)
-          case 'color':
-            return typeof item.value === 'string' && HEX_REGEX.test(item.value)
-          case 'palette':
-            return Array.isArray(item.value) && item.value.every(
-              (v: unknown) => typeof v === 'string' && HEX_REGEX.test(v)
-            )
-          default:
-            return false
-        }
-      })
-      .map(s => ({
-        id: uuid(),
-        type: s.type as AIAction['type'],
-        value: s.value as string | string[],
-        target: typeof s.target === 'string' ? s.target : undefined,
-        label: s.label as string,
-        applied: false,
-      }))
-  } catch {
-    return []
-  }
 }

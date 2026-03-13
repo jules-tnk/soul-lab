@@ -32,6 +32,40 @@ const theme = extendTheme({
         bg: '#fafafa',
         color: 'gray.800',
       },
+      '.ai-markdown': {
+        'h1, h2, h3, h4': {
+          fontWeight: 700,
+          mt: 2,
+          mb: 1,
+        },
+        h1: { fontSize: 'sm' },
+        h2: { fontSize: 'xs' },
+        h3: { fontSize: 'xs' },
+        'p': { mb: 1.5 },
+        'ul, ol': {
+          pl: 4,
+          mb: 1.5,
+        },
+        li: { mb: 0.5 },
+        strong: { fontWeight: 600 },
+        code: {
+          bg: 'gray.100',
+          px: 1,
+          borderRadius: 'sm',
+          fontSize: '2xs',
+        },
+        pre: {
+          bg: 'gray.100',
+          p: 2,
+          borderRadius: 'md',
+          overflowX: 'auto',
+          mb: 1.5,
+          '& code': {
+            bg: 'transparent',
+            p: 0,
+          },
+        },
+      },
     },
   },
   components: {

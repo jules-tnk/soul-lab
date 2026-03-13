@@ -150,15 +150,5 @@ export interface ChatMessage {
   id: string
   role: 'user' | 'assistant' | 'system'
   content: string
-  actions?: AIAction[]
   timestamp: string
-}
-
-export interface AIAction {
-  id: string
-  type: 'fabric' | 'pattern' | 'decoration' | 'color' | 'palette'
-  value: string | string[]
-  target?: string
-  label: string
-  applied: boolean
 }
