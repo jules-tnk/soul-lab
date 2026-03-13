@@ -40,7 +40,7 @@ export default function DesignCanvas() {
 
   const handleElementChange = useCallback((id: string, attrs: Partial<CanvasElement>) => {
     const newElements = elements.map(el =>
-      el.id === id ? { ...el, ...attrs } : el
+      el.id === id ? { ...el, ...attrs } as CanvasElement : el
     )
     updateElements(newElements)
   }, [elements, updateElements])

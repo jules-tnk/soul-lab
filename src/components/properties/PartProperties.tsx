@@ -1,7 +1,7 @@
 import { VStack, Box, Text, HStack, Tag, Input, Slider, SliderTrack, SliderFilledTrack, SliderThumb, IconButton, Tooltip, Circle } from '@chakra-ui/react'
 import { DeleteIcon, LockIcon, UnlockIcon, ArrowUpIcon, ArrowDownIcon } from '@chakra-ui/icons'
 import { useTranslation } from 'react-i18next'
-import type { GarmentPartElement } from '../../types'
+import type { GarmentPartElement, CanvasElement } from '../../types'
 import { COLOR_SWATCHES } from '../../types'
 import { getGarmentType } from '../../catalog'
 import { useDesignStore } from '../../stores/designStore'
@@ -26,7 +26,7 @@ export default function PartProperties({ element }: Props) {
     if (!design) return
     pushSnapshot(design.elements)
     const elements = design.elements.map(el =>
-      el.id === element.id ? { ...el, ...attrs } : el
+      el.id === element.id ? { ...el, ...attrs } as CanvasElement : el
     )
     updateDesign({ elements })
     setDirty(true)

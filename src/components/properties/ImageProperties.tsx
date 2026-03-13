@@ -1,7 +1,7 @@
 import { VStack, Box, Text, Input, HStack, Slider, SliderTrack, SliderFilledTrack, SliderThumb, IconButton, Tooltip } from '@chakra-ui/react'
 import { DeleteIcon, LockIcon, UnlockIcon } from '@chakra-ui/icons'
 import { useTranslation } from 'react-i18next'
-import type { ImageElement } from '../../types'
+import type { ImageElement, CanvasElement } from '../../types'
 import { useDesignStore } from '../../stores/designStore'
 import { useUIStore } from '../../stores/uiStore'
 import { pushSnapshot } from '../../stores/canvasHistoryRef'
@@ -18,7 +18,7 @@ export default function ImageProperties({ element }: Props) {
   const updateElement = (attrs: Partial<ImageElement>) => {
     if (!design) return
     pushSnapshot(design.elements)
-    updateDesign({ elements: design.elements.map(el => el.id === element.id ? { ...el, ...attrs } : el) })
+    updateDesign({ elements: design.elements.map(el => el.id === element.id ? { ...el, ...attrs } as CanvasElement : el) })
     setDirty(true)
   }
 

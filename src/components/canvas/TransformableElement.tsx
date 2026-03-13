@@ -10,7 +10,7 @@ import Konva from 'konva'
 interface Props {
   element: CanvasElement
   isSelected: boolean
-  onSelect: (e: Konva.KonvaEventObject<MouseEvent>) => void
+  onSelect: (e: Konva.KonvaEventObject<MouseEvent | TouchEvent>) => void
   onChange: (attrs: Partial<CanvasElement>) => void
 }
 
