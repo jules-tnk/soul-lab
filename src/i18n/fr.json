@@ -30,7 +30,31 @@
     "notes": "Notes",
     "tags": "Étiquettes",
     "color": "Couleur",
-    "garmentType": "Type de vêtement"
+    "garmentType": "Type de vêtement",
+    "designName": "Nom"
+  },
+  "canvas": {
+    "templates": "Modèles",
+    "extras": "Extras",
+    "addText": "Texte",
+    "addShape": "Forme",
+    "addImage": "Image",
+    "shapes": {
+      "rect": "Rectangle",
+      "circle": "Cercle",
+      "star": "Étoile",
+      "line": "Ligne"
+    },
+    "variant": "Variante",
+    "opacity": "Opacité",
+    "fill": "Remplissage",
+    "stroke": "Contour",
+    "strokeWidth": "Épaisseur",
+    "text": "Texte",
+    "shape": "Forme",
+    "image": "Image",
+    "elementsSelected": "éléments sélectionnés",
+    "addTag": "Ajouter un tag..."
   },
   "gallery": {
     "empty": "Aucune création pour le moment. Commencez à créer dans l'Atelier.",

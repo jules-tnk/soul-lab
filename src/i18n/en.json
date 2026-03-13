@@ -30,7 +30,31 @@
     "notes": "Notes",
     "tags": "Tags",
     "color": "Color",
-    "garmentType": "Garment Type"
+    "garmentType": "Garment Type",
+    "designName": "Name"
+  },
+  "canvas": {
+    "templates": "Templates",
+    "extras": "Extras",
+    "addText": "Text",
+    "addShape": "Shape",
+    "addImage": "Image",
+    "shapes": {
+      "rect": "Rectangle",
+      "circle": "Circle",
+      "star": "Star",
+      "line": "Line"
+    },
+    "variant": "Variant",
+    "opacity": "Opacity",
+    "fill": "Fill",
+    "stroke": "Stroke",
+    "strokeWidth": "Width",
+    "text": "Text",
+    "shape": "Shape",
+    "image": "Image",
+    "elementsSelected": "elements selected",
+    "addTag": "Add tag..."
   },
   "gallery": {
     "empty": "No designs yet. Start creating in the Workshop.",
