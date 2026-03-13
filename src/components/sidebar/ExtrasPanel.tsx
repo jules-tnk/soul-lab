@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next'
 import { v4 as uuid } from 'uuid'
 import { useDesignStore } from '../../stores/designStore'
 import { useUIStore } from '../../stores/uiStore'
+import { pushSnapshot } from '../../stores/canvasHistoryRef'
 import type { TextElement, ShapeElement, ImageElement } from '../../types'
 
 export default function ExtrasPanel() {
@@ -17,6 +18,7 @@ export default function ExtrasPanel() {
 
   const addElement = (el: TextElement | ShapeElement | ImageElement) => {
     if (!design) return
+    pushSnapshot(design.elements)
     updateDesign({ elements: [...design.elements, el] })
     setDirty(true)
     setSelected([el.id])
@@ -109,7 +111,15 @@ export default function ExtrasPanel() {
       <Text fontSize="2xs" fontWeight="700" textTransform="uppercase" letterSpacing="1px" color="accent.purple" mb={1}>
         {t('canvas.extras', 'Extras')}
       </Text>
-      <Button size="xs" variant="ghost" leftIcon={<AddIcon />} justifyContent="flex-start" onClick={handleAddText}>
+      <Button
+        size="xs" variant="ghost" leftIcon={<AddIcon />} justifyContent="flex-start"
+        onClick={handleAddText}
+        draggable
+        onDragStart={(e: React.DragEvent) => {
+          e.dataTransfer.setData('application/soul-lab-element', JSON.stringify({ type: 'text' }))
+          e.dataTransfer.effectAllowed = 'copy'
+        }}
+      >
         {t('canvas.addText', 'Text')}
       </Button>
       <Menu>
@@ -117,10 +127,10 @@ export default function ExtrasPanel() {
           {t('canvas.addShape', 'Shape')}
         </MenuButton>
         <MenuList>
-          <MenuItem onClick={() => handleAddShape('rect')}>{t('canvas.shapes.rect', 'Rectangle')}</MenuItem>
-          <MenuItem onClick={() => handleAddShape('circle')}>{t('canvas.shapes.circle', 'Circle')}</MenuItem>
-          <MenuItem onClick={() => handleAddShape('star')}>{t('canvas.shapes.star', 'Star')}</MenuItem>
-          <MenuItem onClick={() => handleAddShape('line')}>{t('canvas.shapes.line', 'Line')}</MenuItem>
+          <MenuItem onClick={() => handleAddShape('rect')} draggable onDragStart={(e: React.DragEvent) => { e.dataTransfer.setData('application/soul-lab-element', JSON.stringify({ type: 'shape', shapeType: 'rect' })); e.dataTransfer.effectAllowed = 'copy' }}>{t('canvas.shapes.rect', 'Rectangle')}</MenuItem>
+          <MenuItem onClick={() => handleAddShape('circle')} draggable onDragStart={(e: React.DragEvent) => { e.dataTransfer.setData('application/soul-lab-element', JSON.stringify({ type: 'shape', shapeType: 'circle' })); e.dataTransfer.effectAllowed = 'copy' }}>{t('canvas.shapes.circle', 'Circle')}</MenuItem>
+          <MenuItem onClick={() => handleAddShape('star')} draggable onDragStart={(e: React.DragEvent) => { e.dataTransfer.setData('application/soul-lab-element', JSON.stringify({ type: 'shape', shapeType: 'star' })); e.dataTransfer.effectAllowed = 'copy' }}>{t('canvas.shapes.star', 'Star')}</MenuItem>
+          <MenuItem onClick={() => handleAddShape('line')} draggable onDragStart={(e: React.DragEvent) => { e.dataTransfer.setData('application/soul-lab-element', JSON.stringify({ type: 'shape', shapeType: 'line' })); e.dataTransfer.effectAllowed = 'copy' }}>{t('canvas.shapes.line', 'Line')}</MenuItem>
         </MenuList>
       </Menu>
       <Button size="xs" variant="ghost" leftIcon={<AddIcon />} justifyContent="flex-start" onClick={() => fileRef.current?.click()}>

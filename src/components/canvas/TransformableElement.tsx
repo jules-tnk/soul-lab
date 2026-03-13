@@ -12,9 +12,10 @@ interface Props {
   isSelected: boolean
   onSelect: (e: Konva.KonvaEventObject<MouseEvent | TouchEvent>) => void
   onChange: (attrs: Partial<CanvasElement>) => void
+  onDblClick?: () => void
 }
 
-export default function TransformableElement({ element, isSelected, onSelect, onChange }: Props) {
+export default function TransformableElement({ element, isSelected, onSelect, onChange, onDblClick }: Props) {
   const trRef = useRef<Konva.Transformer>(null)
   const groupRef = useRef<Konva.Group>(null)
 
@@ -50,6 +51,8 @@ export default function TransformableElement({ element, isSelected, onSelect, on
         draggable={!element.locked}
         onClick={onSelect}
         onTap={onSelect}
+        onDblClick={() => onDblClick?.()}
+        onDblTap={() => onDblClick?.()}
         onDragEnd={(e) => {
           onChange({ x: e.target.x(), y: e.target.y() })
         }}

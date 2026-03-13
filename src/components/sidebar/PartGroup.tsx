@@ -83,11 +83,21 @@ export default function PartGroup({ part, garmentTypeId }: Props) {
             <Tag
               key={v.id}
               size="sm"
-              cursor="pointer"
+              cursor="grab"
               colorScheme={existingElement?.variantId === v.id ? 'brand' : 'gray'}
               variant={existingElement?.variantId === v.id ? 'solid' : 'subtle'}
               onClick={() => handleVariantClick(v.id)}
               fontSize="2xs"
+              draggable
+              onDragStart={(e: React.DragEvent) => {
+                e.dataTransfer.setData('application/soul-lab-element', JSON.stringify({
+                  type: 'garment-part',
+                  partId: part.id,
+                  variantId: v.id,
+                  garmentTypeId,
+                }))
+                e.dataTransfer.effectAllowed = 'copy'
+              }}
             >
               {t(v.nameKey)}
             </Tag>

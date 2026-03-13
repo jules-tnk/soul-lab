@@ -7,40 +7,66 @@ interface ShortcutHandlers {
   onDuplicate: () => void
   onSelectAll: () => void
   onDeselect: () => void
+  onCopy: () => void
+  onCut: () => void
+  onPaste: () => void
+  onGroup: () => void
+  onUngroup: () => void
 }
 
 export function useKeyboardShortcuts(handlers: ShortcutHandlers) {
   const handlersRef = useRef(handlers)
-  useEffect(() => { handlersRef.current = handlers })
+  handlersRef.current = handlers
 
   useEffect(() => {
-    const handler = (e: KeyboardEvent) => {
+    const onKeyDown = (e: KeyboardEvent) => {
       const tag = (e.target as HTMLElement)?.tagName
       if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return
 
-      if (e.key === 'Delete' || e.key === 'Backspace') {
+      const ctrl = e.ctrlKey || e.metaKey
+      const shift = e.shiftKey
+      const key = e.key.toLowerCase()
+
+      if (key === 'delete' || key === 'backspace') {
         e.preventDefault()
         handlersRef.current.onDelete()
-      } else if (e.key === 'z' && (e.ctrlKey || e.metaKey) && !e.shiftKey) {
+      } else if (ctrl && !shift && key === 'z') {
         e.preventDefault()
         handlersRef.current.onUndo()
-      } else if (
-        (e.key === 'y' && (e.ctrlKey || e.metaKey)) ||
-        (e.key === 'z' && (e.ctrlKey || e.metaKey) && e.shiftKey)
-      ) {
+      } else if (ctrl && key === 'y') {
         e.preventDefault()
         handlersRef.current.onRedo()
-      } else if (e.key === 'd' && (e.ctrlKey || e.metaKey)) {
+      } else if (ctrl && shift && key === 'z') {
+        e.preventDefault()
+        handlersRef.current.onRedo()
+      } else if (ctrl && !shift && key === 'd') {
         e.preventDefault()
         handlersRef.current.onDuplicate()
-      } else if (e.key === 'a' && (e.ctrlKey || e.metaKey)) {
+      } else if (ctrl && !shift && key === 'a') {
         e.preventDefault()
         handlersRef.current.onSelectAll()
-      } else if (e.key === 'Escape') {
+      } else if (key === 'escape') {
+        e.preventDefault()
         handlersRef.current.onDeselect()
+      } else if (ctrl && !shift && key === 'c') {
+        e.preventDefault()
+        handlersRef.current.onCopy()
+      } else if (ctrl && !shift && key === 'x') {
+        e.preventDefault()
+        handlersRef.current.onCut()
+      } else if (ctrl && !shift && key === 'v') {
+        e.preventDefault()
+        handlersRef.current.onPaste()
+      } else if (ctrl && !shift && key === 'g') {
+        e.preventDefault()
+        handlersRef.current.onGroup()
+      } else if (ctrl && shift && key === 'g') {
+        e.preventDefault()
+        handlersRef.current.onUngroup()
       }
     }
-    window.addEventListener('keydown', handler)
-    return () => window.removeEventListener('keydown', handler)
+
+    window.addEventListener('keydown', onKeyDown)
+    return () => window.removeEventListener('keydown', onKeyDown)
   }, [])
 }
