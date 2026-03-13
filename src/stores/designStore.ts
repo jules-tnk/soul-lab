@@ -1,12 +1,12 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { v4 as uuid } from 'uuid'
-import type { Design, FabricType, PatternType } from '../types'
+import type { Design, CanvasElement, FabricType, PatternType } from '../types'
 
 interface DesignState {
   designs: Design[]
   currentDesignId: string | null
-  createDesign: (garmentTypeId: string, name: string) => string
+  createDesign: (garmentTypeId: string, name: string, elements?: CanvasElement[]) => string
   updateCurrentDesign: (patch: Partial<Design>) => void
   deleteDesign: (id: string) => void
   duplicateDesign: (id: string) => string | null
@@ -15,12 +15,15 @@ interface DesignState {
   getCurrentDesign: () => Design | undefined
 }
 
-const makeDefaultDesign = (garmentTypeId: string, name: string): Design => ({
+const makeDefaultDesign = (garmentTypeId: string, name: string, elements: CanvasElement[] = []): Design => ({
   id: uuid(),
+  version: 2,
   name,
   garmentTypeId,
-  parts: {},
-  color: '#E63946',
+  elements,
+  thumbnail: '',
+  canvasWidth: 600,
+  canvasHeight: 800,
   fabric: 'cotton' as FabricType,
   pattern: 'solid' as PatternType,
   decorations: [],
@@ -36,8 +39,8 @@ export const useDesignStore = create<DesignState>()(
       designs: [],
       currentDesignId: null,
 
-      createDesign: (garmentTypeId, name) => {
-        const design = makeDefaultDesign(garmentTypeId, name)
+      createDesign: (garmentTypeId, name, elements = []) => {
+        const design = makeDefaultDesign(garmentTypeId, name, elements)
         set(s => ({
           designs: [...s.designs, design],
           currentDesignId: design.id,
@@ -68,6 +71,7 @@ export const useDesignStore = create<DesignState>()(
         const copy: Design = {
           ...original,
           id: uuid(),
+          elements: original.elements.map(el => ({ ...el, id: uuid() })),
           name: `${original.name} (copy)`,
           createdAt: new Date().toISOString(),
           updatedAt: new Date().toISOString(),
@@ -91,6 +95,16 @@ export const useDesignStore = create<DesignState>()(
         return s.designs.find(d => d.id === s.currentDesignId)
       },
     }),
-    { name: 'soul-lab-designs' }
+    {
+      name: 'soul-lab-designs',
+      onRehydrateStorage: () => (state) => {
+        if (!state) return
+        const hasV1 = state.designs.some((d: any) => !d.version || d.version < 2)
+        if (hasV1) {
+          state.designs = []
+          state.currentDesignId = null
+        }
+      },
+    }
   )
 )
