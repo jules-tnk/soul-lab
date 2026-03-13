@@ -61,8 +61,3 @@ export function getGarmentTypesForCategory(categoryId: string): GarmentType[] {
   return cat.garmentTypeIds.map(id => typeMap.get(id)).filter(Boolean) as GarmentType[]
 }
 export function getAllGarmentTypes(): GarmentType[] { return allGarmentTypes }
-export function getDefaultParts(garmentType: GarmentType): Record<string, string> {
-  const parts: Record<string, string> = {}
-  for (const part of garmentType.parts) { parts[part.id] = part.defaultVariantId }
-  return parts
-}

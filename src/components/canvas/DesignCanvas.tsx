@@ -1,4 +1,5 @@
 import { useRef, useCallback, useEffect } from 'react'
+import { setSnapshotFn, clearSnapshotFn } from '../../stores/canvasHistoryRef'
 import { Stage, Layer } from 'react-konva'
 import { Box } from '@chakra-ui/react'
 import { useDesignStore } from '../../stores/designStore'
@@ -23,6 +24,11 @@ export default function DesignCanvas() {
   const zoom = useUIStore(s => s.canvasZoom)
 
   const history = useCanvasHistory()
+
+  useEffect(() => {
+    setSnapshotFn(history.pushSnapshot)
+    return () => clearSnapshotFn()
+  }, [history.pushSnapshot])
 
   const elements = design?.elements ?? []
 
@@ -143,8 +149,8 @@ export default function DesignCanvas() {
         </Stage>
       </Box>
       <CanvasToolbar
-        canUndo={history.canUndo()}
-        canRedo={history.canRedo()}
+        canUndo={history.canUndo}
+        canRedo={history.canRedo}
         onUndo={handleUndo}
         onRedo={handleRedo}
       />

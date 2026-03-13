@@ -6,6 +6,7 @@ import { COLOR_SWATCHES } from '../../types'
 import { getGarmentType } from '../../catalog'
 import { useDesignStore } from '../../stores/designStore'
 import { useUIStore } from '../../stores/uiStore'
+import { pushSnapshot } from '../../stores/canvasHistoryRef'
 
 interface Props {
   element: GarmentPartElement
@@ -23,6 +24,7 @@ export default function PartProperties({ element }: Props) {
 
   const updateElement = (attrs: Partial<GarmentPartElement>) => {
     if (!design) return
+    pushSnapshot(design.elements)
     const elements = design.elements.map(el =>
       el.id === element.id ? { ...el, ...attrs } : el
     )
@@ -32,6 +34,7 @@ export default function PartProperties({ element }: Props) {
 
   const handleDelete = () => {
     if (!design) return
+    pushSnapshot(design.elements)
     updateDesign({ elements: design.elements.filter(el => el.id !== element.id) })
     setDirty(true)
     clearSelection()

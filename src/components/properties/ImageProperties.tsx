@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next'
 import type { ImageElement } from '../../types'
 import { useDesignStore } from '../../stores/designStore'
 import { useUIStore } from '../../stores/uiStore'
+import { pushSnapshot } from '../../stores/canvasHistoryRef'
 
 interface Props { element: ImageElement }
 
@@ -16,6 +17,7 @@ export default function ImageProperties({ element }: Props) {
 
   const updateElement = (attrs: Partial<ImageElement>) => {
     if (!design) return
+    pushSnapshot(design.elements)
     updateDesign({ elements: design.elements.map(el => el.id === element.id ? { ...el, ...attrs } : el) })
     setDirty(true)
   }
@@ -51,6 +53,7 @@ export default function ImageProperties({ element }: Props) {
           <IconButton aria-label="delete" icon={<DeleteIcon />} size="xs" variant="ghost" colorScheme="red"
             onClick={() => {
               if (!design) return
+              pushSnapshot(design.elements)
               updateDesign({ elements: design.elements.filter(el => el.id !== element.id) })
               setDirty(true)
               clearSelection()

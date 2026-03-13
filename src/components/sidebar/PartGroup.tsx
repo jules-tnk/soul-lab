@@ -5,6 +5,7 @@ import { v4 as uuid } from 'uuid'
 import type { GarmentPart, GarmentPartElement } from '../../types'
 import { useDesignStore } from '../../stores/designStore'
 import { useUIStore } from '../../stores/uiStore'
+import { pushSnapshot } from '../../stores/canvasHistoryRef'
 
 interface Props {
   part: GarmentPart
@@ -26,6 +27,7 @@ export default function PartGroup({ part, garmentTypeId }: Props) {
 
   const handleVariantClick = (variantId: string) => {
     if (!design) return
+    pushSnapshot(design.elements)
     const elements = [...design.elements]
 
     if (existingElement) {
