@@ -3,7 +3,8 @@ const svgCache = new Map<string, string>()
 export async function fetchSvgText(svgPath: string): Promise<string> {
   const cached = svgCache.get(svgPath)
   if (cached) return cached
-  const res = await fetch(`/svg/${svgPath}`)
+  const base = import.meta.env.BASE_URL
+  const res = await fetch(`${base}svg/${svgPath}`)
   if (!res.ok) throw new Error(`Failed to fetch SVG: ${svgPath}`)
   const raw = await res.text()
   const trimmed = trimSvgViewBox(raw)
