@@ -3,6 +3,8 @@ import AppShell from './components/layout/AppShell'
 import AtelierPage from './components/atelier/AtelierPage'
 import GalleryPage from './components/gallery/GalleryPage'
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '') || '/'
+
 export const router = createBrowserRouter([
   {
     element: <AppShell />,
@@ -13,4 +15,4 @@ export const router = createBrowserRouter([
       { path: '*', element: <Navigate to="/atelier" replace /> },
     ],
   },
-])
+], { basename: base })

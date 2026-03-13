@@ -1,73 +1,90 @@
-# React + TypeScript + Vite
+# Soul Lab
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A bilingual (EN/FR) garment design application built with React and Konva.js. Design clothing from scratch using modular SVG parts, customize fabrics, patterns, colors, and decorations — then get AI-powered suggestions and previews via OpenRouter.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Visual Design Editor** — Drag-and-drop canvas powered by Konva.js with transform controls, grouping, layering, grid snapping, and minimap navigation
+- **24 Garment Types** — Shirts, blouses, dresses, trousers, skirts, outerwear and more, each with swappable parts (collars, sleeves, cuffs, pockets, necklines, hems...)
+- **Parts Library** — Browse and swap garment components with live SVG previews and variant selection
+- **Properties Panel** — Per-element controls for color, opacity, size, position, plus global design settings for fabric, pattern, and decorations
+- **AI Design Preview** — Generate a realistic 3D visualization of your design on a mannequin using image generation via OpenRouter
+- **AI Design Suggestions** — Chat with an AI assistant that knows your current design state and suggests fabrics, patterns, colors, and styling for specific occasions
+- **Gallery** — Save, browse, search, and filter your designs with auto-generated thumbnails
+- **Import / Export** — Serialize designs to JSON for sharing and backup
+- **Undo / Redo** — Full canvas history with keyboard shortcuts
+- **Bilingual** — Full English and French interface with instant switching
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+| Layer | Technology |
+|---|---|
+| UI Framework | React 19 + TypeScript 5.9 |
+| Build | Vite 8 |
+| Canvas | Konva + react-konva |
+| Components | Chakra UI v2 |
+| State | Zustand 5 (persisted to localStorage) |
+| AI | OpenRouter SDK (google/gemini-3.1-flash-image-preview) |
+| i18n | i18next + react-i18next |
+| Routing | React Router v7 |
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Prerequisites
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Node.js 22+
+- pnpm 10+
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Install & Run
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+pnpm install
+pnpm dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Open [http://localhost:5173](http://localhost:5173).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Build
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+pnpm build
+pnpm preview
 ```
+
+### AI Features
+
+AI features require an [OpenRouter](https://openrouter.ai) API key. Enter it in the AI tab of the right sidebar panel. The key is stored locally in your browser and never sent anywhere except OpenRouter's API.
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── ai/          # AI panel, preview, suggestions chat
+│   ├── atelier/     # Main editor page, action bar
+│   ├── canvas/      # Konva design canvas, transform controls
+│   ├── gallery/     # Design gallery with search & filters
+│   ├── layout/      # App shell, top navigation
+│   ├── properties/  # Properties panel (global, part, text, shape, image)
+│   └── sidebar/     # Parts library, extras panel, templates
+├── i18n/            # EN/FR translation files
+├── services/        # OpenRouter API client
+├── stores/          # Zustand state (design, AI, UI, canvas history)
+├── types/           # TypeScript type definitions
+└── utils/           # Prompts, canvas snapshot, import/export, templates
+```
+
+## Deployment
+
+The app auto-deploys to GitHub Pages on push to `main` via the included workflow at `.github/workflows/deploy.yml`.
+
+To set up:
+
+1. Push the repo to GitHub
+2. Go to **Settings > Pages**
+3. Set source to **GitHub Actions**
+4. Push to `main` — the workflow builds and deploys automatically
+
+## License
+
+All rights reserved.
