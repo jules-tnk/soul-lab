@@ -91,10 +91,10 @@ export default function PartGroup({ part, garmentTypeId }: Props) {
         </Text>
       </HStack>
       <Collapse in={isOpen}>
-        {hasSvgs ? (
-          <HStack wrap="wrap" spacing={1} pl={5} pb={2}>
-            {part.variants.map(v => {
-              const isActive = existingElement?.variantId === v.id
+        <HStack wrap="wrap" spacing={1} pl={5} pb={2}>
+          {part.variants.map(v => {
+            const isActive = existingElement?.variantId === v.id
+            if (hasSvgs) {
               return (
                 <VStack
                   key={v.id}
@@ -117,17 +117,14 @@ export default function PartGroup({ part, garmentTypeId }: Props) {
                   </Text>
                 </VStack>
               )
-            })}
-          </HStack>
-        ) : (
-          <HStack wrap="wrap" spacing={1} pl={5} pb={2}>
-            {part.variants.map(v => (
+            }
+            return (
               <Tag
                 key={v.id}
                 size="sm"
                 cursor="grab"
-                colorScheme={existingElement?.variantId === v.id ? 'brand' : 'gray'}
-                variant={existingElement?.variantId === v.id ? 'solid' : 'subtle'}
+                colorScheme={isActive ? 'brand' : 'gray'}
+                variant={isActive ? 'solid' : 'subtle'}
                 onClick={() => handleVariantClick(v.id)}
                 fontSize="2xs"
                 draggable
@@ -135,9 +132,9 @@ export default function PartGroup({ part, garmentTypeId }: Props) {
               >
                 {t(v.nameKey)}
               </Tag>
-            ))}
-          </HStack>
-        )}
+            )
+          })}
+        </HStack>
       </Collapse>
     </Box>
   )

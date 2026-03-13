@@ -10,7 +10,7 @@ export default function ImageNode({ element }: Props) {
   const [image, setImage] = useState<HTMLImageElement | null>(null)
 
   useEffect(() => {
-    const img = new Image()
+    const img = new window.Image()
     img.onload = () => setImage(img)
     img.onerror = () => setImage(null)
     img.src = element.dataUrl

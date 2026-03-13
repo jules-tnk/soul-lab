@@ -13,16 +13,32 @@ interface Props {
   onSelect: (e: Konva.KonvaEventObject<MouseEvent | TouchEvent>) => void
   onChange: (attrs: Partial<CanvasElement>) => void
   onDblClick?: () => void
+  onMultiDragStart?: (draggedId: string) => void
+  onMultiDrag?: (draggedId: string, dx: number, dy: number) => void
+  onMultiDragEnd?: (draggedId: string, dx: number, dy: number) => void
 }
 
-export default function TransformableElement({ element, isSelected, onSelect, onChange, onDblClick }: Props) {
+export default function TransformableElement({ element, isSelected, onSelect, onChange, onDblClick, onMultiDragStart, onMultiDrag, onMultiDragEnd }: Props) {
   const trRef = useRef<Konva.Transformer>(null)
   const groupRef = useRef<Konva.Group>(null)
+  const dragStartRef = useRef<{ x: number; y: number } | null>(null)
 
   useEffect(() => {
-    if (isSelected && trRef.current && groupRef.current) {
-      trRef.current.nodes([groupRef.current])
-      trRef.current.getLayer()?.batchDraw()
+    const group = groupRef.current
+    const tr = trRef.current
+    if (!isSelected || !tr || !group) return
+
+    const update = () => {
+      tr.nodes([group])
+      tr.getLayer()?.batchDraw()
+    }
+    // Defer to next frame so react-konva has fully applied node positions
+    const rafId = requestAnimationFrame(update)
+    // Re-fit when children are added/removed (e.g. async image load)
+    group.on('add remove', update)
+    return () => {
+      cancelAnimationFrame(rafId)
+      group.off('add remove', update)
     }
   }, [isSelected])
 
@@ -43,6 +59,7 @@ export default function TransformableElement({ element, isSelected, onSelect, on
     <>
       <Group
         ref={groupRef}
+        id={element.id}
         x={element.x}
         y={element.y}
         scaleX={element.scaleX}
@@ -53,8 +70,26 @@ export default function TransformableElement({ element, isSelected, onSelect, on
         onTap={onSelect}
         onDblClick={() => onDblClick?.()}
         onDblTap={() => onDblClick?.()}
+        onDragStart={() => {
+          dragStartRef.current = { x: element.x, y: element.y }
+          onMultiDragStart?.(element.id)
+        }}
+        onDragMove={(e) => {
+          if (dragStartRef.current && onMultiDrag) {
+            const dx = e.target.x() - dragStartRef.current.x
+            const dy = e.target.y() - dragStartRef.current.y
+            onMultiDrag(element.id, dx, dy)
+          }
+        }}
         onDragEnd={(e) => {
-          onChange({ x: e.target.x(), y: e.target.y() })
+          if (dragStartRef.current && onMultiDragEnd) {
+            const dx = e.target.x() - dragStartRef.current.x
+            const dy = e.target.y() - dragStartRef.current.y
+            onMultiDragEnd(element.id, dx, dy)
+          } else {
+            onChange({ x: e.target.x(), y: e.target.y() })
+          }
+          dragStartRef.current = null
         }}
         onTransformEnd={() => {
           const group = groupRef.current

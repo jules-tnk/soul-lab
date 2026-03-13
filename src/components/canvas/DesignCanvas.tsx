@@ -1,4 +1,4 @@
-import { useRef, useCallback, useEffect, useState } from 'react'
+import { useRef, useCallback, useEffect, useState, useMemo } from 'react'
 import { setSnapshotFn, clearSnapshotFn } from '../../stores/canvasHistoryRef'
 import { Stage, Layer, Rect } from 'react-konva'
 import { Box } from '@chakra-ui/react'
@@ -31,14 +31,17 @@ function getElementBounds(el: CanvasElement) {
 export default function DesignCanvas() {
   const { t } = useTranslation()
   const stageRef = useRef<Konva.Stage>(null)
+  const elementsLayerRef = useRef<Konva.Layer>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const [containerSize, setContainerSize] = useState({ w: 800, h: 600 })
   const [contextMenu, setContextMenu] = useState<{ x: number; y: number; onElement: boolean } | null>(null)
 
   // Marquee selection state
   const [selectionRect, setSelectionRect] = useState<{ x: number; y: number; w: number; h: number } | null>(null)
+  const selectionRectRef = useRef<{ x: number; y: number; w: number; h: number } | null>(null)
   const marqueeStartRef = useRef<{ x: number; y: number } | null>(null)
   const isSelectingRef = useRef(false)
+  const marqueeRafRef = useRef<number | null>(null)
 
   const design = useDesignStore(s => s.getCurrentDesign())
   const updateDesign = useDesignStore(s => s.updateCurrentDesign)
@@ -75,6 +78,7 @@ export default function DesignCanvas() {
   }, [])
 
   const elements = design?.elements ?? []
+  const selectedIdSet = useMemo(() => new Set(selectedIds), [selectedIds])
 
   const updateElements = useCallback((newElements: CanvasElement[]) => {
     history.pushSnapshot(elements)
@@ -89,15 +93,67 @@ export default function DesignCanvas() {
     updateElements(newElements)
   }, [elements, updateElements])
 
+  // Multi-drag: move all selected elements together during drag
+  const dragOriginsRef = useRef<Map<string, { x: number; y: number }>>(new Map())
+
+  const handleMultiDragStart = useCallback((draggedId: string) => {
+    dragOriginsRef.current.clear()
+    if (selectedIds.length < 2 || !selectedIdSet.has(draggedId)) return
+    for (const el of elements) {
+      if (selectedIdSet.has(el.id)) {
+        dragOriginsRef.current.set(el.id, { x: el.x, y: el.y })
+      }
+    }
+  }, [selectedIds, selectedIdSet, elements])
+
+  const handleMultiDrag = useCallback((draggedId: string, dx: number, dy: number) => {
+    if (dragOriginsRef.current.size === 0) return
+    const layer = elementsLayerRef.current
+    if (!layer) return
+    const idSet = dragOriginsRef.current
+    for (const child of layer.children ?? []) {
+      const nodeId = child.id()
+      if (nodeId && nodeId !== draggedId && idSet.has(nodeId)) {
+        const origin = idSet.get(nodeId)!
+        child.x(origin.x + dx)
+        child.y(origin.y + dy)
+      }
+    }
+    layer.batchDraw()
+  }, [])
+
+  const handleMultiDragEnd = useCallback((draggedId: string, dx: number, dy: number) => {
+    if (dragOriginsRef.current.size === 0) {
+      // Single element drag
+      const el = elements.find(e => e.id === draggedId)
+      if (el) handleElementChange(draggedId, { x: el.x + dx, y: el.y + dy })
+      return
+    }
+    // Apply delta to all selected elements
+    const origins = dragOriginsRef.current
+    const newElements = elements.map(el => {
+      const origin = origins.get(el.id)
+      if (origin) {
+        return { ...el, x: origin.x + dx, y: origin.y + dy } as CanvasElement
+      }
+      return el
+    })
+    dragOriginsRef.current.clear()
+    updateElements(newElements)
+  }, [elements, updateElements, handleElementChange])
+
   const handleSelect = useCallback((id: string, e: any) => {
     const evt = e.evt
+    // Ignore right-clicks — Konva fires click for all mouse buttons,
+    // and we don't want to clear multi-selection before contextmenu fires
+    if (evt?.button === 2) return
     const element = elements.find(el => el.id === id)
     const editingGroupId = useUIStore.getState().editingGroupId
 
     if (element?.groupId && element.groupId !== editingGroupId) {
       const groupMembers = elements.filter(el => el.groupId === element.groupId).map(el => el.id)
       if (evt?.ctrlKey || evt?.metaKey || evt?.shiftKey) {
-        const allSelected = groupMembers.every(mid => selectedIds.includes(mid))
+        const allSelected = groupMembers.every(mid => selectedIdSet.has(mid))
         if (allSelected) {
           setSelected(selectedIds.filter(sid => !groupMembers.includes(sid)))
         } else {
@@ -113,9 +169,11 @@ export default function DesignCanvas() {
         setSelected([id])
       }
     }
-  }, [elements, selectedIds, setSelected, toggleSelected])
+  }, [elements, selectedIds, selectedIdSet, setSelected, toggleSelected])
 
   const handleStageClick = useCallback((e: any) => {
+    // Ignore right-clicks (Konva fires click for all mouse buttons)
+    if (e.evt?.button === 2) return
     // Don't clear selection if we just finished a marquee drag
     if (e.target === e.target.getStage() && !isSelectingRef.current) {
       clearSelection()
@@ -154,12 +212,20 @@ export default function DesignCanvas() {
           isSelectingRef.current = true
         }
         if (isSelectingRef.current) {
-          setSelectionRect({
+          const rect = {
             x: Math.min(start.x, cx),
             y: Math.min(start.y, cy),
             w: Math.abs(dx),
             h: Math.abs(dy),
-          })
+          }
+          selectionRectRef.current = rect
+          // Throttle React state updates to one per animation frame
+          if (marqueeRafRef.current === null) {
+            marqueeRafRef.current = requestAnimationFrame(() => {
+              marqueeRafRef.current = null
+              setSelectionRect(selectionRectRef.current)
+            })
+          }
         }
       }
     }
@@ -167,12 +233,18 @@ export default function DesignCanvas() {
 
   const handleStageMouseUp = useCallback(() => {
     viewport.onMouseUp()
-    if (isSelectingRef.current && selectionRect) {
+    // Cancel any pending rAF for marquee rendering
+    if (marqueeRafRef.current !== null) {
+      cancelAnimationFrame(marqueeRafRef.current)
+      marqueeRafRef.current = null
+    }
+    const rect = selectionRectRef.current
+    if (isSelectingRef.current && rect) {
       // Find elements intersecting the selection rectangle
-      const sx1 = selectionRect.x
-      const sy1 = selectionRect.y
-      const sx2 = selectionRect.x + selectionRect.w
-      const sy2 = selectionRect.y + selectionRect.h
+      const sx1 = rect.x
+      const sy1 = rect.y
+      const sx2 = rect.x + rect.w
+      const sy2 = rect.y + rect.h
       const matched: string[] = []
       for (const el of elements) {
         const bounds = getElementBounds(el)
@@ -184,6 +256,7 @@ export default function DesignCanvas() {
       if (matched.length > 0) {
         setSelected(matched)
       }
+      selectionRectRef.current = null
       setSelectionRect(null)
       // Reset after a tick so handleStageClick doesn't immediately clear
       requestAnimationFrame(() => { isSelectingRef.current = false })
@@ -191,7 +264,7 @@ export default function DesignCanvas() {
       isSelectingRef.current = false
     }
     marqueeStartRef.current = null
-  }, [viewport, selectionRect, elements, setSelected])
+  }, [viewport, elements, setSelected])
 
   const handleDblClick = useCallback((id: string) => {
     const element = elements.find(el => el.id === id)
@@ -222,33 +295,33 @@ export default function DesignCanvas() {
   // Shared action callbacks for keyboard shortcuts + context menu
   const handleDelete = useCallback(() => {
     if (selectedIds.length === 0) return
-    updateElements(elements.filter(el => !selectedIds.includes(el.id)))
+    updateElements(elements.filter(el => !selectedIdSet.has(el.id)))
     clearSelection()
-  }, [selectedIds, elements, updateElements, clearSelection])
+  }, [selectedIds, selectedIdSet, elements, updateElements, clearSelection])
 
   const handleDuplicate = useCallback(() => {
     if (selectedIds.length === 0) return
     const duplicated = elements
-      .filter(el => selectedIds.includes(el.id))
+      .filter(el => selectedIdSet.has(el.id))
       .map(el => ({ ...el, id: uuid(), x: el.x + 20, y: el.y + 20 }) as CanvasElement)
     updateElements([...elements, ...duplicated])
     setSelected(duplicated.map(el => el.id))
-  }, [selectedIds, elements, updateElements, setSelected])
+  }, [selectedIds, selectedIdSet, elements, updateElements, setSelected])
 
   const handleCopy = useCallback(() => {
-    const selected = elements.filter(el => selectedIds.includes(el.id))
+    const selected = elements.filter(el => selectedIdSet.has(el.id))
     if (selected.length > 0) {
       useUIStore.getState().setClipboard(JSON.parse(JSON.stringify(selected)))
     }
-  }, [elements, selectedIds])
+  }, [elements, selectedIdSet])
 
   const handleCut = useCallback(() => {
-    const selected = elements.filter(el => selectedIds.includes(el.id))
+    const selected = elements.filter(el => selectedIdSet.has(el.id))
     if (selected.length === 0) return
     useUIStore.getState().setClipboard(JSON.parse(JSON.stringify(selected)))
-    updateElements(elements.filter(el => !selectedIds.includes(el.id)))
+    updateElements(elements.filter(el => !selectedIdSet.has(el.id)))
     clearSelection()
-  }, [elements, selectedIds, updateElements, clearSelection])
+  }, [elements, selectedIdSet, updateElements, clearSelection])
 
   const handlePaste = useCallback(() => {
     const { clipboardElements, pasteCount } = useUIStore.getState()
@@ -273,14 +346,14 @@ export default function DesignCanvas() {
     history.pushSnapshot(elements)
     const gid = uuid()
     const newElements = elements.map(el =>
-      selectedIds.includes(el.id) ? { ...el, groupId: gid } as CanvasElement : el
+      selectedIdSet.has(el.id) ? { ...el, groupId: gid } as CanvasElement : el
     )
     updateDesign({ elements: newElements })
     setDirty(true)
-  }, [selectedIds, elements, history, updateDesign, setDirty])
+  }, [selectedIds, selectedIdSet, elements, history, updateDesign, setDirty])
 
   const handleUngroup = useCallback(() => {
-    const selected = elements.filter(el => selectedIds.includes(el.id))
+    const selected = elements.filter(el => selectedIdSet.has(el.id))
     const groupIds = [...new Set(selected.map(el => el.groupId).filter(Boolean))]
     if (groupIds.length === 0) return
     history.pushSnapshot(elements)
@@ -289,41 +362,41 @@ export default function DesignCanvas() {
     )
     updateDesign({ elements: newElements })
     setDirty(true)
-  }, [selectedIds, elements, history, updateDesign, setDirty])
+  }, [selectedIdSet, elements, history, updateDesign, setDirty])
 
   const handleBringToFront = useCallback(() => {
     if (elements.length === 0) return
     const maxZ = Math.max(...elements.map(e => e.zIndex))
     history.pushSnapshot(elements)
     const newElements = elements.map(el =>
-      selectedIds.includes(el.id) ? { ...el, zIndex: maxZ + 1 } as CanvasElement : el
+      selectedIdSet.has(el.id) ? { ...el, zIndex: maxZ + 1 } as CanvasElement : el
     )
     updateDesign({ elements: newElements })
     setDirty(true)
-  }, [elements, selectedIds, history, updateDesign, setDirty])
+  }, [elements, selectedIdSet, history, updateDesign, setDirty])
 
   const handleSendToBack = useCallback(() => {
     if (elements.length === 0) return
     const minZ = Math.min(...elements.map(e => e.zIndex))
     history.pushSnapshot(elements)
     const newElements = elements.map(el =>
-      selectedIds.includes(el.id) ? { ...el, zIndex: minZ - 1 } as CanvasElement : el
+      selectedIdSet.has(el.id) ? { ...el, zIndex: minZ - 1 } as CanvasElement : el
     )
     updateDesign({ elements: newElements })
     setDirty(true)
-  }, [elements, selectedIds, history, updateDesign, setDirty])
+  }, [elements, selectedIdSet, history, updateDesign, setDirty])
 
   const handleToggleLock = useCallback(() => {
-    const firstSelected = elements.find(el => selectedIds.includes(el.id))
+    const firstSelected = elements.find(el => selectedIdSet.has(el.id))
     if (!firstSelected) return
     const newLocked = !firstSelected.locked
     history.pushSnapshot(elements)
     const newElements = elements.map(el =>
-      selectedIds.includes(el.id) ? { ...el, locked: newLocked } as CanvasElement : el
+      selectedIdSet.has(el.id) ? { ...el, locked: newLocked } as CanvasElement : el
     )
     updateDesign({ elements: newElements })
     setDirty(true)
-  }, [elements, selectedIds, history, updateDesign, setDirty])
+  }, [elements, selectedIdSet, history, updateDesign, setDirty])
 
   useKeyboardShortcuts({
     onDelete: handleDelete,
@@ -338,6 +411,15 @@ export default function DesignCanvas() {
     onGroup: handleGroup,
     onUngroup: handleUngroup,
   })
+
+  // Cancel pending marquee rAF on unmount
+  useEffect(() => {
+    return () => {
+      if (marqueeRafRef.current !== null) {
+        cancelAnimationFrame(marqueeRafRef.current)
+      }
+    }
+  }, [])
 
   // Expose stageRef for thumbnail capture
   useEffect(() => {
@@ -415,12 +497,36 @@ export default function DesignCanvas() {
     }
   }, [elements, updateElements, setSelected, viewport])
 
-  // Context menu
+  // Context menu — check which element (if any) is under the cursor via bounds
   const handleContextMenu = useCallback((e: React.MouseEvent) => {
     e.preventDefault()
-    const isOnElement = selectedIds.length > 0
-    setContextMenu({ x: e.clientX, y: e.clientY, onElement: isOnElement })
-  }, [selectedIds])
+    const container = containerRef.current
+    if (!container) {
+      setContextMenu({ x: e.clientX, y: e.clientY, onElement: false })
+      return
+    }
+    const rect = container.getBoundingClientRect()
+    const { x: cx, y: cy } = viewport.screenToCanvas(e.clientX, e.clientY, rect)
+    // Find topmost element under cursor (sorted by zIndex descending)
+    const sorted = [...elements].sort((a, b) => b.zIndex - a.zIndex)
+    let hitId: string | null = null
+    for (const el of sorted) {
+      if (!el.visible) continue
+      const b = getElementBounds(el)
+      if (cx >= b.x1 && cx <= b.x2 && cy >= b.y1 && cy <= b.y2) {
+        hitId = el.id
+        break
+      }
+    }
+    if (hitId) {
+      if (!selectedIdSet.has(hitId)) {
+        setSelected([hitId])
+      }
+      setContextMenu({ x: e.clientX, y: e.clientY, onElement: true })
+    } else {
+      setContextMenu({ x: e.clientX, y: e.clientY, onElement: false })
+    }
+  }, [selectedIdSet, elements, setSelected, viewport])
 
   // Zoom toolbar handlers
   const handleZoomIn = useCallback(() => setZoom(zoom * 1.1), [zoom, setZoom])
@@ -433,7 +539,7 @@ export default function DesignCanvas() {
     viewport.fitAll(elements, containerSize.w, containerSize.h)
   }, [viewport, elements, containerSize])
 
-  const sorted = [...elements].sort((a, b) => a.zIndex - b.zIndex)
+  const sorted = useMemo(() => [...elements].sort((a, b) => a.zIndex - b.zIndex), [elements])
 
   const getContextMenuItems = () => {
     if (contextMenu?.onElement) {
@@ -443,7 +549,7 @@ export default function DesignCanvas() {
         { label: t('canvas.paste', 'Paste'), shortcut: 'Ctrl+V', onClick: handlePaste, disabled: useUIStore.getState().clipboardElements.length === 0 },
         { label: '---', onClick: () => {} },
         { label: t('canvas.group', 'Group'), shortcut: 'Ctrl+G', onClick: handleGroup, disabled: selectedIds.length < 2 },
-        { label: t('canvas.ungroup', 'Ungroup'), shortcut: 'Ctrl+Shift+G', onClick: handleUngroup, disabled: !elements.some(el => selectedIds.includes(el.id) && el.groupId) },
+        { label: t('canvas.ungroup', 'Ungroup'), shortcut: 'Ctrl+Shift+G', onClick: handleUngroup, disabled: !elements.some(el => selectedIdSet.has(el.id) && el.groupId) },
         { label: '---', onClick: () => {} },
         { label: t('actions.duplicate'), shortcut: 'Ctrl+D', onClick: handleDuplicate },
         { label: t('actions.delete'), shortcut: 'Del', onClick: handleDelete, danger: true },
@@ -451,7 +557,7 @@ export default function DesignCanvas() {
         { label: t('canvas.bringToFront', 'Bring to Front'), onClick: handleBringToFront },
         { label: t('canvas.sendToBack', 'Send to Back'), onClick: handleSendToBack },
         { label: '---', onClick: () => {} },
-        { label: elements.find(el => selectedIds.includes(el.id))?.locked ? t('canvas.unlock', 'Unlock') : t('canvas.lock', 'Lock'), onClick: handleToggleLock },
+        { label: elements.find(el => selectedIdSet.has(el.id))?.locked ? t('canvas.unlock', 'Unlock') : t('canvas.lock', 'Lock'), onClick: handleToggleLock },
       ]
     }
     return [
@@ -499,15 +605,18 @@ export default function DesignCanvas() {
             containerW={containerSize.w}
             containerH={containerSize.h}
           />
-          <Layer>
+          <Layer ref={elementsLayerRef}>
             {sorted.filter(el => el.visible).map(el => (
               <TransformableElement
                 key={el.id}
                 element={el}
-                isSelected={selectedIds.includes(el.id)}
+                isSelected={selectedIdSet.has(el.id)}
                 onSelect={(e) => handleSelect(el.id, e)}
                 onChange={(attrs) => handleElementChange(el.id, attrs)}
                 onDblClick={() => handleDblClick(el.id)}
+                onMultiDragStart={handleMultiDragStart}
+                onMultiDrag={handleMultiDrag}
+                onMultiDragEnd={handleMultiDragEnd}
               />
             ))}
             {selectionRect && (
