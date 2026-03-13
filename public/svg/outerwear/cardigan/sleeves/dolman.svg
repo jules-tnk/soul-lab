@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Dolman sleeves: wide bat-wing, cut-in-one with body -->
+  <!-- Left dolman sleeve: wide drop from body -->
+  <path d="M100,78 Q78,90 45,105 L38,175 L62,175 L70,135 Q80,118 100,115 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right dolman sleeve -->
+  <path d="M100,78 Q122,90 155,105 L162,175 L138,175 L130,135 Q120,118 100,115 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Wide dolman seam curves -->
+  <path d="M100,78 Q78,90 50,107"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M100,78 Q122,90 150,107"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

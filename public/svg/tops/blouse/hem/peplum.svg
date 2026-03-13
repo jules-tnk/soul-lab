@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Peplum hem: flared ruffle flounce below waist seam -->
+  <!-- Waist seam line -->
+  <line x1="42" y1="218" x2="158" y2="218" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Peplum flare: widens from waist seam downward -->
+  <path d="M42,218 Q30,230 28,252 L172,252 Q170,230 158,218 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Gather/ruffle lines at waist -->
+  <path d="M42,218 Q71,224 100,222 Q129,224 158,218"
+    stroke="currentColor" stroke-width="1" stroke-dasharray="3,2" fill="none"/>
+  <!-- Peplum hem wave -->
+  <path d="M28,252 Q46,244 64,252 Q82,260 100,252 Q118,244 136,252 Q154,260 172,252"
+    stroke="currentColor" stroke-width="1" stroke-dasharray="3,2" fill="none"/>
+</svg>

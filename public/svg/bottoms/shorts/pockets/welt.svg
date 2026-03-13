@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Welt pockets: horizontal slit pockets at hip -->
+  <!-- Left welt pocket -->
+  <line x1="68" y1="58" x2="88" y2="58" stroke="currentColor" stroke-width="1.5"/>
+  <rect x="68" y="56" width="20" height="4" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1"/>
+  <!-- Right welt pocket -->
+  <line x1="112" y1="58" x2="132" y2="58" stroke="currentColor" stroke-width="1.5"/>
+  <rect x="112" y="56" width="20" height="4" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1"/>
+</svg>

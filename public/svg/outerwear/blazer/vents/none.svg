@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- No vent: clean continuous hem at back -->
+  <path d="M70,230 L70,260 L130,260 L130,230"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Solid hem line indicating no vent -->
+  <line x1="70" y1="260" x2="130" y2="260" stroke="currentColor" stroke-width="1.5"/>
+</svg>

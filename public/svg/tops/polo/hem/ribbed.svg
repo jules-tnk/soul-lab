@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Ribbed hem: horizontal rib texture band at bottom edge -->
+  <rect x="42" y="238" width="116" height="14"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Rib texture lines -->
+  <line x1="42" y1="241" x2="158" y2="241" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="42" y1="244" x2="158" y2="244" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="42" y1="247" x2="158" y2="247" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="42" y1="250" x2="158" y2="250" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

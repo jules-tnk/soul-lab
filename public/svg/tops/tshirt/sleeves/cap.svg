@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Cap sleeves: minimal coverage, just over the shoulder curve -->
+  <!-- Left cap sleeve -->
+  <path d="M63,65 Q46,67 38,78 Q34,86 40,92 Q52,98 68,90 L74,92 L63,65 Z"
+    fill="currentColor" fill-opacity="0.09" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right cap sleeve -->
+  <path d="M137,65 Q154,67 162,78 Q166,86 160,92 Q148,98 132,90 L126,92 L137,65 Z"
+    fill="currentColor" fill-opacity="0.09" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Cap hem edge arc -->
+  <path d="M40,92 Q54,100 68,90" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2" fill="none"/>
+  <path d="M160,92 Q146,100 132,90" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2" fill="none"/>
+</svg>

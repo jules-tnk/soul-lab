@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Knee-length A-line: hem at ~y180, classic A silhouette -->
+  <path d="M78,43 L52,180 L148,180 L122,43 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="71" y1="70" x2="129" y2="70" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

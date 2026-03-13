@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Lace panel: decorative lace panel on center front -->
+  <!-- Panel outline -->
+  <rect x="84" y="78" width="32" height="110"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Lace lattice pattern -->
+  <line x1="84" y1="92" x2="116" y2="92" stroke="currentColor" stroke-width="0.75" stroke-dasharray="2,2"/>
+  <line x1="84" y1="106" x2="116" y2="106" stroke="currentColor" stroke-width="0.75" stroke-dasharray="2,2"/>
+  <line x1="84" y1="120" x2="116" y2="120" stroke="currentColor" stroke-width="0.75" stroke-dasharray="2,2"/>
+  <line x1="84" y1="134" x2="116" y2="134" stroke="currentColor" stroke-width="0.75" stroke-dasharray="2,2"/>
+  <line x1="84" y1="148" x2="116" y2="148" stroke="currentColor" stroke-width="0.75" stroke-dasharray="2,2"/>
+  <line x1="84" y1="162" x2="116" y2="162" stroke="currentColor" stroke-width="0.75" stroke-dasharray="2,2"/>
+  <line x1="84" y1="176" x2="116" y2="176" stroke="currentColor" stroke-width="0.75" stroke-dasharray="2,2"/>
+  <!-- Vertical lace lines -->
+  <line x1="93" y1="78" x2="93" y2="188" stroke="currentColor" stroke-width="0.75" stroke-dasharray="2,2"/>
+  <line x1="100" y1="78" x2="100" y2="188" stroke="currentColor" stroke-width="0.75" stroke-dasharray="2,2"/>
+  <line x1="107" y1="78" x2="107" y2="188" stroke="currentColor" stroke-width="0.75" stroke-dasharray="2,2"/>
+</svg>

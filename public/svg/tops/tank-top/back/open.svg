@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Open back: back panel has large open cutout area -->
+  <!-- Side panels only, large cutout in center back -->
+  <path d="M68,65 L50,78 L44,95 L53,250 L72,250 L72,130 Q78,118 85,115 L85,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M132,65 L150,78 L156,95 L147,250 L128,250 L128,130 Q122,118 115,115 L115,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Open area outline -->
+  <path d="M85,65 L85,115 Q100,125 115,115 L115,65"
+    stroke="currentColor" stroke-width="1" stroke-dasharray="4,3" fill="none"/>
+  <path d="M72,130 Q100,145 128,130"
+    stroke="currentColor" stroke-width="1" stroke-dasharray="4,3" fill="none"/>
+</svg>

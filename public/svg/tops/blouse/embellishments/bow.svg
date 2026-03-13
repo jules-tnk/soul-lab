@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Bow embellishment: decorative bow on center front -->
+  <!-- Left bow loop -->
+  <path d="M100,118 Q80,108 70,116 Q78,124 100,122 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right bow loop -->
+  <path d="M100,118 Q120,108 130,116 Q122,124 100,122 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Bow knot center -->
+  <ellipse cx="100" cy="120" rx="5" ry="4" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Trailing ribbon tails -->
+  <path d="M96,124 Q92,136 88,148" stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <path d="M104,124 Q108,136 112,148" stroke="currentColor" stroke-width="1.5" fill="none"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Toggle closure: duffle-style toggles with loops -->
+  <!-- Center line -->
+  <line x1="100" y1="68" x2="100" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="4,3"/>
+  <!-- Toggle 1 -->
+  <ellipse cx="100" cy="100" rx="9" ry="3" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M91,100 Q91,95 91,90 Q100,88 109,90 Q109,95 109,100" fill="none" stroke="currentColor" stroke-width="1"/>
+  <!-- Toggle 2 -->
+  <ellipse cx="100" cy="135" rx="9" ry="3" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M91,135 Q91,130 91,125 Q100,123 109,125 Q109,130 109,135" fill="none" stroke="currentColor" stroke-width="1"/>
+  <!-- Toggle 3 -->
+  <ellipse cx="100" cy="170" rx="9" ry="3" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M91,170 Q91,165 91,160 Q100,158 109,160 Q109,165 109,170" fill="none" stroke="currentColor" stroke-width="1"/>
+  <!-- Toggle 4 -->
+  <ellipse cx="100" cy="205" rx="9" ry="3" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M91,205 Q91,200 91,195 Q100,193 109,195 Q109,200 109,205" fill="none" stroke="currentColor" stroke-width="1"/>
+</svg>

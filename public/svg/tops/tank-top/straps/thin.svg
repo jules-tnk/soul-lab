@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Thin straps: medium-width shoulder straps -->
+  <!-- Left strap -->
+  <path d="M74,65 L66,65 L66,95 L78,95 L78,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right strap -->
+  <path d="M126,65 L134,65 L134,95 L122,95 L122,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="69" y1="68" x2="69" y2="92" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="131" y1="68" x2="131" y2="92" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

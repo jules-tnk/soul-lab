@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Single button closure: one button at chest center -->
+  <!-- Left front panel -->
+  <path d="M100,75 L82,80 L80,165 L100,165 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right front panel -->
+  <path d="M100,75 L118,80 L120,165 L100,165 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Single button at chest -->
+  <circle cx="100" cy="140" r="5" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Button hole stitching -->
+  <line x1="97" y1="140" x2="103" y2="140" stroke="currentColor" stroke-width="1" stroke-dasharray="2,1"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Tea length: just below mid-calf ~y258 -->
+  <path d="M68,150 C56,166 44,188 37,258 L163,258 C156,188 144,166 132,150 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Center guide -->
+  <path d="M100,150 L100,258" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Hem -->
+  <path d="M39,258 L161,258" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

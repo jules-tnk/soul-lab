@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Standard waistband: flat band ~8px tall at y=35 -->
+  <rect x="60" y="35" width="80" height="8" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="60" y1="39" x2="140" y2="39" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

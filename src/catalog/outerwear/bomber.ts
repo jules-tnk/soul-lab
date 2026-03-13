@@ -13,8 +13,8 @@ export const bomber: GarmentType = {
       layerOrder: 1,
       defaultVariantId: 'ribbed',
       variants: [
-        { id: 'ribbed', nameKey: 'parts.hem.variants.ribbed', svgPath: '' },
-        { id: 'elastic', nameKey: 'parts.hem.variants.elastic', svgPath: '' },
+        { id: 'ribbed', nameKey: 'parts.hem.variants.ribbed', svgPath: 'outerwear/bomber/hem/ribbed.svg' },
+        { id: 'elastic', nameKey: 'parts.hem.variants.elastic', svgPath: 'outerwear/bomber/hem/elastic.svg' },
       ],
     },
     {
@@ -24,8 +24,8 @@ export const bomber: GarmentType = {
       layerOrder: 2,
       defaultVariantId: 'zipper',
       variants: [
-        { id: 'zipper', nameKey: 'parts.closure.variants.zipper', svgPath: '' },
-        { id: 'snap', nameKey: 'parts.closure.variants.snap', svgPath: '' },
+        { id: 'zipper', nameKey: 'parts.closure.variants.zipper', svgPath: 'outerwear/bomber/closure/zipper.svg' },
+        { id: 'snap', nameKey: 'parts.closure.variants.snap', svgPath: 'outerwear/bomber/closure/snap.svg' },
       ],
     },
     {
@@ -35,9 +35,9 @@ export const bomber: GarmentType = {
       layerOrder: 3,
       defaultVariantId: 'slash',
       variants: [
-        { id: 'slash', nameKey: 'parts.pockets.variants.slash', svgPath: '' },
-        { id: 'flap', nameKey: 'parts.pockets.variants.flap', svgPath: '' },
-        { id: 'none', nameKey: 'parts.pockets.variants.none', svgPath: '' },
+        { id: 'slash', nameKey: 'parts.pockets.variants.slash', svgPath: 'outerwear/bomber/pockets/slash.svg' },
+        { id: 'flap', nameKey: 'parts.pockets.variants.flap', svgPath: 'outerwear/bomber/pockets/flap.svg' },
+        { id: 'none', nameKey: 'parts.pockets.variants.none', svgPath: 'outerwear/bomber/pockets/none.svg' },
       ],
     },
     {
@@ -47,9 +47,9 @@ export const bomber: GarmentType = {
       layerOrder: 4,
       defaultVariantId: 'standard',
       variants: [
-        { id: 'standard', nameKey: 'parts.collar.variants.standard', svgPath: '' },
-        { id: 'mandarin', nameKey: 'parts.collar.variants.mandarin', svgPath: '' },
-        { id: 'shearling', nameKey: 'parts.collar.variants.shearling', svgPath: '' },
+        { id: 'standard', nameKey: 'parts.collar.variants.standard', svgPath: 'outerwear/bomber/collar/standard.svg' },
+        { id: 'mandarin', nameKey: 'parts.collar.variants.mandarin', svgPath: 'outerwear/bomber/collar/mandarin.svg' },
+        { id: 'shearling', nameKey: 'parts.collar.variants.shearling', svgPath: 'outerwear/bomber/collar/shearling.svg' },
       ],
     },
     {
@@ -59,8 +59,8 @@ export const bomber: GarmentType = {
       layerOrder: 5,
       defaultVariantId: 'long',
       variants: [
-        { id: 'long', nameKey: 'parts.sleeves.variants.long', svgPath: '' },
-        { id: 'raglan', nameKey: 'parts.sleeves.variants.raglan', svgPath: '' },
+        { id: 'long', nameKey: 'parts.sleeves.variants.long', svgPath: 'outerwear/bomber/sleeves/long.svg' },
+        { id: 'raglan', nameKey: 'parts.sleeves.variants.raglan', svgPath: 'outerwear/bomber/sleeves/raglan.svg' },
       ],
     },
     {
@@ -70,9 +70,9 @@ export const bomber: GarmentType = {
       layerOrder: 6,
       defaultVariantId: 'ribbed',
       variants: [
-        { id: 'ribbed', nameKey: 'parts.cuffs.variants.ribbed', svgPath: '' },
-        { id: 'elastic', nameKey: 'parts.cuffs.variants.elastic', svgPath: '' },
-        { id: 'snapped', nameKey: 'parts.cuffs.variants.snapped', svgPath: '' },
+        { id: 'ribbed', nameKey: 'parts.cuffs.variants.ribbed', svgPath: 'outerwear/bomber/cuffs/ribbed.svg' },
+        { id: 'elastic', nameKey: 'parts.cuffs.variants.elastic', svgPath: 'outerwear/bomber/cuffs/elastic.svg' },
+        { id: 'snapped', nameKey: 'parts.cuffs.variants.snapped', svgPath: 'outerwear/bomber/cuffs/snapped.svg' },
       ],
     },
   ],

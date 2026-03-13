@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Zipper closure: center front zipper -->
+  <!-- Zipper tape left -->
+  <path d="M96,72 L96,215" fill="none" stroke="currentColor" stroke-width="3" stroke-opacity="0.15"/>
+  <!-- Zipper tape right -->
+  <path d="M104,72 L104,215" fill="none" stroke="currentColor" stroke-width="3" stroke-opacity="0.15"/>
+  <!-- Zipper teeth -->
+  <line x1="96" y1="80" x2="104" y2="87" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="96" y1="94" x2="104" y2="101" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="96" y1="108" x2="104" y2="115" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="96" y1="122" x2="104" y2="129" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="96" y1="136" x2="104" y2="143" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="96" y1="150" x2="104" y2="157" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="96" y1="164" x2="104" y2="171" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="96" y1="178" x2="104" y2="185" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="96" y1="192" x2="104" y2="199" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Zipper pull tab -->
+  <rect x="93" y="68" width="14" height="8" rx="2" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+</svg>

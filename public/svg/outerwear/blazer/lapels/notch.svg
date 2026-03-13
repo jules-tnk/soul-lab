@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Notch lapels: classic V notch between collar and lapel -->
+  <!-- Left lapel -->
+  <path d="M100,68 L78,75 L62,100 L82,108 L100,95 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right lapel -->
+  <path d="M100,68 L122,75 L138,100 L118,108 L100,95 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Notch cut indication -->
+  <line x1="82" y1="108" x2="90" y2="98" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="118" y1="108" x2="110" y2="98" stroke="currentColor" stroke-width="1.5"/>
+</svg>

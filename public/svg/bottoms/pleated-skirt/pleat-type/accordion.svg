@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Accordion pleats: many sharp narrow folds, tight spacing -->
+  <path d="M68,43 L60,180 L140,180 L132,43 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Dense accordion fold lines -->
+  <line x1="74" y1="43" x2="68" y2="180" stroke="currentColor" stroke-width="1"/>
+  <line x1="80" y1="43" x2="74" y2="180" stroke="currentColor" stroke-width="1"/>
+  <line x1="86" y1="43" x2="80" y2="180" stroke="currentColor" stroke-width="1"/>
+  <line x1="92" y1="43" x2="86" y2="180" stroke="currentColor" stroke-width="1"/>
+  <line x1="98" y1="43" x2="92" y2="180" stroke="currentColor" stroke-width="1"/>
+  <line x1="104" y1="43" x2="98" y2="180" stroke="currentColor" stroke-width="1"/>
+  <line x1="110" y1="43" x2="104" y2="180" stroke="currentColor" stroke-width="1"/>
+  <line x1="116" y1="43" x2="110" y2="180" stroke="currentColor" stroke-width="1"/>
+  <line x1="122" y1="43" x2="116" y2="180" stroke="currentColor" stroke-width="1"/>
+  <line x1="128" y1="43" x2="122" y2="180" stroke="currentColor" stroke-width="1"/>
+</svg>

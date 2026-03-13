@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- No side slits: clean closed side seams at hem -->
+  <line x1="46" y1="200" x2="46" y2="260" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="154" y1="200" x2="154" y2="260" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="46" y1="260" x2="154" y2="260" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Closed seam dots at hem corner -->
+  <circle cx="46" cy="260" r="2" fill="currentColor" fill-opacity="0.3"/>
+  <circle cx="154" cy="260" r="2" fill="currentColor" fill-opacity="0.3"/>
+</svg>

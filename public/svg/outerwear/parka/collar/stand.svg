@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Stand collar on parka: moderate-height standing band -->
+  <path d="M76,70 Q100,60 124,70 L122,48 Q100,40 78,48 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Top edge -->
+  <path d="M78,48 Q100,40 122,48"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Mid-band crease -->
+  <path d="M77,59 Q100,51 123,59"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Front opening -->
+  <line x1="100" y1="40" x2="100" y2="70" stroke="currentColor" stroke-width="1"/>
+</svg>

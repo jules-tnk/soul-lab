@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Zipper placket: zip fastening at center front instead of buttons -->
+  <rect x="95" y="72" width="10" height="68"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Zipper teeth pattern -->
+  <line x1="100" y1="72" x2="100" y2="140" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Zipper teeth cross-hatches -->
+  <line x1="96" y1="80"  x2="104" y2="80"  stroke="currentColor" stroke-width="1"/>
+  <line x1="96" y1="87"  x2="104" y2="87"  stroke="currentColor" stroke-width="1"/>
+  <line x1="96" y1="94"  x2="104" y2="94"  stroke="currentColor" stroke-width="1"/>
+  <line x1="96" y1="101" x2="104" y2="101" stroke="currentColor" stroke-width="1"/>
+  <line x1="96" y1="108" x2="104" y2="108" stroke="currentColor" stroke-width="1"/>
+  <line x1="96" y1="115" x2="104" y2="115" stroke="currentColor" stroke-width="1"/>
+  <line x1="96" y1="122" x2="104" y2="122" stroke="currentColor" stroke-width="1"/>
+  <line x1="96" y1="129" x2="104" y2="129" stroke="currentColor" stroke-width="1"/>
+  <!-- Zipper pull tab -->
+  <rect x="96" y="136" width="8" height="5" rx="1"
+    fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1"/>
+</svg>

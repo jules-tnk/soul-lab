@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Welt pockets on vest: clean slit pockets -->
+  <!-- Left welt pocket -->
+  <path d="M50,148 L92,148 L92,154 L50,154 Z"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="50" y1="151" x2="92" y2="151" stroke="currentColor" stroke-width="1"/>
+  <!-- Right welt pocket -->
+  <path d="M108,148 L150,148 L150,154 L108,154 Z"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="108" y1="151" x2="150" y2="151" stroke="currentColor" stroke-width="1"/>
+</svg>

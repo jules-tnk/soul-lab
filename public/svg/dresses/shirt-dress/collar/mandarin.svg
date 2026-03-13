@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Mandarin collar: small upright band, no lapels -->
+  <path d="M82,64 C88,60 94,58 100,58 C106,58 112,60 118,64 L118,72 L82,72 Z" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Band top edge -->
+  <path d="M82,64 C88,60 94,58 100,58 C106,58 112,60 118,64" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Collar stitch line -->
+  <path d="M84,66 C90,62 95,60 100,60 C105,60 110,62 116,66" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Center opening gap -->
+  <path d="M98,58 L98,72 M102,58 L102,72" fill="none" stroke="currentColor" stroke-width="0.5"/>
+  <!-- Button -->
+  <circle cx="100" cy="66" r="2.5" fill="none" stroke="currentColor" stroke-width="1"/>
+</svg>

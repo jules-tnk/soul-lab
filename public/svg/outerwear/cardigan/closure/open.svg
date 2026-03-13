@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Open front cardigan: no closure, drapes open -->
+  <!-- Left front panel edge -->
+  <path d="M100,68 L82,74 L78,245"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right front panel edge -->
+  <path d="M100,68 L118,74 L122,245"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Open gap indicator -->
+  <line x1="100" y1="68" x2="100" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="5,4"/>
+</svg>

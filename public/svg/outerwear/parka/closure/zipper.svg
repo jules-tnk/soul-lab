@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Zipper closure on parka: center front zipper with storm flap -->
+  <!-- Storm flap over zipper -->
+  <path d="M94,78 L94,230 L106,230 L106,78 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1"/>
+  <!-- Zipper tape left -->
+  <path d="M97,78 L97,228" fill="none" stroke="currentColor" stroke-width="2" stroke-opacity="0.2"/>
+  <!-- Zipper tape right -->
+  <path d="M103,78 L103,228" fill="none" stroke="currentColor" stroke-width="2" stroke-opacity="0.2"/>
+  <!-- Zipper teeth (condensed representation) -->
+  <line x1="97" y1="90" x2="103" y2="97" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="97" y1="110" x2="103" y2="117" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="97" y1="130" x2="103" y2="137" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="97" y1="150" x2="103" y2="157" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="97" y1="170" x2="103" y2="177" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="97" y1="190" x2="103" y2="197" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="97" y1="210" x2="103" y2="217" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Zipper pull -->
+  <rect x="94" y="73" width="12" height="7" rx="1.5" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+</svg>

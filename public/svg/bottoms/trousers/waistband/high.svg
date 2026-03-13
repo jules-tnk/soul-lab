@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- High waistband: tall band sitting above natural waist -->
+  <g fill="currentColor" stroke="currentColor">
+    <!-- Tall waistband body -->
+    <rect x="60" y="25" width="80" height="26" fill-opacity="0.08" stroke-width="1.5"/>
+    <!-- Top stitch -->
+    <line x1="62" y1="28" x2="138" y2="28" stroke-width="1" stroke-dasharray="3,2"/>
+    <!-- Bottom stitch -->
+    <line x1="62" y1="48" x2="138" y2="48" stroke-width="1" stroke-dasharray="3,2"/>
+    <!-- Mid stitch -->
+    <line x1="62" y1="38" x2="138" y2="38" stroke-width="1" stroke-dasharray="3,2"/>
+    <!-- Belt loops -->
+    <rect x="72" y="23" width="5" height="30" fill-opacity="0.07" stroke-width="1"/>
+    <rect x="95" y="23" width="5" height="30" fill-opacity="0.07" stroke-width="1"/>
+    <rect x="118" y="23" width="5" height="30" fill-opacity="0.07" stroke-width="1"/>
+    <!-- Trouser body suggestion -->
+    <path d="M60,51 L140,51 L145,90 L100,96 L55,90 Z" fill-opacity="0.04" stroke-width="1"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Barrel cuff: standard single-button cuff -->
+  <!-- Left sleeve end with barrel cuff -->
+  <path d="M38,208 L52,208 L52,224 L38,224 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Seam at cuff attachment -->
+  <path d="M38,212 L52,212" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Cuff stitch -->
+  <path d="M40,215 L50,215" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Cuff button -->
+  <circle cx="45" cy="218" r="3" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1"/>
+  <!-- Right cuff -->
+  <path d="M148,208 L162,208 L162,224 L148,224 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M148,212 L162,212" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M150,215 L160,215" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <circle cx="155" cy="218" r="3" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1"/>
+</svg>

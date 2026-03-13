@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Cargo pockets: large patch pockets on outer thighs -->
+  <!-- Left cargo pocket -->
+  <rect x="56" y="100" width="22" height="28" rx="1" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="56" y1="107" x2="78" y2="107" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Pocket flap -->
+  <path d="M56,107 Q67,110 78,107" fill="none" stroke="currentColor" stroke-width="1"/>
+  <!-- Right cargo pocket -->
+  <rect x="122" y="100" width="22" height="28" rx="1" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="122" y1="107" x2="144" y2="107" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M122,107 Q133,110 144,107" fill="none" stroke="currentColor" stroke-width="1"/>
+</svg>

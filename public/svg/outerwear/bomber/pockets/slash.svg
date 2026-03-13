@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Slash pockets: diagonal slash opening at hips -->
+  <!-- Left slash pocket opening -->
+  <path d="M52,155 L78,170" fill="none" stroke="currentColor" stroke-width="2.5"/>
+  <path d="M52,155 L78,170 L79,167 L53,152 Z"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
+  <!-- Right slash pocket opening -->
+  <path d="M148,155 L122,170" fill="none" stroke="currentColor" stroke-width="2.5"/>
+  <path d="M148,155 L122,170 L121,167 L147,152 Z"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
+  <!-- Pocket stitching along slash -->
+  <line x1="53" y1="156" x2="79" y2="171" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="147" y1="156" x2="121" y2="171" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

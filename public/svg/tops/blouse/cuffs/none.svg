@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- No cuff: clean raw or hemmed edge at wrist, no band -->
+  <!-- Left sleeve clean hem edge -->
+  <line x1="36" y1="200" x2="70" y2="200" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="36" y1="204" x2="70" y2="204" stroke="currentColor" stroke-width="0.75" stroke-dasharray="5,3"/>
+  <!-- Right sleeve clean hem edge -->
+  <line x1="130" y1="200" x2="164" y2="200" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="130" y1="204" x2="164" y2="204" stroke="currentColor" stroke-width="0.75" stroke-dasharray="5,3"/>
+</svg>

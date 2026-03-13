@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Bermuda length: hem at ~y170, just above knee -->
+  <path d="M62,38 L62,95 Q100,110 138,95 L138,38 Z" fill="currentColor" fill-opacity="0.07" stroke="none"/>
+  <path d="M62,95 Q70,135 68,170 L62,170 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M138,95 Q130,135 132,170 L138,170 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M62,95 Q100,110 138,95" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M68,170 Q100,180 132,170" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="62" y1="170" x2="68" y2="170" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="132" y1="170" x2="138" y2="170" stroke="currentColor" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Cuffed hem: folded cuff at ankle, visible fold line -->
+  <g fill="currentColor" stroke="currentColor">
+    <!-- Leg above cuff -->
+    <path d="M55,215 L90,215 L90,248 L55,248 Z" fill-opacity="0.07" stroke-width="1.5"/>
+    <path d="M110,215 L145,215 L145,248 L110,248 Z" fill-opacity="0.07" stroke-width="1.5"/>
+    <!-- Cuff fold (slightly wider than leg) -->
+    <path d="M53,248 L92,248 L92,268 L53,268 Z" fill-opacity="0.08" stroke-width="1.5"/>
+    <path d="M108,248 L147,248 L147,268 L108,268 Z" fill-opacity="0.08" stroke-width="1.5"/>
+    <!-- Fold crease line -->
+    <line x1="53" y1="248" x2="92" y2="248" stroke-width="1.5"/>
+    <line x1="108" y1="248" x2="147" y2="248" stroke-width="1.5"/>
+    <!-- Cuff stitch line -->
+    <line x1="55" y1="252" x2="90" y2="252" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="110" y1="252" x2="145" y2="252" stroke-width="1" stroke-dasharray="3,2"/>
+    <!-- Bottom of cuff -->
+    <line x1="53" y1="268" x2="92" y2="268" stroke-width="1.5"/>
+    <line x1="108" y1="268" x2="147" y2="268" stroke-width="1.5"/>
+  </g>
+</svg>

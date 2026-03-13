@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Handkerchief hem: multiple pointed sections, uneven -->
+  <path d="M32,255 L55,280 L78,255 L100,285 L122,255 L145,280 L168,255" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Hem depth fill -->
+  <path d="M32,255 L55,280 L78,255 L100,285 L122,255 L145,280 L168,255 L168,260 L145,285 L122,260 L100,290 L78,260 L55,285 L32,260 Z" fill="currentColor" fill-opacity="0.07" stroke="none"/>
+  <!-- Hem stitch -->
+  <path d="M35,257 L57,281 L79,257 L100,287 L121,257 L143,281 L165,257" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

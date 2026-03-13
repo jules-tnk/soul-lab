@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Sleeveless: just the armhole shape, no sleeve -->
+  <!-- Left armhole curve -->
+  <path d="M62,65 Q48,72 42,88 Q38,102 44,114 L56,114"
+    stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <path d="M62,65 Q48,72 42,88 Q38,102 44,114 L50,114 Q44,102 48,88 Q54,74 65,68 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="none"/>
+  <!-- Right armhole curve -->
+  <path d="M138,65 Q152,72 158,88 Q162,102 156,114 L144,114"
+    stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <path d="M138,65 Q152,72 158,88 Q162,102 156,114 L150,114 Q156,102 152,88 Q146,74 135,68 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="none"/>
+</svg>

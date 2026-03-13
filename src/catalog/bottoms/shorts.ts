@@ -13,9 +13,9 @@ export const shorts: GarmentType = {
       layerOrder: 1,
       defaultVariantId: 'standard',
       variants: [
-        { id: 'standard', nameKey: 'parts.waistband.variants.standard', svgPath: '' },
-        { id: 'high', nameKey: 'parts.waistband.variants.high', svgPath: '' },
-        { id: 'elastic', nameKey: 'parts.waistband.variants.elastic', svgPath: '' },
+        { id: 'standard', nameKey: 'parts.waistband.variants.standard', svgPath: 'bottoms/shorts/waistband/standard.svg' },
+        { id: 'high', nameKey: 'parts.waistband.variants.high', svgPath: 'bottoms/shorts/waistband/high.svg' },
+        { id: 'elastic', nameKey: 'parts.waistband.variants.elastic', svgPath: 'bottoms/shorts/waistband/elastic.svg' },
       ],
     },
     {
@@ -25,9 +25,9 @@ export const shorts: GarmentType = {
       layerOrder: 1,
       defaultVariantId: 'mid',
       variants: [
-        { id: 'high', nameKey: 'parts.rise.variants.high', svgPath: '' },
-        { id: 'mid', nameKey: 'parts.rise.variants.mid', svgPath: '' },
-        { id: 'low', nameKey: 'parts.rise.variants.low', svgPath: '' },
+        { id: 'high', nameKey: 'parts.rise.variants.high', svgPath: 'bottoms/shorts/rise/high.svg' },
+        { id: 'mid', nameKey: 'parts.rise.variants.mid', svgPath: 'bottoms/shorts/rise/mid.svg' },
+        { id: 'low', nameKey: 'parts.rise.variants.low', svgPath: 'bottoms/shorts/rise/low.svg' },
       ],
     },
     {
@@ -37,10 +37,10 @@ export const shorts: GarmentType = {
       layerOrder: 1,
       defaultVariantId: 'mid-thigh',
       variants: [
-        { id: 'short', nameKey: 'parts.length.variants.short', svgPath: '' },
-        { id: 'mid-thigh', nameKey: 'parts.length.variants.mid-thigh', svgPath: '' },
-        { id: 'bermuda', nameKey: 'parts.length.variants.bermuda', svgPath: '' },
-        { id: 'long', nameKey: 'parts.length.variants.long', svgPath: '' },
+        { id: 'short', nameKey: 'parts.length.variants.short', svgPath: 'bottoms/shorts/length/short.svg' },
+        { id: 'mid-thigh', nameKey: 'parts.length.variants.mid-thigh', svgPath: 'bottoms/shorts/length/mid-thigh.svg' },
+        { id: 'bermuda', nameKey: 'parts.length.variants.bermuda', svgPath: 'bottoms/shorts/length/bermuda.svg' },
+        { id: 'long', nameKey: 'parts.length.variants.long', svgPath: 'bottoms/shorts/length/long.svg' },
       ],
     },
     {
@@ -50,10 +50,10 @@ export const shorts: GarmentType = {
       layerOrder: 1,
       defaultVariantId: 'straight',
       variants: [
-        { id: 'straight', nameKey: 'parts.leg-shape.variants.straight', svgPath: '' },
-        { id: 'relaxed', nameKey: 'parts.leg-shape.variants.relaxed', svgPath: '' },
-        { id: 'slim', nameKey: 'parts.leg-shape.variants.slim', svgPath: '' },
-        { id: 'wide', nameKey: 'parts.leg-shape.variants.wide', svgPath: '' },
+        { id: 'straight', nameKey: 'parts.leg-shape.variants.straight', svgPath: 'bottoms/shorts/leg-shape/straight.svg' },
+        { id: 'relaxed', nameKey: 'parts.leg-shape.variants.relaxed', svgPath: 'bottoms/shorts/leg-shape/relaxed.svg' },
+        { id: 'slim', nameKey: 'parts.leg-shape.variants.slim', svgPath: 'bottoms/shorts/leg-shape/slim.svg' },
+        { id: 'wide', nameKey: 'parts.leg-shape.variants.wide', svgPath: 'bottoms/shorts/leg-shape/wide.svg' },
       ],
     },
     {
@@ -63,9 +63,9 @@ export const shorts: GarmentType = {
       layerOrder: 1,
       defaultVariantId: 'straight',
       variants: [
-        { id: 'straight', nameKey: 'parts.hem.variants.straight', svgPath: '' },
-        { id: 'cuffed', nameKey: 'parts.hem.variants.cuffed', svgPath: '' },
-        { id: 'raw', nameKey: 'parts.hem.variants.raw', svgPath: '' },
+        { id: 'straight', nameKey: 'parts.hem.variants.straight', svgPath: 'bottoms/shorts/hem/straight.svg' },
+        { id: 'cuffed', nameKey: 'parts.hem.variants.cuffed', svgPath: 'bottoms/shorts/hem/cuffed.svg' },
+        { id: 'raw', nameKey: 'parts.hem.variants.raw', svgPath: 'bottoms/shorts/hem/raw.svg' },
       ],
     },
     {
@@ -75,10 +75,10 @@ export const shorts: GarmentType = {
       layerOrder: 3,
       defaultVariantId: 'slash',
       variants: [
-        { id: 'slash', nameKey: 'parts.pockets.variants.slash', svgPath: '' },
-        { id: 'cargo', nameKey: 'parts.pockets.variants.cargo', svgPath: '' },
-        { id: 'welt', nameKey: 'parts.pockets.variants.welt', svgPath: '' },
-        { id: 'none', nameKey: 'parts.pockets.variants.none', svgPath: '' },
+        { id: 'slash', nameKey: 'parts.pockets.variants.slash', svgPath: 'bottoms/shorts/pockets/slash.svg' },
+        { id: 'cargo', nameKey: 'parts.pockets.variants.cargo', svgPath: 'bottoms/shorts/pockets/cargo.svg' },
+        { id: 'welt', nameKey: 'parts.pockets.variants.welt', svgPath: 'bottoms/shorts/pockets/welt.svg' },
+        { id: 'none', nameKey: 'parts.pockets.variants.none', svgPath: 'bottoms/shorts/pockets/none.svg' },
       ],
     },
   ],

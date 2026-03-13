@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Three-quarter sleeves: ending mid-forearm -->
+  <!-- Left sleeve 3/4 length -->
+  <path d="M50,115 L28,125 L28,195 L52,195 L54,125 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right sleeve 3/4 length -->
+  <path d="M150,115 L172,125 L172,195 L148,195 L146,125 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Left clean hem edge -->
+  <line x1="28" y1="195" x2="52" y2="195" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right clean hem edge -->
+  <line x1="148" y1="195" x2="172" y2="195" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Stitching at hem -->
+  <line x1="29" y1="192" x2="51" y2="192" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="149" y1="192" x2="171" y2="192" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

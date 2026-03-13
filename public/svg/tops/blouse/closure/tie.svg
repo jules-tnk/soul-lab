@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Tie closure: fabric ties forming a bow at neckline/waist -->
+  <!-- Left tie -->
+  <path d="M100,90 Q80,98 60,94 Q72,100 60,108 Q80,106 100,100 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right tie -->
+  <path d="M100,90 Q120,98 140,94 Q128,100 140,108 Q120,106 100,100 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Knot at center -->
+  <ellipse cx="100" cy="95" rx="5" ry="6" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Center front line below tie -->
+  <line x1="100" y1="101" x2="100" y2="200" stroke="currentColor" stroke-width="1" stroke-dasharray="4,3"/>
+</svg>

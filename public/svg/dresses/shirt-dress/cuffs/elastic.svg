@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Elastic cuff: gathered fabric with elastic band -->
+  <path d="M36,208 L52,208 L52,224 L36,224 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Elastic gather lines -->
+  <path d="M36,211 L52,211" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M36,214 L52,214" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M36,217 L52,217" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M36,220 L52,220" fill="none" stroke="currentColor" stroke-width="1"/>
+  <!-- Gather marks vertical -->
+  <path d="M38,208 C38,212 38,216 38,224" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <path d="M42,208 C42,212 42,216 42,224" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <path d="M46,208 C46,212 46,216 46,224" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <path d="M50,208 C50,212 50,216 50,224" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="2,2"/>
+  <!-- Right cuff -->
+  <path d="M148,208 L164,208 L164,224 L148,224 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M148,211 L164,211" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M148,214 L164,214" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M148,217 L164,217" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M148,220 L164,220" fill="none" stroke="currentColor" stroke-width="1"/>
+</svg>

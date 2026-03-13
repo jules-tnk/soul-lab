@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Slim fit tshirt: narrow through torso, close taper from chest to hem -->
+  <path d="M68,65 L42,85 L38,105 L50,110 L52,250 L148,250 L150,110 L162,105 L158,85 L132,65 Q116,70 100,70 Q84,70 68,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Tight side seam taper lines -->
+  <line x1="52" y1="125" x2="54" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+  <line x1="148" y1="125" x2="146" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Mandarin neckline: short stand-up collar band around neck -->
+  <!-- Outer collar edge -->
+  <path d="M84,38 Q100,34 116,38 L116,52 Q100,48 84,52 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Inner collar fold line -->
+  <path d="M84,52 Q100,56 116,52" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2" fill="none"/>
+  <!-- Center front opening line -->
+  <line x1="100" y1="36" x2="100" y2="56" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

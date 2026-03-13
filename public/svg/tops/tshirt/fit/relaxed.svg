@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Relaxed fit tshirt: wider body, slight ease through sides -->
+  <path d="M60,65 L28,85 L22,108 L38,112 L40,252 L160,252 L162,112 L178,108 L172,85 L140,65 Q120,70 100,70 Q80,70 60,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Slightly outward side seams -->
+  <line x1="40" y1="125" x2="42" y2="247" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+  <line x1="160" y1="125" x2="158" y2="247" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+</svg>

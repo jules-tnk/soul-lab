@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Tea-length pleated skirt: hem at ~y250 -->
+  <path d="M76,43 L53,250 L147,250 L124,43 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="84" y1="43" x2="65" y2="250" stroke="currentColor" stroke-width="1"/>
+  <line x1="92" y1="43" x2="78" y2="250" stroke="currentColor" stroke-width="1"/>
+  <line x1="100" y1="43" x2="100" y2="250" stroke="currentColor" stroke-width="1"/>
+  <line x1="108" y1="43" x2="122" y2="250" stroke="currentColor" stroke-width="1"/>
+  <line x1="116" y1="43" x2="135" y2="250" stroke="currentColor" stroke-width="1"/>
+</svg>

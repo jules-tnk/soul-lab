@@ -13,9 +13,9 @@ export const vest: GarmentType = {
       layerOrder: 0,
       defaultVariantId: 'regular',
       variants: [
-        { id: 'slim', nameKey: 'parts.fit.variants.slim', svgPath: '' },
-        { id: 'regular', nameKey: 'parts.fit.variants.regular', svgPath: '' },
-        { id: 'oversized', nameKey: 'parts.fit.variants.oversized', svgPath: '' },
+        { id: 'slim', nameKey: 'parts.fit.variants.slim', svgPath: 'outerwear/vest/fit/slim.svg' },
+        { id: 'regular', nameKey: 'parts.fit.variants.regular', svgPath: 'outerwear/vest/fit/regular.svg' },
+        { id: 'oversized', nameKey: 'parts.fit.variants.oversized', svgPath: 'outerwear/vest/fit/oversized.svg' },
       ],
     },
     {
@@ -25,9 +25,9 @@ export const vest: GarmentType = {
       layerOrder: 1,
       defaultVariantId: 'hip',
       variants: [
-        { id: 'cropped', nameKey: 'parts.length.variants.cropped', svgPath: '' },
-        { id: 'hip', nameKey: 'parts.length.variants.hip', svgPath: '' },
-        { id: 'long', nameKey: 'parts.length.variants.long', svgPath: '' },
+        { id: 'cropped', nameKey: 'parts.length.variants.cropped', svgPath: 'outerwear/vest/length/cropped.svg' },
+        { id: 'hip', nameKey: 'parts.length.variants.hip', svgPath: 'outerwear/vest/length/hip.svg' },
+        { id: 'long', nameKey: 'parts.length.variants.long', svgPath: 'outerwear/vest/length/long.svg' },
       ],
     },
     {
@@ -37,9 +37,9 @@ export const vest: GarmentType = {
       layerOrder: 2,
       defaultVariantId: 'buttons',
       variants: [
-        { id: 'buttons', nameKey: 'parts.closure.variants.buttons', svgPath: '' },
-        { id: 'zipper', nameKey: 'parts.closure.variants.zipper', svgPath: '' },
-        { id: 'open', nameKey: 'parts.closure.variants.open', svgPath: '' },
+        { id: 'buttons', nameKey: 'parts.closure.variants.buttons', svgPath: 'outerwear/vest/closure/buttons.svg' },
+        { id: 'zipper', nameKey: 'parts.closure.variants.zipper', svgPath: 'outerwear/vest/closure/zipper.svg' },
+        { id: 'open', nameKey: 'parts.closure.variants.open', svgPath: 'outerwear/vest/closure/open.svg' },
       ],
     },
     {
@@ -49,9 +49,9 @@ export const vest: GarmentType = {
       layerOrder: 3,
       defaultVariantId: 'welt',
       variants: [
-        { id: 'welt', nameKey: 'parts.pockets.variants.welt', svgPath: '' },
-        { id: 'flap', nameKey: 'parts.pockets.variants.flap', svgPath: '' },
-        { id: 'none', nameKey: 'parts.pockets.variants.none', svgPath: '' },
+        { id: 'welt', nameKey: 'parts.pockets.variants.welt', svgPath: 'outerwear/vest/pockets/welt.svg' },
+        { id: 'flap', nameKey: 'parts.pockets.variants.flap', svgPath: 'outerwear/vest/pockets/flap.svg' },
+        { id: 'none', nameKey: 'parts.pockets.variants.none', svgPath: 'outerwear/vest/pockets/none.svg' },
       ],
     },
     {
@@ -61,10 +61,10 @@ export const vest: GarmentType = {
       layerOrder: 3,
       defaultVariantId: 'v-neck',
       variants: [
-        { id: 'v-neck', nameKey: 'parts.neckline.variants.v-neck', svgPath: '' },
-        { id: 'round', nameKey: 'parts.neckline.variants.round', svgPath: '' },
-        { id: 'scoop', nameKey: 'parts.neckline.variants.scoop', svgPath: '' },
-        { id: 'mandarin', nameKey: 'parts.neckline.variants.mandarin', svgPath: '' },
+        { id: 'v-neck', nameKey: 'parts.neckline.variants.v-neck', svgPath: 'outerwear/vest/neckline/v-neck.svg' },
+        { id: 'round', nameKey: 'parts.neckline.variants.round', svgPath: 'outerwear/vest/neckline/round.svg' },
+        { id: 'scoop', nameKey: 'parts.neckline.variants.scoop', svgPath: 'outerwear/vest/neckline/scoop.svg' },
+        { id: 'mandarin', nameKey: 'parts.neckline.variants.mandarin', svgPath: 'outerwear/vest/neckline/mandarin.svg' },
       ],
     },
   ],

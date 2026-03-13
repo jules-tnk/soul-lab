@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Cape sleeves: draped cape-like panels flowing from shoulders -->
+  <!-- Left cape panel -->
+  <path d="M62,65 Q40,80 20,100 Q16,116 24,120 Q44,108 66,108 L70,88 L62,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Cape drape fold lines -->
+  <path d="M42,80 Q32,96 28,112" stroke="currentColor" stroke-width="1" stroke-dasharray="4,3" fill="none"/>
+  <!-- Right cape panel -->
+  <path d="M138,65 Q160,80 180,100 Q184,116 176,120 Q156,108 134,108 L130,88 L138,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M158,80 Q168,96 172,112" stroke="currentColor" stroke-width="1" stroke-dasharray="4,3" fill="none"/>
+</svg>

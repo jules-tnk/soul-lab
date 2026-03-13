@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Slash pockets: angled slit pockets at hip on each side -->
+  <g fill="currentColor" stroke="currentColor">
+    <!-- Trouser body context -->
+    <path d="M68,40 L132,40 L138,90 L100,102 L62,90 Z" fill-opacity="0.04" stroke-width="1"/>
+    <path d="M62,90 L100,102 L95,180 L55,180 Z" fill-opacity="0.04" stroke-width="1"/>
+    <path d="M100,102 L138,90 L145,180 L105,180 Z" fill-opacity="0.04" stroke-width="1"/>
+    <!-- Waistband -->
+    <rect x="68" y="35" width="64" height="10" fill-opacity="0.08" stroke-width="1.5"/>
+    <line x1="70" y1="41" x2="130" y2="41" stroke-width="1" stroke-dasharray="3,2"/>
+    <!-- Left slash pocket: angled slit -->
+    <line x1="68" y1="60" x2="80" y2="76" stroke-width="1.5"/>
+    <!-- Left pocket bag outline (ghost) -->
+    <path d="M68,60 L80,76 L84,96 L62,96 L60,72 Z" fill-opacity="0.05" stroke-width="1" stroke-dasharray="2,3"/>
+    <!-- Right slash pocket: angled slit -->
+    <line x1="132" y1="60" x2="120" y2="76" stroke-width="1.5"/>
+    <!-- Right pocket bag outline (ghost) -->
+    <path d="M132,60 L120,76 L116,96 L138,96 L140,72 Z" fill-opacity="0.05" stroke-width="1" stroke-dasharray="2,3"/>
+  </g>
+</svg>

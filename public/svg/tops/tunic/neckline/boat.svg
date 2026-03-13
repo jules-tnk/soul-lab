@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Boat neckline: wide, nearly horizontal neckline spanning shoulder to shoulder -->
+  <path d="M62,48 Q100,56 138,48"
+    stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <path d="M62,48 Q100,56 138,48 L138,52 Q100,60 62,52 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="none"/>
+</svg>

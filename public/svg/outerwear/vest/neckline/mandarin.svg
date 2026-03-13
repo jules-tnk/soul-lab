@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Mandarin neckline vest: short standing collar band -->
+  <path d="M80,62 Q100,54 120,62 L118,48 Q100,41 82,48 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Top edge -->
+  <path d="M82,48 Q100,41 118,48"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Inner edge line -->
+  <path d="M82,60 Q100,53 118,60"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Center gap -->
+  <line x1="100" y1="41" x2="100" y2="62" stroke="currentColor" stroke-width="1"/>
+</svg>

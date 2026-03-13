@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Slim fit cardigan: fitted through torso -->
+  <path d="M72,65 L44,82 L40,105 L54,110 L58,230 L142,230 L146,110 L160,105 L156,82 L128,65 Q114,70 100,70 Q86,70 72,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Side seam tapers -->
+  <line x1="58" y1="128" x2="60" y2="225" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="142" y1="128" x2="140" y2="225" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Center opening -->
+  <line x1="100" y1="70" x2="100" y2="230" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

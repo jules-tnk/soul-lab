@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Funnel collar: high zip-up funnel neck -->
+  <!-- Funnel collar shape - wide at base, narrowing toward chin -->
+  <path d="M70,78 Q100,64 130,78 L128,40 Q100,32 72,40 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Collar top edge -->
+  <path d="M72,40 Q100,32 128,40"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Zipper line up center -->
+  <line x1="100" y1="32" x2="100" y2="78" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Mid detail lines -->
+  <path d="M73,54 Q100,46 127,54"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M72,66 Q100,58 128,66"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Zip pull -->
+  <rect x="96" y="35" width="8" height="6" rx="1" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1"/>
+</svg>

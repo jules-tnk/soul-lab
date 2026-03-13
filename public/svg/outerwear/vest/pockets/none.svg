@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- No pockets on vest: clean front panels -->
+  <!-- Left panel -->
+  <path d="M46,130 L92,130 L92,210 L46,210 Z"
+    fill="currentColor" fill-opacity="0.05" stroke="none"/>
+  <!-- Right panel -->
+  <path d="M108,130 L154,130 L154,210 L108,210 Z"
+    fill="currentColor" fill-opacity="0.05" stroke="none"/>
+</svg>

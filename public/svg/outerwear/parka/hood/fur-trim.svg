@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Fur-trimmed hood: hood with fur or faux fur around opening -->
+  <!-- Hood body -->
+  <path d="M68,65 Q100,12 132,65 Q118,72 100,74 Q82,72 68,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Fur trim around opening edge - fluffy strokes -->
+  <path d="M68,65 Q64,58 67,52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M72,57 Q67,50 70,43" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M78,50 Q74,43 77,37" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M86,44 Q83,37 86,31" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M94,40 Q92,33 95,27" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M100,38 Q100,31 100,25" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M106,40 Q108,33 105,27" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M114,44 Q117,37 114,31" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M122,50 Q126,43 123,37" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M128,57 Q133,50 130,43" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M132,65 Q136,58 133,52" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Hood center seam -->
+  <line x1="100" y1="18" x2="100" y2="65" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

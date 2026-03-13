@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Hidden closure: concealed buttons under placket flap -->
+  <!-- Front placket panel -->
+  <path d="M94,75 L94,210 L106,210 L106,75 Z"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Placket edge stitching -->
+  <line x1="94" y1="78" x2="94" y2="207" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="106" y1="78" x2="106" y2="207" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Hidden buttons (barely visible through placket) -->
+  <circle cx="100" cy="110" r="2.5" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2,1"/>
+  <circle cx="100" cy="135" r="2.5" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2,1"/>
+  <circle cx="100" cy="160" r="2.5" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2,1"/>
+  <circle cx="100" cy="185" r="2.5" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2,1"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Oversized fit blazer: wide boxy silhouette, minimal taper -->
+  <path d="M65,65 L28,90 L22,115 L40,120 L44,265 L156,265 L160,120 L178,115 L172,90 L135,65 Q118,73 100,73 Q82,73 65,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Straight side seam lines indicating boxy cut -->
+  <line x1="44" y1="135" x2="44" y2="260" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="156" y1="135" x2="156" y2="260" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Center front opening line -->
+  <line x1="100" y1="73" x2="100" y2="265" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

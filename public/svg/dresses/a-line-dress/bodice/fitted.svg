@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Fitted bodice: close-fitting upper body with side seams -->
+  <path d="M70,65 C70,65 60,70 58,90 C56,110 55,130 58,150 L142,150 C145,130 144,110 142,90 C140,70 130,65 130,65 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Side seam shaping -->
+  <path d="M58,90 C57,110 57,130 58,150" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M142,90 C143,110 143,130 142,150" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Princess seams -->
+  <path d="M85,65 C84,90 83,120 83,150" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M115,65 C116,90 117,120 117,150" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

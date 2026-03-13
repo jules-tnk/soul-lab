@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- No pockets: clean smooth side panels -->
+  <!-- Left front panel area -->
+  <path d="M48,130 L88,130 L88,215 L48,215 Z"
+    fill="currentColor" fill-opacity="0.05" stroke="none"/>
+  <!-- Right front panel area -->
+  <path d="M112,130 L152,130 L152,215 L112,215 Z"
+    fill="currentColor" fill-opacity="0.05" stroke="none"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Ribbed hem band: thick ribbed waistband at bottom -->
+  <path d="M45,215 L45,240 L155,240 L155,215"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Ribbed texture lines -->
+  <line x1="52" y1="215" x2="52" y2="240" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="62" y1="215" x2="62" y2="240" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="72" y1="215" x2="72" y2="240" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="82" y1="215" x2="82" y2="240" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="92" y1="215" x2="92" y2="240" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="108" y1="215" x2="108" y2="240" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="118" y1="215" x2="118" y2="240" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="128" y1="215" x2="128" y2="240" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="138" y1="215" x2="138" y2="240" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="148" y1="215" x2="148" y2="240" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Band border lines -->
+  <line x1="45" y1="215" x2="155" y2="215" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="45" y1="240" x2="155" y2="240" stroke="currentColor" stroke-width="1.5"/>
+</svg>

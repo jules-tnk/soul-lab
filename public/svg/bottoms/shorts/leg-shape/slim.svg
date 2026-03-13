@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Slim leg: tapers inward toward hem -->
+  <path d="M63,38 L63,95 Q100,110 137,95 L137,38 Z" fill="currentColor" fill-opacity="0.07" stroke="none"/>
+  <!-- Left leg: tapers in -->
+  <path d="M63,95 L66,150 L84,150 Q91,125 81,95 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right leg: tapers in -->
+  <path d="M137,95 L134,150 L116,150 Q109,125 119,95 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M63,95 Q100,110 137,95" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="66" y1="150" x2="84" y2="150" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="116" y1="150" x2="134" y2="150" stroke="currentColor" stroke-width="1.5"/>
+</svg>

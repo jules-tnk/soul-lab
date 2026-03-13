@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Tie cuff: fabric tie closure at wrist -->
+  <!-- Left sleeve end band -->
+  <rect x="36" y="196" width="34" height="8" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Left tie bow -->
+  <path d="M53,196 Q44,190 38,192 Q44,196 38,202 Q44,200 53,196 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M53,196 Q62,190 68,192 Q62,196 68,202 Q62,200 53,196 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <circle cx="53" cy="196" r="2.5" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1"/>
+  <!-- Right sleeve end band -->
+  <rect x="130" y="196" width="34" height="8" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right tie bow -->
+  <path d="M147,196 Q138,190 132,192 Q138,196 132,202 Q138,200 147,196 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M147,196 Q156,190 162,192 Q156,196 162,202 Q156,200 147,196 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <circle cx="147" cy="196" r="2.5" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1"/>
+</svg>

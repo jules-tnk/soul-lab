@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Snap closure: snap fasteners at wrap -->
+  <!-- Waist area -->
+  <path d="M62,148 L138,148 L138,158 L62,158 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Snap stud (outer circle with inner dot) -->
+  <circle cx="80" cy="153" r="5" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="80" cy="153" r="2" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="0.5"/>
+  <!-- Snap socket -->
+  <circle cx="95" cy="153" r="5" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="95" cy="153" r="2.5" fill="none" stroke="currentColor" stroke-width="0.5" stroke-dasharray="1,1"/>
+  <!-- Second snap pair -->
+  <circle cx="110" cy="153" r="5" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="110" cy="153" r="2" fill="currentColor" fill-opacity="0.2" stroke="currentColor" stroke-width="0.5"/>
+</svg>

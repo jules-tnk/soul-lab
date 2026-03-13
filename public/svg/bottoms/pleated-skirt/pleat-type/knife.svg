@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Knife pleats: all folds going same direction, evenly spaced -->
+  <!-- Skirt body -->
+  <path d="M68,43 L60,180 L140,180 L132,43 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Knife pleat lines - all angled same direction -->
+  <line x1="78" y1="43" x2="72" y2="180" stroke="currentColor" stroke-width="1"/>
+  <line x1="86" y1="43" x2="80" y2="180" stroke="currentColor" stroke-width="1"/>
+  <line x1="94" y1="43" x2="88" y2="180" stroke="currentColor" stroke-width="1"/>
+  <line x1="102" y1="43" x2="96" y2="180" stroke="currentColor" stroke-width="1"/>
+  <line x1="110" y1="43" x2="104" y2="180" stroke="currentColor" stroke-width="1"/>
+  <line x1="118" y1="43" x2="112" y2="180" stroke="currentColor" stroke-width="1"/>
+  <line x1="126" y1="43" x2="120" y2="180" stroke="currentColor" stroke-width="1"/>
+</svg>

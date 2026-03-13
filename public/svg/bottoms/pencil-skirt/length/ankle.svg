@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Pencil skirt ankle: hem at ~y262, very slim fitted column -->
+  <path d="M78,43 Q74,120 76,262 L124,262 Q126,120 122,43 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="76" y1="80" x2="124" y2="80" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

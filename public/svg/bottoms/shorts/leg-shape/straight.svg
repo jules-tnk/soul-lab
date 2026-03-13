@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Straight leg: uniform width from hip to hem -->
+  <path d="M62,38 L62,95 Q100,110 138,95 L138,38 Z" fill="currentColor" fill-opacity="0.07" stroke="none"/>
+  <!-- Left leg: straight sides -->
+  <path d="M62,95 L62,150 L80,150 Q90,128 80,95 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right leg: straight sides -->
+  <path d="M138,95 L138,150 L120,150 Q110,128 120,95 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M62,95 Q100,110 138,95" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="62" y1="150" x2="80" y2="150" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="120" y1="150" x2="138" y2="150" stroke="currentColor" stroke-width="1.5"/>
+</svg>

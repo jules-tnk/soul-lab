@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Balloon sleeves: puffed full length, gathered tightly at both shoulder and wrist -->
+  <!-- Left balloon sleeve -->
+  <path d="M62,65 Q38,70 20,88 Q14,110 26,120 Q16,150 18,180 Q24,200 44,200 Q60,198 64,180 Q68,150 66,118 Q76,108 76,88 Q76,72 62,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Gather at shoulder -->
+  <path d="M26,120 Q46,128 66,118" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3,2" fill="none"/>
+  <!-- Gather at wrist -->
+  <path d="M18,180 Q36,190 64,180" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3,2" fill="none"/>
+  <!-- Right balloon sleeve -->
+  <path d="M138,65 Q162,70 180,88 Q186,110 174,120 Q184,150 182,180 Q176,200 156,200 Q140,198 136,180 Q132,150 134,118 Q124,108 124,88 Q124,72 138,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M174,120 Q154,128 134,118" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3,2" fill="none"/>
+  <path d="M182,180 Q164,190 136,180" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3,2" fill="none"/>
+</svg>

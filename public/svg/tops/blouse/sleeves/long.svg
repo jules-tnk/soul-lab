@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Long sleeves: full length reaching to wrist -->
+  <!-- Left sleeve -->
+  <path d="M62,65 L32,88 L27,108 L42,113 L56,200 L70,200 L72,113 L72,88 L62,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right sleeve -->
+  <path d="M138,65 L168,88 L173,108 L158,113 L144,200 L130,200 L128,113 L128,88 L138,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Underarm seam lines -->
+  <line x1="42" y1="113" x2="56" y2="200" stroke="currentColor" stroke-width="0.75" stroke-dasharray="4,3"/>
+  <line x1="158" y1="113" x2="144" y2="200" stroke="currentColor" stroke-width="0.75" stroke-dasharray="4,3"/>
+</svg>

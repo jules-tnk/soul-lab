@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Smocked bodice: gathered elastic fabric texture across bodice -->
+  <path d="M70,65 C65,68 58,74 56,92 C54,112 55,132 58,150 L142,150 C145,132 146,112 144,92 C142,74 135,68 130,65 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Smocking horizontal gather lines -->
+  <path d="M58,78 C70,76 86,75 100,75 C114,75 130,76 142,78" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M57,88 C70,86 86,85 100,85 C114,85 130,86 143,88" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M56,98 C69,96 86,95 100,95 C114,95 131,96 144,98" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M56,108 C69,106 86,105 100,105 C114,105 131,106 144,108" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M56,118 C69,116 86,115 100,115 C114,115 131,116 144,118" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M57,128 C69,126 86,125 100,125 C114,125 131,126 143,128" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M58,138 C70,136 86,135 100,135 C114,135 130,136 142,138" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

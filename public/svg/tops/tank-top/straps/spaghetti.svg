@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Spaghetti straps: very thin delicate straps -->
+  <!-- Left strap -->
+  <line x1="80" y1="65" x2="80" y2="95" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="84" y1="65" x2="84" y2="95" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right strap -->
+  <line x1="120" y1="65" x2="120" y2="95" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="116" y1="65" x2="116" y2="95" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Minimal fill between thin lines -->
+  <path d="M80,65 L84,65 L84,95 L80,95 Z" fill="currentColor" fill-opacity="0.08"/>
+  <path d="M116,65 L120,65 L120,95 L116,95 Z" fill="currentColor" fill-opacity="0.08"/>
+</svg>

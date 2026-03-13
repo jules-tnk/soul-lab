@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Ruffle cuff: ruffled/flounced edge at wrist -->
+  <!-- Left sleeve end -->
+  <rect x="36" y="196" width="34" height="6" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Left ruffle waves below cuff -->
+  <path d="M36,202 Q40,196 44,202 Q48,208 52,202 Q56,196 60,202 Q64,208 70,202"
+    stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <path d="M36,202 Q40,196 44,202 Q48,208 52,202 Q56,196 60,202 Q64,208 70,202 L70,212 Q64,218 60,212 Q56,206 52,212 Q48,218 44,212 Q40,206 36,212 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="none"/>
+  <!-- Right sleeve end -->
+  <rect x="130" y="196" width="34" height="6" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right ruffle waves -->
+  <path d="M130,202 Q134,196 138,202 Q142,208 146,202 Q150,196 154,202 Q158,208 164,202"
+    stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <path d="M130,202 Q134,196 138,202 Q142,208 146,202 Q150,196 154,202 Q158,208 164,202 L164,212 Q158,218 154,212 Q150,206 146,212 Q142,218 138,212 Q134,206 130,212 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="none"/>
+</svg>

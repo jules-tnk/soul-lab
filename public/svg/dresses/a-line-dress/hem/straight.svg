@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Straight hem: clean horizontal line -->
+  <path d="M50,235 L150,235 L150,242 L50,242 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Hem stitch -->
+  <path d="M52,239 L148,239" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

@@ -13,9 +13,9 @@ export const polo: GarmentType = {
       layerOrder: 0,
       defaultVariantId: 'regular',
       variants: [
-        { id: 'slim', nameKey: 'parts.fit.variants.slim', svgPath: '' },
-        { id: 'regular', nameKey: 'parts.fit.variants.regular', svgPath: '' },
-        { id: 'relaxed', nameKey: 'parts.fit.variants.relaxed', svgPath: '' },
+        { id: 'slim', nameKey: 'parts.fit.variants.slim', svgPath: 'tops/polo/fit/slim.svg' },
+        { id: 'regular', nameKey: 'parts.fit.variants.regular', svgPath: 'tops/polo/fit/regular.svg' },
+        { id: 'relaxed', nameKey: 'parts.fit.variants.relaxed', svgPath: 'tops/polo/fit/relaxed.svg' },
       ],
     },
     {
@@ -25,8 +25,8 @@ export const polo: GarmentType = {
       layerOrder: 1,
       defaultVariantId: 'straight',
       variants: [
-        { id: 'straight', nameKey: 'parts.hem.variants.straight', svgPath: '' },
-        { id: 'ribbed', nameKey: 'parts.hem.variants.ribbed', svgPath: '' },
+        { id: 'straight', nameKey: 'parts.hem.variants.straight', svgPath: 'tops/polo/hem/straight.svg' },
+        { id: 'ribbed', nameKey: 'parts.hem.variants.ribbed', svgPath: 'tops/polo/hem/ribbed.svg' },
       ],
     },
     {
@@ -36,9 +36,9 @@ export const polo: GarmentType = {
       layerOrder: 2,
       defaultVariantId: 'standard',
       variants: [
-        { id: 'standard', nameKey: 'parts.placket.variants.standard', svgPath: '' },
-        { id: 'hidden', nameKey: 'parts.placket.variants.hidden', svgPath: '' },
-        { id: 'zipper', nameKey: 'parts.placket.variants.zipper', svgPath: '' },
+        { id: 'standard', nameKey: 'parts.placket.variants.standard', svgPath: 'tops/polo/placket/standard.svg' },
+        { id: 'hidden', nameKey: 'parts.placket.variants.hidden', svgPath: 'tops/polo/placket/hidden.svg' },
+        { id: 'zipper', nameKey: 'parts.placket.variants.zipper', svgPath: 'tops/polo/placket/zipper.svg' },
       ],
     },
     {
@@ -48,9 +48,9 @@ export const polo: GarmentType = {
       layerOrder: 4,
       defaultVariantId: 'classic',
       variants: [
-        { id: 'classic', nameKey: 'parts.collar.variants.classic', svgPath: '' },
-        { id: 'mandarin', nameKey: 'parts.collar.variants.mandarin', svgPath: '' },
-        { id: 'johnny', nameKey: 'parts.collar.variants.johnny', svgPath: '' },
+        { id: 'classic', nameKey: 'parts.collar.variants.classic', svgPath: 'tops/polo/collar/classic.svg' },
+        { id: 'mandarin', nameKey: 'parts.collar.variants.mandarin', svgPath: 'tops/polo/collar/mandarin.svg' },
+        { id: 'johnny', nameKey: 'parts.collar.variants.johnny', svgPath: 'tops/polo/collar/johnny.svg' },
       ],
     },
     {
@@ -60,9 +60,9 @@ export const polo: GarmentType = {
       layerOrder: 5,
       defaultVariantId: 'short',
       variants: [
-        { id: 'short', nameKey: 'parts.sleeves.variants.short', svgPath: '' },
-        { id: 'long', nameKey: 'parts.sleeves.variants.long', svgPath: '' },
-        { id: 'three-quarter', nameKey: 'parts.sleeves.variants.three-quarter', svgPath: '' },
+        { id: 'short', nameKey: 'parts.sleeves.variants.short', svgPath: 'tops/polo/sleeves/short.svg' },
+        { id: 'long', nameKey: 'parts.sleeves.variants.long', svgPath: 'tops/polo/sleeves/long.svg' },
+        { id: 'three-quarter', nameKey: 'parts.sleeves.variants.three-quarter', svgPath: 'tops/polo/sleeves/three-quarter.svg' },
       ],
     },
   ],

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Oversized fit blouse: very wide boxy shape, drops off shoulders -->
+  <path d="M52,62 L15,88 L11,110 L27,115 L29,252 L171,252 L173,115 L189,110 L185,88 L148,62 Q124,69 100,69 Q76,69 52,62 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Outward boxy side seam indicators -->
+  <line x1="29" y1="130" x2="32" y2="248" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+  <line x1="171" y1="130" x2="168" y2="248" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+</svg>

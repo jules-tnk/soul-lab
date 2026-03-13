@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Bell sleeves: fitted at shoulder, flaring wide from elbow downward -->
+  <!-- Left sleeve - narrow at top, bell flare at bottom -->
+  <path d="M62,65 L34,86 L28,110 L40,115 L46,155 L28,215 L72,215 L68,155 L68,113 L68,86 L62,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right sleeve -->
+  <path d="M138,65 L166,86 L172,110 L160,115 L154,155 L172,215 L128,215 L132,155 L132,113 L132,86 L138,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Flare start indicator -->
+  <line x1="40" y1="155" x2="68" y2="155" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="160" y1="155" x2="132" y2="155" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Mock wrap: faux wrap detail, looks wrapped but is not -->
+  <!-- Fake wrap seam, shallow diagonal -->
+  <path d="M75,65 C80,70 88,76 95,82 C97,84 99,86 100,88" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M125,65 C120,70 112,76 105,82 C103,84 101,86 100,88" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Mock stitching to indicate it's non-functional -->
+  <path d="M85,72 C87,76 90,80 92,84" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M115,72 C113,76 110,80 108,84" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M70,68 L75,65" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M130,68 L125,65" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

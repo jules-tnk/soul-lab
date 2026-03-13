@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Long sleeves: full-length set-in sleeves -->
+  <!-- Left sleeve -->
+  <path d="M52,110 L30,120 L28,218 L54,218 L56,120 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right sleeve -->
+  <path d="M148,110 L170,120 L172,218 L146,218 L144,120 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Sleeve seam stitch line -->
+  <line x1="30" y1="120" x2="28" y2="218" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="170" y1="120" x2="172" y2="218" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

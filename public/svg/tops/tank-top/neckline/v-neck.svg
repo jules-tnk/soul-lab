@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- V-neck: V-shaped opening pointing down at center -->
+  <path d="M78,46 L100,82 L122,46"
+    stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <path d="M78,46 L100,82 L122,46 L119,46 L100,78 L81,46 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="none"/>
+</svg>

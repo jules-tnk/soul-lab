@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- High side slits: tall slits from hip level, opening ~60px from hem -->
+  <!-- Left side with high slit -->
+  <line x1="46" y1="140" x2="46" y2="200" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M46,200 L38,260" stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <!-- Right side with high slit -->
+  <line x1="154" y1="140" x2="154" y2="200" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M154,200 L162,260" stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <!-- Hem -->
+  <line x1="38" y1="260" x2="162" y2="260" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Slit gap highlight lines -->
+  <line x1="42" y1="203" x2="39" y2="257" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="158" y1="203" x2="161" y2="257" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

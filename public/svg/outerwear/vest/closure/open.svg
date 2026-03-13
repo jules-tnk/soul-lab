@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Open front vest: no closure, front hangs open -->
+  <!-- Left front edge -->
+  <path d="M100,68 L84,74 L80,235"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right front edge -->
+  <path d="M100,68 L116,74 L120,235"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Open gap -->
+  <line x1="100" y1="68" x2="100" y2="235" stroke="currentColor" stroke-width="1" stroke-dasharray="5,4"/>
+</svg>

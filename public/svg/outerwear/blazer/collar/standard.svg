@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Standard blazer collar: classic collar with collar stand -->
+  <!-- Left collar leaf -->
+  <path d="M100,58 L80,52 L64,70 L84,66 L100,63 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right collar leaf -->
+  <path d="M100,58 L120,52 L136,70 L116,66 L100,63 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Collar stand band -->
+  <path d="M84,58 Q100,54 116,58 L116,63 Q100,59 84,63 Z"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
+</svg>

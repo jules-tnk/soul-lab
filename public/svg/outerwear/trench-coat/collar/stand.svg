@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Stand collar on trench: upright band collar -->
+  <path d="M76,68 Q100,58 124,68 L122,48 Q100,40 78,48 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Mid-collar crease -->
+  <path d="M78,58 Q100,50 122,58"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Top edge stitching -->
+  <path d="M78,50 Q100,42 122,50"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Center front gap -->
+  <line x1="100" y1="40" x2="100" y2="68" stroke="currentColor" stroke-width="1"/>
+</svg>

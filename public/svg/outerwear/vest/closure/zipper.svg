@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Zipper closure on vest: center front zipper -->
+  <!-- Zipper tapes -->
+  <path d="M97,68 L97,232" fill="none" stroke="currentColor" stroke-width="2.5" stroke-opacity="0.15"/>
+  <path d="M103,68 L103,232" fill="none" stroke="currentColor" stroke-width="2.5" stroke-opacity="0.15"/>
+  <!-- Zipper teeth -->
+  <line x1="97" y1="82" x2="103" y2="89" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="97" y1="100" x2="103" y2="107" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="97" y1="118" x2="103" y2="125" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="97" y1="136" x2="103" y2="143" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="97" y1="154" x2="103" y2="161" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="97" y1="172" x2="103" y2="179" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="97" y1="190" x2="103" y2="197" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="97" y1="208" x2="103" y2="215" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Zipper pull -->
+  <rect x="94" y="63" width="12" height="7" rx="1.5" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+</svg>

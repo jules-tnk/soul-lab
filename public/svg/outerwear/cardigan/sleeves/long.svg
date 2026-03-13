@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Long sleeves on cardigan: full-length to wrist -->
+  <!-- Left sleeve -->
+  <path d="M52,110 L30,122 L28,240 L54,240 L58,122 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right sleeve -->
+  <path d="M148,110 L170,122 L172,240 L146,240 L142,122 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Ribbed cuffs -->
+  <rect x="28" y="232" width="26" height="10" fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
+  <rect x="146" y="232" width="26" height="10" fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
+  <!-- Cuff rib lines -->
+  <line x1="33" y1="232" x2="33" y2="242" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="38" y1="232" x2="38" y2="242" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="43" y1="232" x2="43" y2="242" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="151" y1="232" x2="151" y2="242" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="156" y1="232" x2="156" y2="242" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="161" y1="232" x2="161" y2="242" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="166" y1="232" x2="166" y2="242" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+</svg>

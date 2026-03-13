@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Bootcut leg: fitted through thigh, slight flare from knee -->
+  <g fill="currentColor" stroke="currentColor">
+    <path d="M68,40 L132,40 L138,90 L100,102 L62,90 Z" fill-opacity="0.07" stroke-width="1.5"/>
+    <!-- Left leg: fitted thigh, gentle flare at knee (y≈170) -->
+    <path d="M62,90 L100,102 L94,170 L84,262 L56,262 L63,170 Z" fill-opacity="0.07" stroke-width="1.5"/>
+    <!-- Right leg: fitted thigh, gentle flare at knee -->
+    <path d="M100,102 L138,90 L137,170 L144,262 L116,262 L106,170 Z" fill-opacity="0.07" stroke-width="1.5"/>
+    <!-- Waistband -->
+    <rect x="68" y="35" width="64" height="10" fill-opacity="0.08" stroke-width="1.5"/>
+    <line x1="70" y1="41" x2="130" y2="41" stroke-width="1" stroke-dasharray="3,2"/>
+    <!-- Hem lines showing slight width -->
+    <line x1="56" y1="262" x2="84" y2="262" stroke-width="1.5"/>
+    <line x1="116" y1="262" x2="144" y2="262" stroke-width="1.5"/>
+  </g>
+</svg>

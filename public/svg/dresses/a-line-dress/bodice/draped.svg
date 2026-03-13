@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Draped bodice: flowing fabric folds -->
+  <path d="M70,65 C65,68 58,72 56,92 C54,112 56,132 58,150 L142,150 C144,132 146,112 144,92 C142,72 135,68 130,65 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Drape fold lines -->
+  <path d="M80,68 C90,80 95,100 92,120 C89,138 85,148 84,150" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M100,66 C108,82 110,102 108,122 C106,140 103,148 102,150" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M115,68 C120,84 122,104 120,124 C118,140 116,148 116,150" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Regular fit blazer: comfortable through torso, moderate taper -->
+  <path d="M68,65 L35,88 L30,112 L46,117 L50,260 L150,260 L154,117 L170,112 L165,88 L132,65 Q116,72 100,72 Q84,72 68,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Gentle side seam lines -->
+  <line x1="50" y1="135" x2="52" y2="255" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="150" y1="135" x2="148" y2="255" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Center front opening line -->
+  <line x1="100" y1="72" x2="100" y2="260" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Oversized cardigan: very wide boxy fit -->
+  <path d="M66,65 L28,88 L22,115 L40,120 L44,235 L156,235 L160,120 L178,115 L172,88 L134,65 Q117,73 100,73 Q83,73 66,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Straight side seam (boxy) -->
+  <line x1="44" y1="135" x2="44" y2="230" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="156" y1="135" x2="156" y2="230" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Center opening -->
+  <line x1="100" y1="73" x2="100" y2="235" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

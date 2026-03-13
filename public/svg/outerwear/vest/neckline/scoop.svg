@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Scoop neckline vest: deeper rounded scoop -->
+  <!-- Deep scoop curve -->
+  <path d="M76,58 Q100,88 124,58"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Neckband trim -->
+  <path d="M76,58 Q100,92 124,58 L122,54 Q100,84 78,54 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Inner stitching -->
+  <path d="M78,56 Q100,86 122,56"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

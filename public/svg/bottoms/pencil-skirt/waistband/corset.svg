@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Corset waistband: laced and boned tall waist panel -->
+  <rect x="68" y="22" width="64" height="28" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Boning lines -->
+  <line x1="80" y1="22" x2="80" y2="50" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="94" y1="22" x2="94" y2="50" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="106" y1="22" x2="106" y2="50" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="120" y1="22" x2="120" y2="50" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Lacing at center -->
+  <line x1="100" y1="24" x2="100" y2="48" stroke="currentColor" stroke-width="1"/>
+  <line x1="97" y1="28" x2="103" y2="28" stroke="currentColor" stroke-width="1"/>
+  <line x1="97" y1="33" x2="103" y2="33" stroke="currentColor" stroke-width="1"/>
+  <line x1="97" y1="38" x2="103" y2="38" stroke="currentColor" stroke-width="1"/>
+  <line x1="97" y1="43" x2="103" y2="43" stroke="currentColor" stroke-width="1"/>
+</svg>

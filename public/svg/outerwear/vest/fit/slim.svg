@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Slim fit vest: fitted torso, narrow silhouette, no sleeves -->
+  <path d="M74,65 L48,88 L46,220 L154,220 L152,88 L126,65 Q113,72 100,72 Q87,72 74,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Armhole curves (no sleeves) -->
+  <path d="M74,65 Q60,75 48,88" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M126,65 Q140,75 152,88" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Side seam taper -->
+  <line x1="46" y1="130" x2="48" y2="215" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="154" y1="130" x2="152" y2="215" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Center front line -->
+  <line x1="100" y1="72" x2="100" y2="220" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

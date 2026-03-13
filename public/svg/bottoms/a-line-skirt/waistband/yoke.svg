@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Yoke waistband: shaped panel, wider and contoured -->
+  <path d="M68,28 Q100,22 132,28 L134,52 Q100,46 66,52 Z" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M68,40 Q100,34 132,40" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

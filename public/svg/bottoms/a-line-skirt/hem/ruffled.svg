@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Ruffled hem: wavy hem at bottom of skirt -->
+  <path d="M52,175 Q60,185 68,175 Q76,185 84,175 Q92,185 100,175 Q108,185 116,175 Q124,185 132,175 Q140,185 148,175" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Ruffle depth lines -->
+  <path d="M52,178 Q60,188 68,178 Q76,188 84,178 Q92,188 100,178 Q108,188 116,178 Q124,188 132,178 Q140,188 148,178" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1"/>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Button fly jeans: exposed row of buttons at center front, no zipper -->
+  <g fill="currentColor" stroke="currentColor">
+    <!-- Jeans front body context -->
+    <path d="M68,40 L132,40 L136,90 L100,100 L64,90 Z" fill-opacity="0.04" stroke-width="1"/>
+    <!-- Denim waistband -->
+    <rect x="68" y="35" width="64" height="10" fill-opacity="0.08" stroke-width="1.5"/>
+    <line x1="70" y1="38" x2="130" y2="38" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="70" y1="42" x2="130" y2="42" stroke-width="1" stroke-dasharray="3,2"/>
+    <!-- Fly placket -->
+    <path d="M96,45 L104,45 L105,88 L95,88 Z" fill-opacity="0.07" stroke-width="1"/>
+    <!-- Fly stitch (straight down) -->
+    <line x1="104" y1="46" x2="104" y2="87" stroke-width="1" stroke-dasharray="3,2"/>
+    <!-- Button row (5 buttons typical for button fly) -->
+    <circle cx="100" cy="41" r="3" fill-opacity="0.08" stroke-width="1.5"/>
+    <!-- Shank buttons with cross detail -->
+    <circle cx="100" cy="51" r="3" fill-opacity="0.08" stroke-width="1.5"/>
+    <line x1="98" y1="51" x2="102" y2="51" stroke-width="1"/>
+    <circle cx="100" cy="61" r="3" fill-opacity="0.08" stroke-width="1.5"/>
+    <line x1="98" y1="61" x2="102" y2="61" stroke-width="1"/>
+    <circle cx="100" cy="71" r="3" fill-opacity="0.08" stroke-width="1.5"/>
+    <line x1="98" y1="71" x2="102" y2="71" stroke-width="1"/>
+    <circle cx="100" cy="81" r="3" fill-opacity="0.08" stroke-width="1.5"/>
+    <line x1="98" y1="81" x2="102" y2="81" stroke-width="1"/>
+    <!-- Button holes on placket -->
+    <line x1="97" y1="51" x2="97" y2="55" stroke-width="1"/>
+    <line x1="97" y1="61" x2="97" y2="65" stroke-width="1"/>
+    <line x1="97" y1="71" x2="97" y2="75" stroke-width="1"/>
+    <line x1="97" y1="81" x2="97" y2="85" stroke-width="1"/>
+  </g>
+</svg>

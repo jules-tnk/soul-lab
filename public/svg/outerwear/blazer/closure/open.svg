@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Open front: no closure, lapels fall open -->
+  <!-- Left front panel angled open -->
+  <path d="M100,75 L78,85 L72,200 L100,200 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right front panel angled open -->
+  <path d="M100,75 L122,85 L128,200 L100,200 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Open front gap indication -->
+  <line x1="100" y1="75" x2="100" y2="200" stroke="currentColor" stroke-width="1" stroke-dasharray="4,3"/>
+</svg>

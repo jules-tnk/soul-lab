@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Knee length tunic: hem falls at knee, approximately y270 -->
+  <path d="M46,110 L46,272 L154,272 L154,110"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Hem indicator band -->
+  <path d="M46,266 L46,276 L154,276 L154,266 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1"/>
+  <line x1="46" y1="271" x2="154" y2="271" stroke="currentColor" stroke-width="1" stroke-dasharray="4,3"/>
+</svg>

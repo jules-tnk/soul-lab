@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Classic wide trench collar: large folded collar spread wide -->
+  <!-- Left collar wing -->
+  <path d="M100,62 L72,55 L52,80 L76,85 L100,75 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right collar wing -->
+  <path d="M100,62 L128,55 L148,80 L124,85 L100,75 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Collar fold line -->
+  <path d="M76,85 Q88,78 100,75 Q112,78 124,85"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Collar stand band -->
+  <path d="M82,62 Q100,56 118,62 L118,68 Q100,62 82,68 Z"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
+</svg>

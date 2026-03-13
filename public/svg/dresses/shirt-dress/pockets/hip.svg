@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Hip pockets: side seam or patch pockets at hip level -->
+  <!-- Left hip pocket -->
+  <path d="M58,170 C60,168 65,166 72,166 L72,190 C65,190 60,188 58,186 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Pocket opening line -->
+  <path d="M58,172 C62,169 68,167 72,167" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right hip pocket -->
+  <path d="M142,170 C140,168 135,166 128,166 L128,190 C135,190 140,188 142,186 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M142,172 C138,169 132,167 128,167" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>

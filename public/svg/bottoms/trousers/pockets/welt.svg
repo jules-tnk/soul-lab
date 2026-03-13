@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Welt pockets: horizontal slit with fabric welt strip at hip -->
+  <g fill="currentColor" stroke="currentColor">
+    <!-- Trouser body context -->
+    <path d="M68,40 L132,40 L138,90 L100,102 L62,90 Z" fill-opacity="0.04" stroke-width="1"/>
+    <path d="M62,90 L100,102 L95,180 L55,180 Z" fill-opacity="0.04" stroke-width="1"/>
+    <path d="M100,102 L138,90 L145,180 L105,180 Z" fill-opacity="0.04" stroke-width="1"/>
+    <!-- Waistband -->
+    <rect x="68" y="35" width="64" height="10" fill-opacity="0.08" stroke-width="1.5"/>
+    <line x1="70" y1="41" x2="130" y2="41" stroke-width="1" stroke-dasharray="3,2"/>
+    <!-- Left welt pocket: horizontal slit with welt strip -->
+    <rect x="62" y="68" width="22" height="5" fill-opacity="0.08" stroke-width="1"/>
+    <line x1="62" y1="70" x2="84" y2="70" stroke-width="1.5"/>
+    <!-- Left pocket stitch -->
+    <line x1="63" y1="72" x2="83" y2="72" stroke-width="1" stroke-dasharray="3,2"/>
+    <!-- Right welt pocket -->
+    <rect x="116" y="68" width="22" height="5" fill-opacity="0.08" stroke-width="1"/>
+    <line x1="116" y1="70" x2="138" y2="70" stroke-width="1.5"/>
+    <!-- Right pocket stitch -->
+    <line x1="117" y1="72" x2="137" y2="72" stroke-width="1" stroke-dasharray="3,2"/>
+    <!-- Back welt pocket indication (center) -->
+    <rect x="87" y="62" width="26" height="5" fill-opacity="0.07" stroke-width="1"/>
+    <line x1="87" y1="64" x2="113" y2="64" stroke-width="1.5"/>
+  </g>
+</svg>

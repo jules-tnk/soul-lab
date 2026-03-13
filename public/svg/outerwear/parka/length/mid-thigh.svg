@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Mid-thigh parka: hem at mid-thigh -->
+  <path d="M62,68 L26,95 L22,120 L40,125 L44,235 L156,235 L160,125 L178,120 L174,95 L138,68 Q119,76 100,76 Q81,76 62,68 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Center zipper line -->
+  <line x1="100" y1="76" x2="100" y2="235" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Hem stitching -->
+  <line x1="45" y1="232" x2="155" y2="232" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

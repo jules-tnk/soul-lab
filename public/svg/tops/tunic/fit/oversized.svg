@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Oversized fit tunic: very wide, boxy, dropped shoulders -->
+  <path d="M58,68 L32,88 L25,115 L35,120 L38,260 L162,260 L165,120 L175,115 L168,88 L142,68 Q122,76 100,76 Q78,76 58,68 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="38" y1="130" x2="42" y2="255" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="162" y1="130" x2="158" y2="255" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Regular fit cardigan: relaxed through torso -->
+  <path d="M70,65 L40,84 L36,108 L52,113 L56,230 L144,230 L148,113 L164,108 L160,84 L130,65 Q115,71 100,71 Q85,71 70,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Center opening -->
+  <line x1="100" y1="71" x2="100" y2="230" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

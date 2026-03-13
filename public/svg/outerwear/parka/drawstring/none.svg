@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- No drawstring: clean uncinched silhouette -->
+  <!-- Waist area clean -->
+  <path d="M40,150 L160,150 L160,175 L40,175 Z"
+    fill="currentColor" fill-opacity="0.05" stroke="none"/>
+  <!-- Subtle side seams -->
+  <line x1="40" y1="150" x2="40" y2="175" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="160" y1="150" x2="160" y2="175" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

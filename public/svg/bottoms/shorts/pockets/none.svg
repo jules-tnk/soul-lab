@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- No pockets: clean side seams only -->
+  <line x1="62" y1="38" x2="62" y2="95" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="138" y1="38" x2="138" y2="95" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

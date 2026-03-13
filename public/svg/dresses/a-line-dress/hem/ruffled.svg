@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Ruffled hem: wavy bottom edge with ruffle layer -->
+  <path d="M48,225 L152,225 L152,230 C145,230 140,235 135,238 C130,241 125,236 120,233 C115,230 110,235 105,238 C100,241 95,236 90,233 C85,230 80,235 75,238 C70,241 65,236 60,233 C55,230 50,235 48,238 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Ruffle gather marks -->
+  <path d="M60,225 C60,228 59,231 60,234" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M80,225 C80,228 79,231 80,234" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M100,225 C100,228 99,231 100,234" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M120,225 C120,228 119,231 120,234" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M140,225 C140,228 139,231 140,234" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

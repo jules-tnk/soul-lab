@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- D-ring closure: metal D-ring at waist -->
+  <!-- Waist band -->
+  <path d="M62,148 L138,148 L138,158 L62,158 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- D-ring hardware (two D-rings side by side) -->
+  <path d="M78,146 C74,146 72,148 72,153 C72,158 74,160 78,160" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <line x1="78" y1="146" x2="78" y2="160" stroke="currentColor" stroke-width="2"/>
+  <path d="M85,146 C81,146 79,148 79,153 C79,158 81,160 85,160" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <line x1="85" y1="146" x2="85" y2="160" stroke="currentColor" stroke-width="2"/>
+  <!-- Fabric strap through rings -->
+  <path d="M62,150 L72,150" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M62,155 L72,155" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>

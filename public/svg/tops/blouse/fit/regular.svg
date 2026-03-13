@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Regular fit blouse: standard relaxed shape, gentle silhouette -->
+  <path d="M62,65 L32,88 L27,108 L42,113 L43,250 L157,250 L158,113 L173,108 L168,88 L138,65 Q119,71 100,71 Q81,71 62,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Straight side seam indicators -->
+  <line x1="43" y1="128" x2="43" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+  <line x1="157" y1="128" x2="157" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+</svg>

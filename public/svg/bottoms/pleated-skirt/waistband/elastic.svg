@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Elastic waistband for pleated skirt: gather texture lines -->
+  <rect x="66" y="33" width="68" height="10" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="68" y1="36" x2="132" y2="36" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="68" y1="40" x2="132" y2="40" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+</svg>

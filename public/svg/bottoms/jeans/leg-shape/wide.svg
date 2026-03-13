@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Wide leg jeans: generous width from hip through to hem -->
+  <g fill="currentColor" stroke="currentColor">
+    <!-- Body -->
+    <path d="M62,40 L138,40 L146,90 L100,104 L54,90 Z" fill-opacity="0.07" stroke-width="1.5"/>
+    <!-- Left leg: wide -->
+    <path d="M54,90 L100,104 L92,262 L42,262 Z" fill-opacity="0.07" stroke-width="1.5"/>
+    <!-- Right leg: wide -->
+    <path d="M100,104 L146,90 L158,262 L108,262 Z" fill-opacity="0.07" stroke-width="1.5"/>
+    <!-- Denim waistband -->
+    <rect x="62" y="35" width="76" height="10" fill-opacity="0.08" stroke-width="1.5"/>
+    <line x1="64" y1="38" x2="136" y2="38" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="64" y1="42" x2="136" y2="42" stroke-width="1" stroke-dasharray="3,2"/>
+    <!-- Hem wide -->
+    <line x1="42" y1="262" x2="92" y2="262" stroke-width="1.5"/>
+    <line x1="108" y1="262" x2="158" y2="262" stroke-width="1.5"/>
+    <!-- Inseam -->
+    <line x1="100" y1="106" x2="92" y2="260" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="100" y1="106" x2="108" y2="260" stroke-width="1" stroke-dasharray="3,2"/>
+  </g>
+</svg>

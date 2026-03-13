@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Halter straps: straps from upper chest sides going up and behind neck -->
+  <!-- Left strap going to neck center -->
+  <path d="M68,82 L68,75 L96,46 L100,46"
+    stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/>
+  <!-- Right strap going to neck center -->
+  <path d="M132,82 L132,75 L104,46 L100,46"
+    stroke="currentColor" stroke-width="2" fill="none" stroke-linejoin="round"/>
+  <!-- Neck tie suggestion -->
+  <path d="M96,44 Q100,42 104,44" stroke="currentColor" stroke-width="1.5" fill="none"/>
+</svg>

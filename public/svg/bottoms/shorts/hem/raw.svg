@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Raw hem: irregular/frayed edge -->
+  <!-- Left leg raw hem -->
+  <path d="M62,150 Q65,152 68,149 Q71,152 74,150 Q77,153 80,150 Q82,152 82,150" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right leg raw hem -->
+  <path d="M118,150 Q121,152 124,149 Q127,152 130,150 Q133,153 136,150 Q138,152 138,150" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Standard back: normal back panel, straight across shoulder line -->
+  <path d="M68,65 L50,78 L44,95 L53,250 L147,250 L156,95 L150,78 L132,65 Q116,70 100,70 Q84,70 68,65 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Back neckline hint -->
+  <path d="M78,65 Q100,60 122,65" stroke="currentColor" stroke-width="1" fill="none" stroke-dasharray="3,2"/>
+</svg>

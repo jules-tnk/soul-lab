@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Wrap dress above-knee skirt: diagonal hem from wrap -->
+  <path d="M66,155 C58,162 50,170 46,190 L154,190 C150,170 142,162 134,155 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Diagonal front wrap seam line in skirt -->
+  <path d="M100,155 L88,190" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M48,188 L152,188" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

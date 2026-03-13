@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Strapless: horizontal band at top of bodice -->
+  <path d="M60,72 C72,68 86,66 100,66 C114,66 128,68 140,72 L140,80 C128,78 114,76 100,76 C86,76 72,78 60,80 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Top edge -->
+  <path d="M60,72 C75,68 88,66 100,66 C112,66 125,68 140,72" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Stitch line -->
+  <path d="M62,75 C77,71 90,69 100,69 C110,69 123,71 138,75" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Boning marks -->
+  <line x1="80" y1="68" x2="80" y2="79" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="100" y1="67" x2="100" y2="79" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="120" y1="68" x2="120" y2="79" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

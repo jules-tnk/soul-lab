@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Ankle trench: full-length to ankle -->
+  <path d="M65,65 L30,90 L26,115 L40,120 L44,290 L156,290 L160,120 L174,115 L170,90 L135,65 Q118,73 100,73 Q82,73 65,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Center front line -->
+  <line x1="100" y1="73" x2="100" y2="290" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Hem stitching -->
+  <line x1="45" y1="287" x2="155" y2="287" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

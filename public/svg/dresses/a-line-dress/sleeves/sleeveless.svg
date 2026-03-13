@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Sleeveless: shoulder straps or armhole only -->
+  <!-- Armhole curves -->
+  <path d="M68,68 C62,72 58,80 58,90" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M132,68 C138,72 142,80 142,90" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Armhole facing stitch -->
+  <path d="M66,69 C60,73 56,81 56,91" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M134,69 C140,73 144,81 144,91" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Shoulder lines -->
+  <path d="M68,68 L85,65" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M132,68 L115,65" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

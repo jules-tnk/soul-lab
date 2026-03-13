@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Johnny collar: open V-shaped collar with narrow pointed lapels, no stand -->
+  <!-- Left lapel -->
+  <path d="M100,72 L84,58 L76,68 L92,75 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right lapel -->
+  <path d="M100,72 L116,58 L124,68 L108,75 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- V opening line -->
+  <line x1="100" y1="60" x2="100" y2="82" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

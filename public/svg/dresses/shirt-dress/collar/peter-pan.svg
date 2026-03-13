@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Peter Pan collar: flat, round-edged collar -->
+  <!-- Left collar leaf (rounded) -->
+  <path d="M80,66 C72,68 64,72 60,80 C66,82 76,80 84,76 C84,72 82,68 80,66 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Right collar leaf (rounded) -->
+  <path d="M120,66 C128,68 136,72 140,80 C134,82 124,80 116,76 C116,72 118,68 120,66 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Neck band -->
+  <path d="M80,66 C88,62 94,60 100,60 C106,60 112,62 120,66" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Collar stitching -->
+  <path d="M62,78 C68,80 76,79 83,76" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M138,78 C132,80 124,79 117,76" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Side slit: opening on the side seam -->
+  <line x1="78" y1="180" x2="122" y2="180" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right side slit opening -->
+  <line x1="122" y1="180" x2="122" y2="150" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="116" y1="150" x2="116" y2="180" stroke="currentColor" stroke-width="1"/>
+  <line x1="116" y1="150" x2="122" y2="150" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

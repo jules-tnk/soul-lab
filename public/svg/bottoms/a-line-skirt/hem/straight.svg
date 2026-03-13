@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Straight hem: clean horizontal line -->
+  <line x1="52" y1="180" x2="148" y2="180" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="53" y1="177" x2="147" y2="177" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

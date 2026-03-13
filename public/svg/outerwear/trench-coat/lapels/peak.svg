@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Peak lapels on trench coat: pointed tips facing up -->
+  <!-- Left peak lapel -->
+  <path d="M100,70 L70,75 L52,100 L76,92 L80,114 L100,98 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right peak lapel -->
+  <path d="M100,70 L130,75 L148,100 L124,92 L120,114 L100,98 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Peak tip lines -->
+  <line x1="52" y1="100" x2="76" y2="92" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="148" y1="100" x2="124" y2="92" stroke="currentColor" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Short polo sleeves: end at mid-upper arm with ribbed hem band -->
+  <!-- Left sleeve -->
+  <path d="M62,68 L32,90 L30,108 L44,112 L60,128 L74,128 L74,90 L62,68 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right sleeve -->
+  <path d="M138,68 L168,90 L170,108 L156,112 L140,128 L126,128 L126,90 L138,68 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Ribbed hem band at sleeve bottom -->
+  <line x1="44" y1="122" x2="74" y2="122" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="44" y1="125" x2="74" y2="125" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="126" y1="122" x2="156" y2="122" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="126" y1="125" x2="156" y2="125" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

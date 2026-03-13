@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Double-breasted: wide overlap, two columns of buttons -->
+  <!-- Left overlap panel -->
+  <path d="M100,75 L68,84 L64,210 L100,210 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right panel -->
+  <path d="M100,75 L124,84 L126,210 L100,210 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Left button column -->
+  <circle cx="85" cy="108" r="4" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="85" cy="130" r="4" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="85" cy="152" r="4" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right button column -->
+  <circle cx="110" cy="108" r="4" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="110" cy="130" r="4" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="110" cy="152" r="4" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+</svg>

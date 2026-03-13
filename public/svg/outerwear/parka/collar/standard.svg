@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Standard parka collar: modest stand-up collar -->
+  <path d="M76,70 Q100,62 124,70 L122,54 Q100,47 78,54 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Collar inner edge -->
+  <path d="M78,68 Q100,61 122,68"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Top edge -->
+  <path d="M78,54 Q100,47 122,54"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Kangaroo pocket on cardigan: single front pouch -->
+  <!-- Kangaroo pouch -->
+  <path d="M60,155 Q100,149 140,155 L140,198 Q100,204 60,198 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Opening edge -->
+  <path d="M60,155 Q100,151 140,155"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Center seam -->
+  <line x1="100" y1="155" x2="100" y2="198" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Stitching edge -->
+  <path d="M62,157 Q100,153 138,157 L138,196 Q100,200 62,196 Z"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

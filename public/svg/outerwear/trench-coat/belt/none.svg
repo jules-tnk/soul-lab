@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- No belt: clean waist, no belt detail -->
+  <!-- Waist area clean panel -->
+  <path d="M42,145 L158,145 L158,175 L42,175 Z"
+    fill="currentColor" fill-opacity="0.05" stroke="none"/>
+  <!-- Subtle waist seam line -->
+  <line x1="42" y1="160" x2="158" y2="160" stroke="currentColor" stroke-width="1" stroke-dasharray="4,4"/>
+</svg>

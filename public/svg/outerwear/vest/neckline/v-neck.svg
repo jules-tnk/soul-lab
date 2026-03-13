@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- V-neck vest: deep V neckline -->
+  <!-- Left front panel creating V -->
+  <path d="M100,55 L80,62 L78,105 L100,118 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right front panel -->
+  <path d="M100,55 L120,62 L122,105 L100,118 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- V outline -->
+  <path d="M80,62 L100,118 L120,62"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Trim stitching -->
+  <path d="M82,64 L100,115 L118,64"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

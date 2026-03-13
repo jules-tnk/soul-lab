@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Short length: hem at ~y120, wide silhouette -->
+  <path d="M62,38 L62,95 Q100,110 138,95 L138,38 Z" fill="currentColor" fill-opacity="0.07" stroke="none"/>
+  <!-- Left leg -->
+  <path d="M62,95 Q80,108 80,120 L62,120 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right leg -->
+  <path d="M138,95 Q120,108 120,120 L138,120 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Crotch seam -->
+  <path d="M62,95 Q100,110 138,95" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Inseam -->
+  <path d="M80,120 Q100,128 120,120" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Hem lines -->
+  <line x1="62" y1="120" x2="80" y2="120" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="120" y1="120" x2="138" y2="120" stroke="currentColor" stroke-width="1.5"/>
+</svg>

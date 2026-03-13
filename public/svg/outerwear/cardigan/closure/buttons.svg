@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Button closure cardigan: row of buttons down center front -->
+  <!-- Button band left -->
+  <rect x="92" y="68" width="8" height="180" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1"/>
+  <!-- Button band right -->
+  <rect x="100" y="68" width="8" height="180" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1"/>
+  <!-- Buttons -->
+  <circle cx="100" cy="88" r="4" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="100" cy="110" r="4" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="100" cy="132" r="4" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="100" cy="154" r="4" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="100" cy="176" r="4" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="100" cy="198" r="4" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="100" cy="220" r="4" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+</svg>

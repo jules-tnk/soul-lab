@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Long sleeves: full length to wrist with ribbed cuffs -->
+  <!-- Left sleeve -->
+  <path d="M63,65 L35,85 L28,108 L42,113 L56,202 L72,202 L74,113 L74,90 L63,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right sleeve -->
+  <path d="M137,65 L165,85 L172,108 L158,113 L144,202 L128,202 L126,113 L126,90 L137,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Cuff rib lines at wrist -->
+  <line x1="42" y1="198" x2="72" y2="198" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="128" y1="198" x2="158" y2="198" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

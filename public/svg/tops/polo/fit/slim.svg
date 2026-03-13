@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Slim fit polo: tapered torso, fitted through chest and waist -->
+  <path d="M67,68 L37,90 L32,110 L46,114 L49,248 L151,248 L154,114 L168,110 L163,90 L133,68 Q116,73 100,73 Q84,73 67,68 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Side seam taper indicators -->
+  <line x1="49" y1="132" x2="51" y2="243" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+  <line x1="151" y1="132" x2="149" y2="243" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+</svg>

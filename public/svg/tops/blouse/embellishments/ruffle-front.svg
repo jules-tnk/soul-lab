@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Ruffle front: vertical ruffle cascade down center front -->
+  <!-- Center ruffle column -->
+  <path d="M96,75 L96,195 L104,195 L104,75 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="none"/>
+  <!-- Left ruffle waves -->
+  <path d="M96,80 Q88,88 96,96 Q88,104 96,112 Q88,120 96,128 Q88,136 96,144 Q88,152 96,160 Q88,168 96,176 Q88,184 96,192"
+    stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <!-- Right ruffle waves -->
+  <path d="M104,80 Q112,88 104,96 Q112,104 104,112 Q112,120 104,128 Q112,136 104,144 Q112,152 104,160 Q112,168 104,176 Q112,184 104,192"
+    stroke="currentColor" stroke-width="1.5" fill="none"/>
+</svg>

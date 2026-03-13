@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Rolled sleeves: long sleeve with rolled cuff detail -->
+  <path d="M60,75 C52,80 44,90 40,110 C36,130 36,160 38,175 L52,175 C50,160 50,130 54,112 C58,92 64,82 70,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M140,75 C148,80 156,90 160,110 C164,130 164,160 162,175 L148,175 C150,160 150,130 146,112 C142,92 136,82 130,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Roll detail at cuff end -->
+  <path d="M38,165 L52,165" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <path d="M38,170 L52,170" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <!-- Roll fold edge -->
+  <path d="M38,165 C38,162 40,160 44,160 C48,160 52,162 52,165" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1"/>
+  <path d="M148,165 L162,165" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <path d="M148,170 L162,170" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <path d="M148,165 C148,162 150,160 155,160 C160,160 162,162 162,165" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1"/>
+</svg>

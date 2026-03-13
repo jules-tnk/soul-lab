@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Regular fit tunic: standard ease, straight sides with slight taper -->
+  <path d="M66,65 L44,80 L38,105 L46,110 L49,260 L151,260 L154,110 L162,105 L156,80 L134,65 Q118,72 100,72 Q82,72 66,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="49" y1="120" x2="51" y2="255" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="151" y1="120" x2="149" y2="255" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

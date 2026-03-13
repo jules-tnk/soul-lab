@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Long sleeves: full-length to wrist with button cuffs -->
+  <!-- Left sleeve -->
+  <path d="M50,115 L28,125 L26,240 L50,240 L54,125 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right sleeve -->
+  <path d="M150,115 L172,125 L174,240 L150,240 L146,125 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Left cuff band -->
+  <rect x="26" y="232" width="24" height="10" fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
+  <!-- Right cuff band -->
+  <rect x="150" y="232" width="24" height="10" fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
+  <!-- Cuff stitching -->
+  <line x1="27" y1="234" x2="49" y2="234" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="151" y1="234" x2="173" y2="234" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

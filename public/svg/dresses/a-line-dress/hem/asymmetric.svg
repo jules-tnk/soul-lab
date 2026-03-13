@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Asymmetric hem: one side shorter than the other -->
+  <path d="M50,210 C70,210 80,215 100,220 C120,225 135,232 150,240 L150,245 C135,237 120,230 100,225 C80,220 70,215 50,215 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Hem edge line -->
+  <path d="M50,210 C70,210 90,218 110,224 C130,230 140,236 150,240" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Hem stitch -->
+  <path d="M52,213 C72,213 92,221 112,227 C132,233 142,239 148,243" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

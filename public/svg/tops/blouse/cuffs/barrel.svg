@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Barrel cuff: standard straight cuff band at wrist -->
+  <!-- Left cuff -->
+  <rect x="36" y="196" width="34" height="12"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Cuff fold line -->
+  <line x1="36" y1="202" x2="70" y2="202" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
+  <!-- Single button -->
+  <circle cx="53" cy="202" r="2.5" fill="none" stroke="currentColor" stroke-width="1"/>
+  <!-- Right cuff -->
+  <rect x="130" y="196" width="34" height="12"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="130" y1="202" x2="164" y2="202" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2"/>
+  <circle cx="147" cy="202" r="2.5" fill="none" stroke="currentColor" stroke-width="1"/>
+</svg>

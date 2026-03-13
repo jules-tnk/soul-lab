@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Shawl lapels: smooth rounded continuous curve, no notch -->
+  <!-- Left shawl lapel -->
+  <path d="M100,65 Q82,68 68,78 Q55,90 58,108 Q72,115 88,108 L100,95 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right shawl lapel -->
+  <path d="M100,65 Q118,68 132,78 Q145,90 142,108 Q128,115 112,108 L100,95 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Smooth roll line -->
+  <path d="M88,108 Q94,102 100,95 Q106,102 112,108"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

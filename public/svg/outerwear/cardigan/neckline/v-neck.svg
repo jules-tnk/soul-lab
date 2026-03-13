@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- V-neck cardigan: deep V opening at front -->
+  <!-- Left lapel edge creating the V -->
+  <path d="M100,55 L82,60 L80,100 L100,115 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right lapel edge -->
+  <path d="M100,55 L118,60 L120,100 L100,115 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- V-neck outline -->
+  <path d="M82,60 L100,115 L118,60"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Ribbed neckband stitching -->
+  <path d="M84,62 L100,113 L116,62"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

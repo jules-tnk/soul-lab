@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- V-neck blouse: deep V-shaped opening pointing downward -->
+  <path d="M80,42 L100,88 L120,42"
+    stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <path d="M80,42 L100,88 L120,42 L117,42 Q100,84 83,42 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="none"/>
+  <line x1="80" y1="42" x2="100" y2="88" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="120" y1="42" x2="100" y2="88" stroke="currentColor" stroke-width="1.5"/>
+</svg>

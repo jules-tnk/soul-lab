@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Straight hem: clean horizontal hem line -->
+  <line x1="62" y1="150" x2="82" y2="150" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="118" y1="150" x2="138" y2="150" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Stitch line just inside hem -->
+  <line x1="63" y1="147" x2="81" y2="147" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="119" y1="147" x2="137" y2="147" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Mid rise: waistband at natural waist, medium rise indicator -->
+  <g fill="currentColor" stroke="currentColor">
+    <!-- Trouser silhouette -->
+    <path d="M65,48 L135,48 L140,95 L100,106 L60,95 Z" fill-opacity="0.07" stroke-width="1.5"/>
+    <path d="M60,95 L100,106 L95,200 L55,200 Z" fill-opacity="0.04" stroke-width="1"/>
+    <path d="M100,106 L140,95 L145,200 L105,200 Z" fill-opacity="0.04" stroke-width="1"/>
+    <!-- Waistband at mid position -->
+    <rect x="65" y="43" width="70" height="12" fill-opacity="0.08" stroke-width="1.5"/>
+    <!-- Rise indicator arrow: medium vertical line -->
+    <line x1="155" y1="49" x2="155" y2="106" stroke-width="1.5"/>
+    <line x1="151" y1="49" x2="159" y2="49" stroke-width="1.5"/>
+    <line x1="151" y1="106" x2="159" y2="106" stroke-width="1.5"/>
+    <!-- Dashed guide lines -->
+    <line x1="100" y1="106" x2="158" y2="106" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="100" y1="49" x2="158" y2="49" stroke-width="1" stroke-dasharray="3,2"/>
+  </g>
+</svg>

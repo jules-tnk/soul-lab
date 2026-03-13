@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Raglan sleeves: sleeve extends to neckline, diagonal seam -->
+  <!-- Left raglan sleeve with diagonal seam from neck -->
+  <path d="M88,68 L28,110 L26,218 L54,218 L56,120 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right raglan sleeve -->
+  <path d="M112,68 L172,110 L174,218 L146,218 L144,120 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Left raglan seam line -->
+  <line x1="88" y1="68" x2="56" y2="120" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <!-- Right raglan seam line -->
+  <line x1="112" y1="68" x2="144" y2="120" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,2"/>
+</svg>

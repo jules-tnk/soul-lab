@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Rolled sleeves: short sleeves with cuff folded/rolled up -->
+  <!-- Left sleeve body -->
+  <path d="M62,65 L35,85 L29,108 L42,114 L52,148 L68,148 L68,112 L68,85 L62,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Left rolled cuff (folded band) -->
+  <path d="M42,134 L52,148 L68,148 L68,134 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1"/>
+  <line x1="42" y1="134" x2="68" y2="134" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Right sleeve body -->
+  <path d="M138,65 L165,85 L171,108 L158,114 L148,148 L132,148 L132,112 L132,85 L138,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right rolled cuff -->
+  <path d="M158,134 L148,148 L132,148 L132,134 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1"/>
+  <line x1="158" y1="134" x2="132" y2="134" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Long sleeves on parka: full-length insulated sleeves -->
+  <!-- Left sleeve -->
+  <path d="M50,120 L26,132 L24,235 L52,235 L56,132 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right sleeve -->
+  <path d="M150,120 L174,132 L176,235 L148,235 L144,132 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Quilted stitch lines on left sleeve (parka texture) -->
+  <line x1="27" y1="155" x2="52" y2="155" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="27" y1="180" x2="52" y2="180" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="27" y1="205" x2="52" y2="205" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Quilted stitch lines on right sleeve -->
+  <line x1="148" y1="155" x2="173" y2="155" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="148" y1="180" x2="173" y2="180" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="148" y1="205" x2="173" y2="205" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

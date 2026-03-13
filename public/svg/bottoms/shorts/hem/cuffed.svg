@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Cuffed hem: folded band at bottom of each leg -->
+  <!-- Left cuff -->
+  <rect x="62" y="140" width="20" height="12" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="62" y1="144" x2="82" y2="144" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Right cuff -->
+  <rect x="118" y="140" width="20" height="12" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="118" y1="144" x2="138" y2="144" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

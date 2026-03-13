@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Long polo sleeves: full wrist-length sleeves with ribbed cuff band -->
+  <!-- Left sleeve -->
+  <path d="M62,68 L32,90 L27,110 L42,114 L56,198 L72,198 L74,114 L74,90 L62,68 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right sleeve -->
+  <path d="M138,68 L168,90 L173,110 L158,114 L144,198 L128,198 L126,114 L126,90 L138,68 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Ribbed cuff band left -->
+  <line x1="42" y1="192" x2="72" y2="192" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="42" y1="195" x2="72" y2="195" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Ribbed cuff band right -->
+  <line x1="128" y1="192" x2="158" y2="192" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="128" y1="195" x2="158" y2="195" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

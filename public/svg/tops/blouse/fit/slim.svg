@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Slim fit blouse: narrow tapered sides, fitted through waist -->
+  <path d="M68,65 L38,88 L33,108 L47,113 L50,250 L150,250 L153,113 L167,108 L162,88 L132,65 Q116,71 100,71 Q84,71 68,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Waist taper: inward seam indicators -->
+  <line x1="50" y1="128" x2="52" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+  <line x1="150" y1="128" x2="148" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+</svg>

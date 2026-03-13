@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Round neckline vest: rounded collar edge -->
+  <!-- Neckline rounded shape -->
+  <path d="M80,60 Q100,76 120,60"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Neckband trim -->
+  <path d="M80,60 Q100,80 120,60 L118,56 Q100,73 82,56 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Inner stitching -->
+  <path d="M82,58 Q100,75 118,58"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

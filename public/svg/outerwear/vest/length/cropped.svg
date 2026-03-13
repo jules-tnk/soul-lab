@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Cropped vest: hem at waist/above navel -->
+  <path d="M72,65 L44,90 L42,170 L158,170 L156,90 L128,65 Q114,72 100,72 Q86,72 72,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Armhole curves -->
+  <path d="M72,65 Q58,77 44,90" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M128,65 Q142,77 156,90" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Hem stitching -->
+  <line x1="43" y1="167" x2="157" y2="167" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="100" y1="72" x2="100" y2="170" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

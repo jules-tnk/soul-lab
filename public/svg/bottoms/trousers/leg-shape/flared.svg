@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Flared leg: fitted through thigh, dramatic flare from knee -->
+  <g fill="currentColor" stroke="currentColor">
+    <path d="M68,40 L132,40 L138,90 L100,102 L62,90 Z" fill-opacity="0.07" stroke-width="1.5"/>
+    <!-- Left leg: fitted thigh, dramatic flare from knee (y≈160) -->
+    <path d="M62,90 L100,102 L93,160 L72,262 L38,262 L60,160 Z" fill-opacity="0.07" stroke-width="1.5"/>
+    <!-- Right leg: fitted thigh, dramatic flare from knee -->
+    <path d="M100,102 L138,90 L140,160 L162,262 L128,262 L107,160 Z" fill-opacity="0.07" stroke-width="1.5"/>
+    <!-- Waistband -->
+    <rect x="68" y="35" width="64" height="10" fill-opacity="0.08" stroke-width="1.5"/>
+    <line x1="70" y1="41" x2="130" y2="41" stroke-width="1" stroke-dasharray="3,2"/>
+    <!-- Hem lines showing wide flare -->
+    <line x1="38" y1="262" x2="72" y2="262" stroke-width="1.5"/>
+    <line x1="128" y1="262" x2="162" y2="262" stroke-width="1.5"/>
+    <!-- Flare seam indication -->
+    <line x1="60" y1="162" x2="39" y2="260" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="140" y1="162" x2="161" y2="260" stroke-width="1" stroke-dasharray="3,2"/>
+  </g>
+</svg>

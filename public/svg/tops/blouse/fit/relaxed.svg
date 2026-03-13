@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Relaxed fit blouse: wider sides, looser through body -->
+  <path d="M58,65 L25,88 L20,108 L35,113 L37,250 L163,250 L165,113 L180,108 L175,88 L142,65 Q121,71 100,71 Q79,71 58,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Slightly outward side seam indicators -->
+  <line x1="37" y1="128" x2="39" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+  <line x1="163" y1="128" x2="161" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+</svg>

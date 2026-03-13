@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Scalloped hem: repeated arc curves at hem -->
+  <path d="M52,175 Q60,185 68,175 Q76,185 84,175 Q92,185 100,175 Q108,185 116,175 Q124,185 132,175 Q140,185 148,175" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="52" y1="175" x2="148" y2="175" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

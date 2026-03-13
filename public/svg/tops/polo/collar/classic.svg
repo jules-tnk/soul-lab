@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Classic polo collar: wide fold-over collar with pointed tips, sits flat on shoulders -->
+  <!-- Left collar leaf -->
+  <path d="M100,65 L74,55 L55,75 L80,72 L100,70 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right collar leaf -->
+  <path d="M100,65 L126,55 L145,75 L120,72 L100,70 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Collar stand band at neck -->
+  <path d="M84,55 Q100,50 116,55 L116,62 Q100,58 84,62 Z"
+    fill="currentColor" fill-opacity="0.10" stroke="currentColor" stroke-width="1"/>
+</svg>

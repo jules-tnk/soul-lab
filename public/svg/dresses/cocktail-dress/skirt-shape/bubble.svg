@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Bubble skirt: puffed, rounded shape tucked at hem -->
+  <path d="M68,150 C56,155 44,165 40,185 C38,198 44,210 56,215 C68,218 80,218 100,218 C120,218 132,218 144,215 C156,210 162,198 160,185 C156,165 144,155 132,150 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Bubble fullness lines -->
+  <path d="M65,165 C58,172 54,182 54,192" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M135,165 C142,172 146,182 146,192" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Hem tuck line -->
+  <path d="M56,215 C68,220 80,220 100,220 C120,220 132,220 144,215" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M58,213 C70,218 82,218 100,218 C118,218 130,218 142,213" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

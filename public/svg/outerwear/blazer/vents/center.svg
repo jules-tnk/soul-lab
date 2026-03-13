@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Center vent: single slit at center back hem -->
+  <path d="M70,230 L70,260 L96,260 L96,240 L100,238 L104,240 L104,260 L130,260 L130,230"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Center vent slit line -->
+  <line x1="100" y1="238" x2="100" y2="260" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Vent overlap indication -->
+  <line x1="96" y1="240" x2="104" y2="240" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

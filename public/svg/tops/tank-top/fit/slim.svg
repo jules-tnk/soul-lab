@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Slim fit tank-top: narrow tapered silhouette -->
+  <path d="M72,65 L55,75 L50,90 L55,95 L58,250 L142,250 L145,95 L150,90 L145,75 L128,65 Q114,70 100,70 Q86,70 72,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="58" y1="120" x2="60" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="142" y1="120" x2="140" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

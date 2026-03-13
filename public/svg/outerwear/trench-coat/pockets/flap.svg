@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Flap pockets on trench coat -->
+  <!-- Left flap pocket -->
+  <rect x="52" y="160" width="38" height="26" rx="1"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Left flap cover -->
+  <path d="M52,160 L90,160 L90,169 L71,172 L52,169 Z"
+    fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right flap pocket -->
+  <rect x="110" y="160" width="38" height="26" rx="1"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right flap cover -->
+  <path d="M110,160 L148,160 L148,169 L129,172 L110,169 Z"
+    fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Button on flap -->
+  <circle cx="71" cy="166" r="2.5" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1"/>
+  <circle cx="129" cy="166" r="2.5" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1"/>
+</svg>

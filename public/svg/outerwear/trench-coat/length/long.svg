@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Long trench: hem below knee, mid-calf -->
+  <path d="M65,65 L30,90 L26,115 L42,120 L46,268 L154,268 L158,120 L174,115 L170,90 L135,65 Q118,73 100,73 Q82,73 65,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Center front line -->
+  <line x1="100" y1="73" x2="100" y2="268" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Hem stitching -->
+  <line x1="47" y1="265" x2="153" y2="265" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

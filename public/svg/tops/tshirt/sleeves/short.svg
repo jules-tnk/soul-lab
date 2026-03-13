@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Short sleeves: end at mid upper arm with ribbed hem -->
+  <!-- Left sleeve -->
+  <path d="M63,65 L35,85 L33,106 L45,110 L60,132 L74,132 L74,90 L63,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right sleeve -->
+  <path d="M137,65 L165,85 L167,106 L155,110 L140,132 L126,132 L126,90 L137,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Rib hem line at sleeve bottom -->
+  <line x1="45" y1="128" x2="74" y2="128" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="126" y1="128" x2="155" y2="128" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

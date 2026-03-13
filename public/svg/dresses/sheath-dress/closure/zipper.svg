@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Zipper closure: center back zipper line with teeth detail -->
+  <line x1="100" y1="65" x2="100" y2="180" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Zipper teeth -->
+  <path d="M96,75 L98,75 M102,75 L104,75" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M96,85 L98,85 M102,85 L104,85" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M96,95 L98,95 M102,95 L104,95" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M96,105 L98,105 M102,105 L104,105" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M96,115 L98,115 M102,115 L104,115" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M96,125 L98,125 M102,125 L104,125" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M96,135 L98,135 M102,135 L104,135" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M96,145 L98,145 M102,145 L104,145" fill="none" stroke="currentColor" stroke-width="1"/>
+  <!-- Zipper pull tab -->
+  <rect x="96" y="68" width="8" height="5" rx="1" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1"/>
+</svg>

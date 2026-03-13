@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Cargo pockets: large deep bellowed pockets with flap and button -->
+  <!-- Left cargo pocket (large, bellowed) -->
+  <path d="M40,155 L86,155 L88,200 L38,200 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Left cargo flap -->
+  <path d="M40,155 L86,155 L86,166 L63,170 L40,166 Z"
+    fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Left bellows fold lines -->
+  <line x1="40" y1="180" x2="86" y2="180" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Left button -->
+  <circle cx="63" cy="162" r="3" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1"/>
+  <!-- Right cargo pocket -->
+  <path d="M160,155 L114,155 L112,200 L162,200 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right cargo flap -->
+  <path d="M114,155 L160,155 L160,166 L137,170 L114,166 Z"
+    fill="currentColor" fill-opacity="0.14" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right bellows fold lines -->
+  <line x1="114" y1="180" x2="160" y2="180" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Right button -->
+  <circle cx="137" cy="162" r="3" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1"/>
+</svg>

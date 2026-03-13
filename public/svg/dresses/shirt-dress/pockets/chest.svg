@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Chest pocket: single or double chest pockets -->
+  <!-- Left chest pocket -->
+  <path d="M72,98 L72,116 L90,116 L90,100 C86,98 78,97 72,98 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Pocket flap -->
+  <path d="M72,102 L90,102" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Pocket stitch -->
+  <path d="M74,104 L88,104" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Right chest pocket -->
+  <path d="M110,98 L110,116 L128,116 L128,100 C124,98 116,97 110,98 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M110,102 L128,102" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M112,104 L126,104" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

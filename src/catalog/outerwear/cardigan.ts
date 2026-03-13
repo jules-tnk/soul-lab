@@ -13,9 +13,9 @@ export const cardigan: GarmentType = {
       layerOrder: 0,
       defaultVariantId: 'regular',
       variants: [
-        { id: 'slim', nameKey: 'parts.fit.variants.slim', svgPath: '' },
-        { id: 'regular', nameKey: 'parts.fit.variants.regular', svgPath: '' },
-        { id: 'oversized', nameKey: 'parts.fit.variants.oversized', svgPath: '' },
+        { id: 'slim', nameKey: 'parts.fit.variants.slim', svgPath: 'outerwear/cardigan/fit/slim.svg' },
+        { id: 'regular', nameKey: 'parts.fit.variants.regular', svgPath: 'outerwear/cardigan/fit/regular.svg' },
+        { id: 'oversized', nameKey: 'parts.fit.variants.oversized', svgPath: 'outerwear/cardigan/fit/oversized.svg' },
       ],
     },
     {
@@ -25,10 +25,10 @@ export const cardigan: GarmentType = {
       layerOrder: 1,
       defaultVariantId: 'hip',
       variants: [
-        { id: 'cropped', nameKey: 'parts.length.variants.cropped', svgPath: '' },
-        { id: 'hip', nameKey: 'parts.length.variants.hip', svgPath: '' },
-        { id: 'tunic', nameKey: 'parts.length.variants.tunic', svgPath: '' },
-        { id: 'long', nameKey: 'parts.length.variants.long', svgPath: '' },
+        { id: 'cropped', nameKey: 'parts.length.variants.cropped', svgPath: 'outerwear/cardigan/length/cropped.svg' },
+        { id: 'hip', nameKey: 'parts.length.variants.hip', svgPath: 'outerwear/cardigan/length/hip.svg' },
+        { id: 'tunic', nameKey: 'parts.length.variants.tunic', svgPath: 'outerwear/cardigan/length/tunic.svg' },
+        { id: 'long', nameKey: 'parts.length.variants.long', svgPath: 'outerwear/cardigan/length/long.svg' },
       ],
     },
     {
@@ -38,10 +38,10 @@ export const cardigan: GarmentType = {
       layerOrder: 2,
       defaultVariantId: 'buttons',
       variants: [
-        { id: 'buttons', nameKey: 'parts.closure.variants.buttons', svgPath: '' },
-        { id: 'zipper', nameKey: 'parts.closure.variants.zipper', svgPath: '' },
-        { id: 'toggle', nameKey: 'parts.closure.variants.toggle', svgPath: '' },
-        { id: 'open', nameKey: 'parts.closure.variants.open', svgPath: '' },
+        { id: 'buttons', nameKey: 'parts.closure.variants.buttons', svgPath: 'outerwear/cardigan/closure/buttons.svg' },
+        { id: 'zipper', nameKey: 'parts.closure.variants.zipper', svgPath: 'outerwear/cardigan/closure/zipper.svg' },
+        { id: 'toggle', nameKey: 'parts.closure.variants.toggle', svgPath: 'outerwear/cardigan/closure/toggle.svg' },
+        { id: 'open', nameKey: 'parts.closure.variants.open', svgPath: 'outerwear/cardigan/closure/open.svg' },
       ],
     },
     {
@@ -51,9 +51,9 @@ export const cardigan: GarmentType = {
       layerOrder: 3,
       defaultVariantId: 'patch',
       variants: [
-        { id: 'patch', nameKey: 'parts.pockets.variants.patch', svgPath: '' },
-        { id: 'kangaroo', nameKey: 'parts.pockets.variants.kangaroo', svgPath: '' },
-        { id: 'none', nameKey: 'parts.pockets.variants.none', svgPath: '' },
+        { id: 'patch', nameKey: 'parts.pockets.variants.patch', svgPath: 'outerwear/cardigan/pockets/patch.svg' },
+        { id: 'kangaroo', nameKey: 'parts.pockets.variants.kangaroo', svgPath: 'outerwear/cardigan/pockets/kangaroo.svg' },
+        { id: 'none', nameKey: 'parts.pockets.variants.none', svgPath: 'outerwear/cardigan/pockets/none.svg' },
       ],
     },
     {
@@ -63,10 +63,10 @@ export const cardigan: GarmentType = {
       layerOrder: 3,
       defaultVariantId: 'v-neck',
       variants: [
-        { id: 'v-neck', nameKey: 'parts.neckline.variants.v-neck', svgPath: '' },
-        { id: 'round', nameKey: 'parts.neckline.variants.round', svgPath: '' },
-        { id: 'shawl', nameKey: 'parts.neckline.variants.shawl', svgPath: '' },
-        { id: 'waterfall', nameKey: 'parts.neckline.variants.waterfall', svgPath: '' },
+        { id: 'v-neck', nameKey: 'parts.neckline.variants.v-neck', svgPath: 'outerwear/cardigan/neckline/v-neck.svg' },
+        { id: 'round', nameKey: 'parts.neckline.variants.round', svgPath: 'outerwear/cardigan/neckline/round.svg' },
+        { id: 'shawl', nameKey: 'parts.neckline.variants.shawl', svgPath: 'outerwear/cardigan/neckline/shawl.svg' },
+        { id: 'waterfall', nameKey: 'parts.neckline.variants.waterfall', svgPath: 'outerwear/cardigan/neckline/waterfall.svg' },
       ],
     },
     {
@@ -76,10 +76,10 @@ export const cardigan: GarmentType = {
       layerOrder: 5,
       defaultVariantId: 'long',
       variants: [
-        { id: 'long', nameKey: 'parts.sleeves.variants.long', svgPath: '' },
-        { id: 'three-quarter', nameKey: 'parts.sleeves.variants.three-quarter', svgPath: '' },
-        { id: 'short', nameKey: 'parts.sleeves.variants.short', svgPath: '' },
-        { id: 'dolman', nameKey: 'parts.sleeves.variants.dolman', svgPath: '' },
+        { id: 'long', nameKey: 'parts.sleeves.variants.long', svgPath: 'outerwear/cardigan/sleeves/long.svg' },
+        { id: 'three-quarter', nameKey: 'parts.sleeves.variants.three-quarter', svgPath: 'outerwear/cardigan/sleeves/three-quarter.svg' },
+        { id: 'short', nameKey: 'parts.sleeves.variants.short', svgPath: 'outerwear/cardigan/sleeves/short.svg' },
+        { id: 'dolman', nameKey: 'parts.sleeves.variants.dolman', svgPath: 'outerwear/cardigan/sleeves/dolman.svg' },
       ],
     },
   ],

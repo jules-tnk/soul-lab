@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Mandarin collar: short stand-up collar, no ribbing -->
+  <path d="M78,66 Q100,58 122,66 L120,50 Q100,43 80,50 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Collar top edge -->
+  <path d="M80,50 Q100,43 120,50"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Inner edge line -->
+  <path d="M80,64 Q100,57 120,64"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Elastic cuffs: gathered elastic at sleeve end -->
+  <!-- Left elastic cuff -->
+  <path d="M26,210 Q40,206 54,210 L54,224 Q40,228 26,224 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Left gather lines -->
+  <path d="M28,215 Q35,213 46,215 Q50,216 52,215" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M28,220 Q35,218 46,220 Q50,221 52,220" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Right elastic cuff -->
+  <path d="M146,210 Q160,206 174,210 L174,224 Q160,228 146,224 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right gather lines -->
+  <path d="M148,215 Q155,213 166,215 Q170,216 172,215" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M148,220 Q155,218 166,220 Q170,221 172,220" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

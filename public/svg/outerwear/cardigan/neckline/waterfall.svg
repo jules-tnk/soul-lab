@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Waterfall neckline: cascading draped fabric front -->
+  <!-- Left drape cascade -->
+  <path d="M100,60 Q82,68 72,85 Q66,100 68,120 Q72,140 74,160 Q76,175 78,200"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Left cascade fill -->
+  <path d="M100,60 Q84,66 74,83 Q68,98 70,118 Q74,138 76,158 Q78,173 80,198 L88,198 Q86,173 84,158 Q82,138 78,118 Q76,98 82,83 Q88,68 100,62 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="none"/>
+  <!-- Right drape cascade -->
+  <path d="M100,60 Q118,68 128,85 Q134,100 132,120 Q128,140 126,160 Q124,175 122,200"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right cascade fill -->
+  <path d="M100,60 Q116,66 126,83 Q132,98 130,118 Q126,138 124,158 Q122,173 120,198 L112,198 Q114,173 116,158 Q118,138 122,118 Q124,98 118,83 Q112,68 100,62 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="none"/>
+  <!-- Neckline opening at top -->
+  <path d="M82,60 Q100,55 118,60"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>

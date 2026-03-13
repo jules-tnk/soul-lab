@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Tie-neck neckline: V-opening with long fabric ties forming a bow -->
+  <!-- V opening -->
+  <path d="M86,44 L100,68 L114,44"
+    stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <path d="M86,44 L100,68 L114,44 L111,44 Q100,64 89,44 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="none"/>
+  <!-- Left tie -->
+  <path d="M86,44 Q70,48 56,44 Q66,50 56,58 Q70,54 86,48 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right tie -->
+  <path d="M114,44 Q130,48 144,44 Q134,50 144,58 Q130,54 114,48 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+</svg>

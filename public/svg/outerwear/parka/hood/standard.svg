@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Standard hood: basic fitted hood -->
+  <path d="M68,65 Q100,15 132,65 Q118,72 100,74 Q82,72 68,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Hood center seam -->
+  <line x1="100" y1="18" x2="100" y2="65" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Hood tunnel/channel line -->
+  <path d="M72,66 Q100,76 128,66"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

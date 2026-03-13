@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Mandarin collar: short stand-up band, no fold-over -->
+  <path d="M80,62 Q100,56 120,62 L118,50 Q100,44 82,50 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Inner band detail -->
+  <path d="M82,60 Q100,54 118,60"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Front opening between collar halves -->
+  <line x1="100" y1="44" x2="100" y2="62" stroke="currentColor" stroke-width="1"/>
+</svg>

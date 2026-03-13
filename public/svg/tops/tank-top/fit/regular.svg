@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Regular fit tank-top: standard silhouette with moderate ease -->
+  <path d="M68,65 L50,78 L44,95 L50,100 L53,250 L147,250 L150,100 L156,95 L150,78 L132,65 Q116,71 100,71 Q84,71 68,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="53" y1="115" x2="55" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="147" y1="115" x2="145" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

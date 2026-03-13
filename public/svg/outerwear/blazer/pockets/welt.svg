@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Welt pockets: slim finished slit pockets at hip -->
+  <!-- Left welt pocket -->
+  <path d="M58,168 L90,168 L90,173 L58,173 Z"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Left welt opening line -->
+  <line x1="58" y1="170" x2="90" y2="170" stroke="currentColor" stroke-width="1"/>
+  <!-- Right welt pocket -->
+  <path d="M110,168 L142,168 L142,173 L110,173 Z"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right welt opening line -->
+  <line x1="110" y1="170" x2="142" y2="170" stroke="currentColor" stroke-width="1"/>
+  <!-- Breast welt pocket -->
+  <path d="M112,112 L132,112 L132,116 L112,116 Z"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
+  <line x1="112" y1="114" x2="132" y2="114" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

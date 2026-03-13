@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Welt pockets on trench coat: finished slit pockets -->
+  <!-- Left welt pocket -->
+  <path d="M52,163 L90,163 L90,169 L52,169 Z"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="52" y1="166" x2="90" y2="166" stroke="currentColor" stroke-width="1"/>
+  <!-- Right welt pocket -->
+  <path d="M110,163 L148,163 L148,169 L110,169 Z"
+    fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="110" y1="166" x2="148" y2="166" stroke="currentColor" stroke-width="1"/>
+</svg>

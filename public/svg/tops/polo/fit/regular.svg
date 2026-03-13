@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Regular fit polo: standard relaxed width through torso -->
+  <path d="M62,68 L32,90 L27,110 L42,114 L44,248 L156,248 L158,114 L173,110 L168,90 L138,68 Q119,73 100,73 Q81,73 62,68 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Straight side seam indicators -->
+  <line x1="44" y1="132" x2="44" y2="243" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+  <line x1="156" y1="132" x2="156" y2="243" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+</svg>

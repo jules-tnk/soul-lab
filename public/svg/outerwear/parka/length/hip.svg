@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Hip-length parka: hem at hip level -->
+  <path d="M62,68 L28,95 L24,120 L42,125 L46,195 L154,195 L158,125 L176,120 L172,95 L138,68 Q119,76 100,76 Q81,76 62,68 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Center zipper line -->
+  <line x1="100" y1="76" x2="100" y2="195" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Hem stitching -->
+  <line x1="47" y1="192" x2="153" y2="192" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Short sleeves on cardigan: ending just below shoulder -->
+  <!-- Left short sleeve -->
+  <path d="M52,110 L32,118 L32,148 L56,148 L58,118 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right short sleeve -->
+  <path d="M148,110 L168,118 L168,148 L144,148 L142,118 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Ribbed sleeve hem -->
+  <line x1="32" y1="148" x2="56" y2="148" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="144" y1="148" x2="168" y2="148" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="33" y1="145" x2="55" y2="145" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="145" y1="145" x2="167" y2="145" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

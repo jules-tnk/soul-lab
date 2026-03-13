@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Belted waistline: separate belt with buckle at center -->
+  <path d="M55,146 L145,146 L145,162 L55,162 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Belt buckle (rectangular frame center) -->
+  <rect x="92" y="149" width="16" height="10" rx="1" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Buckle prong -->
+  <line x1="100" y1="149" x2="100" y2="159" stroke="currentColor" stroke-width="1"/>
+  <!-- Belt holes -->
+  <circle cx="112" cy="154" r="1.5" fill="none" stroke="currentColor" stroke-width="1"/>
+  <circle cx="117" cy="154" r="1.5" fill="none" stroke="currentColor" stroke-width="1"/>
+  <circle cx="122" cy="154" r="1.5" fill="none" stroke="currentColor" stroke-width="1"/>
+  <!-- Belt stitch -->
+  <path d="M57,149 L90,149 M108,149 L143,149" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M57,158 L90,158 M108,158 L143,158" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

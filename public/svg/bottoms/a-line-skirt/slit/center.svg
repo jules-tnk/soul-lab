@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Center slit: opening at center front/back hem -->
+  <!-- Slit gap at center -->
+  <line x1="52" y1="180" x2="94" y2="180" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="106" y1="180" x2="148" y2="180" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Slit lines going up -->
+  <line x1="94" y1="180" x2="100" y2="140" stroke="currentColor" stroke-width="1"/>
+  <line x1="106" y1="180" x2="100" y2="140" stroke="currentColor" stroke-width="1"/>
+</svg>

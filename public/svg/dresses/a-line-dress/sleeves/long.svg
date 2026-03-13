@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Long sleeves: full length to wrist -->
+  <!-- Left sleeve -->
+  <path d="M58,75 C50,80 42,90 38,110 C34,130 34,180 36,220 L50,220 C48,182 48,132 52,112 C56,92 62,82 68,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Right sleeve -->
+  <path d="M142,75 C150,80 158,90 162,110 C166,130 166,180 164,220 L150,220 C152,182 152,132 148,112 C144,92 138,82 132,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Seam lines -->
+  <path d="M44,100 C44,140 44,180 44,218" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M156,100 C156,140 156,180 156,218" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

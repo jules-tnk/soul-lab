@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Short sleeves: sleeves ending just below shoulder at upper arm -->
+  <!-- Left sleeve -->
+  <path d="M62,65 L36,84 L30,106 L44,112 L55,138 L68,138 L70,110 L70,84 L62,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right sleeve -->
+  <path d="M138,65 L164,84 L170,106 L156,112 L145,138 L132,138 L130,110 L130,84 L138,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Hem cuff lines -->
+  <line x1="44" y1="134" x2="68" y2="138" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="156" y1="134" x2="132" y2="138" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

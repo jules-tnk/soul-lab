@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Regular fit tshirt: standard width, gentle straight sides -->
+  <path d="M63,65 L35,85 L30,105 L44,110 L45,250 L155,250 L156,110 L170,105 L165,85 L137,65 Q119,70 100,70 Q81,70 63,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Straight side seam indicators -->
+  <line x1="45" y1="125" x2="45" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+  <line x1="155" y1="125" x2="155" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+</svg>

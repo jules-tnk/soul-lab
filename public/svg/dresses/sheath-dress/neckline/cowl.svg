@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Cowl neckline: draped fabric folds at neck -->
+  <path d="M75,65 C80,68 85,74 88,82 C90,88 95,92 100,90 C105,92 110,88 112,82 C115,74 120,68 125,65" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Cowl drape folds -->
+  <path d="M80,68 C83,74 86,80 88,86 C90,90 95,90 100,88" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M90,72 C92,78 94,84 96,88" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M70,68 L75,65" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M130,68 L125,65" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

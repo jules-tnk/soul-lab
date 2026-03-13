@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Ribbed cuffs: ribbed knit bands at sleeve ends -->
+  <!-- Left cuff band -->
+  <rect x="26" y="210" width="28" height="14" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Left ribbed texture -->
+  <line x1="30" y1="210" x2="30" y2="224" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="35" y1="210" x2="35" y2="224" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="40" y1="210" x2="40" y2="224" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="45" y1="210" x2="45" y2="224" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="50" y1="210" x2="50" y2="224" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Right cuff band -->
+  <rect x="146" y="210" width="28" height="14" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right ribbed texture -->
+  <line x1="150" y1="210" x2="150" y2="224" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="155" y1="210" x2="155" y2="224" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="160" y1="210" x2="160" y2="224" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="165" y1="210" x2="165" y2="224" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="170" y1="210" x2="170" y2="224" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

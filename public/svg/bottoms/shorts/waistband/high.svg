@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- High waistband: taller band ~14px at y=28 -->
+  <rect x="58" y="28" width="84" height="14" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="58" y1="35" x2="142" y2="35" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Left-over-right wrap: left panel crosses over right -->
+  <!-- Right panel (underneath) -->
+  <path d="M100,70 C108,72 118,76 126,82 L130,150 L100,155 Z" fill="currentColor" fill-opacity="0.05" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Left panel (on top) crossing over -->
+  <path d="M100,70 C92,72 80,76 72,82 C68,90 66,110 65,130 C64,145 65,152 66,155 L130,150 L125,82 C118,76 108,72 100,70 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Wrap overlap diagonal line -->
+  <path d="M100,70 L80,155" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Left-over direction arrow indicator -->
+  <path d="M95,100 C88,102 84,106 82,110" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"/>
+  <path d="M82,108 L82,112 L86,110" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

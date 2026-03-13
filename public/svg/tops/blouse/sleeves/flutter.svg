@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Flutter sleeves: short, wide, fluttery draped panels at shoulder -->
+  <!-- Left flutter panel -->
+  <path d="M62,65 Q44,72 28,80 Q24,90 32,96 Q48,90 66,100 L70,90 L72,80 L62,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Flutter edge wave -->
+  <path d="M28,80 Q36,86 32,96" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2" fill="none"/>
+  <!-- Right flutter panel -->
+  <path d="M138,65 Q156,72 172,80 Q176,90 168,96 Q152,90 134,100 L130,90 L128,80 L138,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M172,80 Q164,86 168,96" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2" fill="none"/>
+</svg>

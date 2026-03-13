@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Hook and eye closure: hook-and-eye pairs at back -->
+  <line x1="100" y1="65" x2="100" y2="180" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Hook symbols (J shapes) -->
+  <path d="M96,78 C94,78 93,80 94,82 C95,84 97,83 97,81" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M104,78 C106,78 107,80 106,82 C105,84 103,83 103,81" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Eye loops -->
+  <path d="M96,95 C94,95 93,97 94,99 C95,101 97,100 97,98" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M104,95 C106,95 107,97 106,99 C105,101 103,100 103,98" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- More sets -->
+  <path d="M96,112 C94,112 93,114 94,116 C95,118 97,117 97,115" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M104,112 C106,112 107,114 106,116 C105,118 103,117 103,115" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Hidden placket: smooth fabric flap conceals buttons at center front -->
+  <rect x="91" y="72" width="18" height="68"
+    fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Outer flap edge (smooth, no visible seam) -->
+  <line x1="91" y1="72" x2="91" y2="140" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Hidden buttons shown dashed beneath flap -->
+  <circle cx="100" cy="88"  r="2.5" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <circle cx="100" cy="108" r="2.5" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <circle cx="100" cy="128" r="2.5" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Standard bomber collar: ribbed band collar -->
+  <path d="M75,70 Q100,62 125,70 L122,55 Q100,48 78,55 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Ribbed texture on collar -->
+  <line x1="82" y1="55" x2="80" y2="70" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="90" y1="53" x2="88" y2="70" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="100" y1="51" x2="100" y2="68" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="110" y1="53" x2="112" y2="70" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="118" y1="55" x2="120" y2="70" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

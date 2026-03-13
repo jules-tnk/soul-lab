@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Elastic closure: gather marks along waistband -->
+  <rect x="70" y="35" width="60" height="8" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Elastic gather marks -->
+  <line x1="75" y1="35" x2="75" y2="43" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="82" y1="35" x2="82" y2="43" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="89" y1="35" x2="89" y2="43" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="100" y1="35" x2="100" y2="43" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="111" y1="35" x2="111" y2="43" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="118" y1="35" x2="118" y2="43" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+  <line x1="125" y1="35" x2="125" y2="43" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2"/>
+</svg>

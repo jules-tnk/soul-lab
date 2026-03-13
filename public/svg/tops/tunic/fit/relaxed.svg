@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Relaxed fit tunic: wider, flowing silhouette with generous ease -->
+  <path d="M62,65 L38,82 L32,105 L40,110 L43,260 L157,260 L160,110 L168,105 L162,82 L138,65 Q120,72 100,72 Q80,72 62,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="43" y1="125" x2="46" y2="255" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="157" y1="125" x2="154" y2="255" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Straight hem: horizontal hem band at standard tank-top length -->
+  <path d="M50,242 L50,255 L150,255 L150,242 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="50" y1="248" x2="150" y2="248" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Long sleeves on trench coat -->
+  <!-- Left sleeve -->
+  <path d="M48,118 L24,130 L22,250 L50,250 L54,130 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right sleeve -->
+  <path d="M152,118 L176,130 L178,250 L150,250 L146,130 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- D-ring strap detail on cuff (trench feature) -->
+  <rect x="22" y="240" width="28" height="10" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <rect x="150" y="240" width="28" height="10" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Cuff stitching -->
+  <line x1="23" y1="242" x2="49" y2="242" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="151" y1="242" x2="177" y2="242" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

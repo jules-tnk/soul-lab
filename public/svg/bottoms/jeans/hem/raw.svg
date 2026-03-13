@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Raw hem jeans: unfinished denim edge with visible fraying -->
+  <g fill="currentColor" stroke="currentColor">
+    <!-- Leg sections -->
+    <path d="M55,220 L90,220 L90,260 L55,260 Z" fill-opacity="0.07" stroke-width="1.5"/>
+    <path d="M110,220 L145,220 L145,260 L110,260 Z" fill-opacity="0.07" stroke-width="1.5"/>
+    <!-- Irregular raw edge with frays -->
+    <polyline points="55,260 58,264 61,260 64,265 67,260 70,264 73,260 76,265 79,261 82,265 85,260 88,263 90,261" stroke-width="1.5" fill="none"/>
+    <polyline points="110,260 113,264 116,260 119,265 122,260 125,264 128,260 131,265 134,261 137,265 140,260 143,263 145,261" stroke-width="1.5" fill="none"/>
+    <!-- Individual fringe threads -->
+    <line x1="58" y1="261" x2="57" y2="270" stroke-width="1"/>
+    <line x1="63" y1="262" x2="62" y2="271" stroke-width="1"/>
+    <line x1="68" y1="261" x2="69" y2="270" stroke-width="1"/>
+    <line x1="73" y1="262" x2="72" y2="271" stroke-width="1"/>
+    <line x1="78" y1="261" x2="79" y2="269" stroke-width="1"/>
+    <line x1="83" y1="262" x2="82" y2="270" stroke-width="1"/>
+    <line x1="113" y1="261" x2="112" y2="270" stroke-width="1"/>
+    <line x1="118" y1="262" x2="119" y2="271" stroke-width="1"/>
+    <line x1="123" y1="261" x2="122" y2="270" stroke-width="1"/>
+    <line x1="128" y1="262" x2="129" y2="269" stroke-width="1"/>
+    <line x1="133" y1="261" x2="132" y2="270" stroke-width="1"/>
+    <line x1="138" y1="262" x2="139" y2="271" stroke-width="1"/>
+  </g>
+</svg>

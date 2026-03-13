@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Asymmetric hem: one side longer than the other -->
+  <path d="M40,238 L160,248 L160,258 L40,248 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Diagonal hem line showing asymmetry -->
+  <line x1="40" y1="238" x2="160" y2="248" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Stitch indicator along diagonal -->
+  <line x1="40" y1="243" x2="160" y2="253" stroke="currentColor" stroke-width="1" stroke-dasharray="5,3"/>
+</svg>

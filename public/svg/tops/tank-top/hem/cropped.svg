@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Cropped hem: hem sits high at midriff around y200 -->
+  <path d="M52,192 L52,204 L148,204 L148,192 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="52" y1="198" x2="148" y2="198" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

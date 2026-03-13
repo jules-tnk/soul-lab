@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Racerback straps: straps angle inward toward center back, narrow at back -->
+  <!-- Left strap angling inward -->
+  <path d="M72,65 L64,65 L88,100 L96,100 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right strap angling inward -->
+  <path d="M128,65 L136,65 L112,100 L104,100 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Center back convergence mark -->
+  <line x1="92" y1="100" x2="108" y2="100" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

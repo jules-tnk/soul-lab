@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Relaxed fit polo: wider boxy silhouette, minimal taper -->
+  <path d="M60,68 L27,90 L22,110 L37,114 L38,248 L162,248 L163,114 L178,110 L173,90 L140,68 Q120,73 100,73 Q80,73 60,68 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <!-- Slight outward side indicators -->
+  <line x1="38" y1="132" x2="40" y2="243" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+  <line x1="162" y1="132" x2="160" y2="243" stroke="currentColor" stroke-width="1" stroke-dasharray="2,4"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Puff sleeves: dramatically gathered/puffed at shoulder, narrows below -->
+  <!-- Left puff sleeve -->
+  <path d="M62,65 Q42,68 24,84 Q18,100 30,108 Q38,114 50,112 L56,200 L70,200 L68,110 Q78,108 78,95 Q80,74 62,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Gather line at bottom of puff -->
+  <path d="M30,108 Q50,116 68,110" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3,2" fill="none"/>
+  <!-- Right puff sleeve -->
+  <path d="M138,65 Q158,68 176,84 Q182,100 170,108 Q162,114 150,112 L144,200 L130,200 L132,110 Q122,108 122,95 Q120,74 138,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M170,108 Q150,116 132,110" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3,2" fill="none"/>
+</svg>

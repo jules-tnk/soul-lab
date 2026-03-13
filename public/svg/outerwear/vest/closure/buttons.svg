@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Button closure on vest: center button placket -->
+  <!-- Button band -->
+  <rect x="93" y="68" width="14" height="165" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1"/>
+  <!-- Buttons -->
+  <circle cx="100" cy="90" r="4" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="100" cy="115" r="4" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="100" cy="140" r="4" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="100" cy="165" r="4" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="100" cy="190" r="4" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+  <circle cx="100" cy="215" r="4" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+</svg>

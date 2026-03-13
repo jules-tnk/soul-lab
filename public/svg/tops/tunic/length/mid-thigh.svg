@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Mid-thigh length tunic: hem falls at mid-thigh, approximately y250 -->
+  <path d="M46,110 L46,254 L154,254 L154,110"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Hem indicator band -->
+  <path d="M46,248 L46,258 L154,258 L154,248 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1"/>
+  <line x1="46" y1="253" x2="154" y2="253" stroke="currentColor" stroke-width="1" stroke-dasharray="4,3"/>
+</svg>

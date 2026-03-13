@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Storm collar: high stand collar that fully encircles neck -->
+  <path d="M72,72 Q100,58 128,72 L126,40 Q100,30 74,40 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Collar top stitching -->
+  <path d="M74,40 Q100,31 126,40"
+    fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Mid-collar detail lines -->
+  <path d="M74,52 Q100,43 126,52"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M73,62 Q100,53 127,62"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Button closure at top -->
+  <circle cx="100" cy="38" r="3.5" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1.5"/>
+</svg>

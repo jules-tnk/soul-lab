@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Elastic cuff: gathered fabric bunched around elastic band, wavy edge -->
+  <!-- Left elastic cuff -->
+  <path d="M36,196 Q42,192 48,196 Q54,200 60,196 Q66,192 70,196 L70,210 Q66,214 60,210 Q54,206 48,210 Q42,214 36,210 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Elastic channel lines -->
+  <path d="M36,201 Q48,205 60,201 Q64,199 70,201" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2" fill="none"/>
+  <path d="M36,206 Q48,210 60,206 Q64,204 70,206" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2" fill="none"/>
+  <!-- Right elastic cuff -->
+  <path d="M130,196 Q136,192 142,196 Q148,200 154,196 Q160,192 164,196 L164,210 Q160,214 154,210 Q148,206 142,210 Q136,214 130,210 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M130,201 Q142,205 154,201 Q158,199 164,201" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2" fill="none"/>
+  <path d="M130,206 Q142,210 154,206 Q158,204 164,206" stroke="currentColor" stroke-width="0.75" stroke-dasharray="3,2" fill="none"/>
+</svg>

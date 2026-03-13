@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Square neckline: angular straight-edged opening -->
+  <path d="M78,44 L78,72 L122,72 L122,44"
+    stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <path d="M78,44 L78,72 L122,72 L122,44 L119,44 L119,69 L81,69 L81,44 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="none"/>
+</svg>

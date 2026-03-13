@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Buckle belt: belt with metal buckle closure -->
+  <!-- Belt band -->
+  <path d="M42,155 L158,155 L158,168 L42,168 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Metal buckle frame -->
+  <rect x="88" y="153" width="24" height="17" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+  <!-- Buckle inner bar -->
+  <line x1="100" y1="153" x2="100" y2="170" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Belt prong -->
+  <line x1="100" y1="160" x2="106" y2="160" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Belt holes on right side -->
+  <circle cx="118" cy="161" r="1.5" fill="currentColor" fill-opacity="0.4"/>
+  <circle cx="126" cy="161" r="1.5" fill="currentColor" fill-opacity="0.4"/>
+  <circle cx="134" cy="161" r="1.5" fill="currentColor" fill-opacity="0.4"/>
+  <!-- Stitching lines along belt -->
+  <line x1="43" y1="157" x2="87" y2="157" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="113" y1="157" x2="157" y2="157" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

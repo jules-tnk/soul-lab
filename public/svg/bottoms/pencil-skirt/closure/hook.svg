@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Hook-and-eye closure: at top of skirt -->
+  <!-- Hook bar at top -->
+  <line x1="92" y1="43" x2="108" y2="43" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Hook marks -->
+  <path d="M96,43 Q94,46 96,49" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M100,43 Q98,47 100,51" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M104,43 Q102,46 104,49" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Closure seam line -->
+  <line x1="100" y1="49" x2="100" y2="100" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

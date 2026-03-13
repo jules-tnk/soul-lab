@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Henley neckline: round collar with short button placket below -->
+  <ellipse cx="100" cy="55" rx="17" ry="12"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Short placket below neckline -->
+  <rect x="94" y="67" width="12" height="30"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1"/>
+  <!-- Placket buttons -->
+  <circle cx="100" cy="75" r="2" fill="none" stroke="currentColor" stroke-width="1"/>
+  <circle cx="100" cy="85" r="2" fill="none" stroke="currentColor" stroke-width="1"/>
+  <circle cx="100" cy="95" r="2" fill="none" stroke="currentColor" stroke-width="1"/>
+</svg>

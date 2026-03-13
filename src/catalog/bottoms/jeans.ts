@@ -13,9 +13,9 @@ export const jeans: GarmentType = {
       layerOrder: 1,
       defaultVariantId: 'standard',
       variants: [
-        { id: 'standard', nameKey: 'parts.waistband.variants.standard', svgPath: '' },
-        { id: 'high', nameKey: 'parts.waistband.variants.high', svgPath: '' },
-        { id: 'low', nameKey: 'parts.waistband.variants.low', svgPath: '' },
+        { id: 'standard', nameKey: 'parts.waistband.variants.standard', svgPath: 'bottoms/jeans/waistband/standard.svg' },
+        { id: 'high', nameKey: 'parts.waistband.variants.high', svgPath: 'bottoms/jeans/waistband/high.svg' },
+        { id: 'low', nameKey: 'parts.waistband.variants.low', svgPath: 'bottoms/jeans/waistband/low.svg' },
       ],
     },
     {
@@ -25,9 +25,9 @@ export const jeans: GarmentType = {
       layerOrder: 1,
       defaultVariantId: 'mid',
       variants: [
-        { id: 'high', nameKey: 'parts.rise.variants.high', svgPath: '' },
-        { id: 'mid', nameKey: 'parts.rise.variants.mid', svgPath: '' },
-        { id: 'low', nameKey: 'parts.rise.variants.low', svgPath: '' },
+        { id: 'high', nameKey: 'parts.rise.variants.high', svgPath: 'bottoms/jeans/rise/high.svg' },
+        { id: 'mid', nameKey: 'parts.rise.variants.mid', svgPath: 'bottoms/jeans/rise/mid.svg' },
+        { id: 'low', nameKey: 'parts.rise.variants.low', svgPath: 'bottoms/jeans/rise/low.svg' },
       ],
     },
     {
@@ -37,11 +37,11 @@ export const jeans: GarmentType = {
       layerOrder: 1,
       defaultVariantId: 'straight',
       variants: [
-        { id: 'straight', nameKey: 'parts.leg-shape.variants.straight', svgPath: '' },
-        { id: 'skinny', nameKey: 'parts.leg-shape.variants.skinny', svgPath: '' },
-        { id: 'slim', nameKey: 'parts.leg-shape.variants.slim', svgPath: '' },
-        { id: 'bootcut', nameKey: 'parts.leg-shape.variants.bootcut', svgPath: '' },
-        { id: 'wide', nameKey: 'parts.leg-shape.variants.wide', svgPath: '' },
+        { id: 'straight', nameKey: 'parts.leg-shape.variants.straight', svgPath: 'bottoms/jeans/leg-shape/straight.svg' },
+        { id: 'skinny', nameKey: 'parts.leg-shape.variants.skinny', svgPath: 'bottoms/jeans/leg-shape/skinny.svg' },
+        { id: 'slim', nameKey: 'parts.leg-shape.variants.slim', svgPath: 'bottoms/jeans/leg-shape/slim.svg' },
+        { id: 'bootcut', nameKey: 'parts.leg-shape.variants.bootcut', svgPath: 'bottoms/jeans/leg-shape/bootcut.svg' },
+        { id: 'wide', nameKey: 'parts.leg-shape.variants.wide', svgPath: 'bottoms/jeans/leg-shape/wide.svg' },
       ],
     },
     {
@@ -51,9 +51,9 @@ export const jeans: GarmentType = {
       layerOrder: 1,
       defaultVariantId: 'straight',
       variants: [
-        { id: 'straight', nameKey: 'parts.hem.variants.straight', svgPath: '' },
-        { id: 'cuffed', nameKey: 'parts.hem.variants.cuffed', svgPath: '' },
-        { id: 'raw', nameKey: 'parts.hem.variants.raw', svgPath: '' },
+        { id: 'straight', nameKey: 'parts.hem.variants.straight', svgPath: 'bottoms/jeans/hem/straight.svg' },
+        { id: 'cuffed', nameKey: 'parts.hem.variants.cuffed', svgPath: 'bottoms/jeans/hem/cuffed.svg' },
+        { id: 'raw', nameKey: 'parts.hem.variants.raw', svgPath: 'bottoms/jeans/hem/raw.svg' },
       ],
     },
     {
@@ -63,8 +63,8 @@ export const jeans: GarmentType = {
       layerOrder: 2,
       defaultVariantId: 'zipper',
       variants: [
-        { id: 'zipper', nameKey: 'parts.fly.variants.zipper', svgPath: '' },
-        { id: 'button', nameKey: 'parts.fly.variants.button', svgPath: '' },
+        { id: 'zipper', nameKey: 'parts.fly.variants.zipper', svgPath: 'bottoms/jeans/fly/zipper.svg' },
+        { id: 'button', nameKey: 'parts.fly.variants.button', svgPath: 'bottoms/jeans/fly/button.svg' },
       ],
     },
     {
@@ -74,10 +74,10 @@ export const jeans: GarmentType = {
       layerOrder: 3,
       defaultVariantId: 'classic',
       variants: [
-        { id: 'classic', nameKey: 'parts.pockets.variants.classic', svgPath: '' },
-        { id: 'patch', nameKey: 'parts.pockets.variants.patch', svgPath: '' },
-        { id: 'minimal', nameKey: 'parts.pockets.variants.minimal', svgPath: '' },
-        { id: 'none', nameKey: 'parts.pockets.variants.none', svgPath: '' },
+        { id: 'classic', nameKey: 'parts.pockets.variants.classic', svgPath: 'bottoms/jeans/pockets/classic.svg' },
+        { id: 'patch', nameKey: 'parts.pockets.variants.patch', svgPath: 'bottoms/jeans/pockets/patch.svg' },
+        { id: 'minimal', nameKey: 'parts.pockets.variants.minimal', svgPath: 'bottoms/jeans/pockets/minimal.svg' },
+        { id: 'none', nameKey: 'parts.pockets.variants.none', svgPath: 'bottoms/jeans/pockets/none.svg' },
       ],
     },
   ],

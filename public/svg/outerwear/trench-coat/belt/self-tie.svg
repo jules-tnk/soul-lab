@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Self-tie belt: fabric belt tied in a knot/bow at front -->
+  <!-- Belt band across waist -->
+  <path d="M42,155 L158,155 L158,168 L42,168 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Self-tie knot at center -->
+  <path d="M88,155 Q100,148 112,155 L108,168 Q100,172 92,168 Z"
+    fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Left belt tie hanging down -->
+  <path d="M88,155 L82,190 L90,190 L92,168"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right belt tie hanging down -->
+  <path d="M112,155 L118,190 L110,190 L108,168"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Tunic-length cardigan: hem below hip, mid-thigh -->
+  <path d="M70,65 L38,86 L34,110 L50,115 L54,238 L146,238 L150,115 L166,110 L162,86 L130,65 Q115,71 100,71 Q85,71 70,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Ribbed hem band -->
+  <rect x="53" y="230" width="94" height="10" fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
+  <line x1="100" y1="71" x2="100" y2="238" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

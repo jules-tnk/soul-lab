@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- High rise: waistband sits well above hip bone, long rise indicator -->
+  <g fill="currentColor" stroke="currentColor">
+    <!-- Trouser silhouette -->
+    <path d="M65,35 L135,35 L140,90 L100,100 L60,90 Z" fill-opacity="0.07" stroke-width="1.5"/>
+    <path d="M60,90 L100,100 L95,200 L55,200 Z" fill-opacity="0.04" stroke-width="1"/>
+    <path d="M100,100 L140,90 L145,200 L105,200 Z" fill-opacity="0.04" stroke-width="1"/>
+    <!-- Waistband at high position -->
+    <rect x="65" y="30" width="70" height="12" fill-opacity="0.08" stroke-width="1.5"/>
+    <!-- Rise indicator arrow: long vertical line from waistband to crotch -->
+    <line x1="155" y1="36" x2="155" y2="100" stroke-width="1.5"/>
+    <line x1="151" y1="36" x2="159" y2="36" stroke-width="1.5"/>
+    <line x1="151" y1="100" x2="159" y2="100" stroke-width="1.5"/>
+    <!-- Rise label area: dashed line from crotch point -->
+    <line x1="100" y1="100" x2="158" y2="100" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="100" y1="36" x2="158" y2="36" stroke-width="1" stroke-dasharray="3,2"/>
+  </g>
+</svg>

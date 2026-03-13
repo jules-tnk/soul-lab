@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Mock turtleneck: short standing collar that folds over slightly -->
+  <!-- Outer collar band -->
+  <path d="M82,42 Q82,30 100,30 Q118,30 118,42 L118,62 Q118,66 100,66 Q82,66 82,62 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Inner fold line showing collar turn -->
+  <path d="M84,50 Q84,44 100,44 Q116,44 116,50"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Side slit: opening at left side seam -->
+  <path d="M65,200 L65,225 M65,250 L65,250 L135,250 L135,200" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Left side slit gap -->
+  <path d="M65,225 C63,230 63,245 65,250" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4,2"/>
+  <!-- Slit opening marker -->
+  <path d="M65,225 C66,222 68,220 68,220" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Hem stitch -->
+  <path d="M65,248 L133,248" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

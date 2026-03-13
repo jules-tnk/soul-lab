@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Raw hem: unfinished, frayed edge at hem -->
+  <g fill="currentColor" stroke="currentColor">
+    <!-- Leg approaching hem -->
+    <path d="M55,220 L90,220 L90,262 L55,262 Z" fill-opacity="0.07" stroke-width="1.5"/>
+    <path d="M110,220 L145,220 L145,262 L110,262 Z" fill-opacity="0.07" stroke-width="1.5"/>
+    <!-- Irregular raw hem edge (frayed look) -->
+    <polyline points="55,262 59,265 63,261 67,266 71,262 75,265 79,261 83,266 87,262 90,264" stroke-width="1.5" fill="none"/>
+    <polyline points="110,262 114,265 118,261 122,266 126,262 130,265 134,261 138,266 142,262 145,264" stroke-width="1.5" fill="none"/>
+    <!-- Fringe threads -->
+    <line x1="59" y1="262" x2="58" y2="270" stroke-width="1"/>
+    <line x1="65" y1="263" x2="64" y2="271" stroke-width="1"/>
+    <line x1="71" y1="262" x2="72" y2="269" stroke-width="1"/>
+    <line x1="77" y1="263" x2="76" y2="270" stroke-width="1"/>
+    <line x1="83" y1="262" x2="84" y2="270" stroke-width="1"/>
+    <line x1="114" y1="262" x2="113" y2="270" stroke-width="1"/>
+    <line x1="120" y1="263" x2="121" y2="270" stroke-width="1"/>
+    <line x1="126" y1="262" x2="125" y2="269" stroke-width="1"/>
+    <line x1="132" y1="263" x2="133" y2="270" stroke-width="1"/>
+    <line x1="138" y1="262" x2="137" y2="270" stroke-width="1"/>
+  </g>
+</svg>

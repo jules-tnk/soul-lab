@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Three-quarter polo sleeves: end between elbow and wrist with ribbed band -->
+  <!-- Left sleeve -->
+  <path d="M62,68 L32,90 L27,110 L42,114 L54,165 L70,165 L74,114 L74,90 L62,68 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right sleeve -->
+  <path d="M138,68 L168,90 L173,110 L158,114 L146,165 L130,165 L126,114 L126,90 L138,68 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Ribbed hem band left -->
+  <line x1="42" y1="159" x2="70" y2="159" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="42" y1="162" x2="70" y2="162" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Ribbed hem band right -->
+  <line x1="130" y1="159" x2="158" y2="159" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="130" y1="162" x2="158" y2="162" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Relaxed fit tank-top: wider, boxy silhouette with generous ease -->
+  <path d="M65,65 L42,80 L36,100 L44,105 L47,250 L153,250 L156,105 L164,100 L158,80 L135,65 Q118,72 100,72 Q82,72 65,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="47" y1="115" x2="50" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="153" y1="115" x2="150" y2="245" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

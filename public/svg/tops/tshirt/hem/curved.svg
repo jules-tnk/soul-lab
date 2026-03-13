@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Curved hem: dips lower at center front, rises at sides -->
+  <path d="M42,242 Q71,252 100,256 Q129,252 158,242 L158,252 Q129,262 100,266 Q71,262 42,252 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M42,242 Q71,252 100,256 Q129,252 158,242"
+    stroke="currentColor" stroke-width="1" stroke-dasharray="5,3" fill="none"/>
+</svg>

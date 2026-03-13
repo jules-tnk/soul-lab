@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Cowl neckline: soft draped folds of fabric at neck -->
+  <!-- Outer drape shape -->
+  <path d="M76,44 Q88,60 100,80 Q112,60 124,44"
+    stroke="currentColor" stroke-width="1.5" fill="none"/>
+  <!-- Inner drape fold layer -->
+  <path d="M82,44 Q92,58 100,72 Q108,58 118,44"
+    stroke="currentColor" stroke-width="1" stroke-dasharray="3,2" fill="none"/>
+  <!-- Fill for drape area -->
+  <path d="M76,44 Q88,60 100,80 Q112,60 124,44 L121,44 Q110,58 100,76 Q90,58 79,44 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="none"/>
+</svg>

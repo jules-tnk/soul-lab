@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Standard back: normal closed back with zipper -->
+  <path d="M70,65 C78,62 88,60 100,60 C112,60 122,62 130,65 L130,150 L70,150 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Center back zipper line -->
+  <line x1="100" y1="60" x2="100" y2="150" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Zipper teeth detail -->
+  <path d="M97,70 L99,70 M101,70 L103,70" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M97,82 L99,82 M101,82 L103,82" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M97,94 L99,94 M101,94 L103,94" fill="none" stroke="currentColor" stroke-width="1"/>
+</svg>

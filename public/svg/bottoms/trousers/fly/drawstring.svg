@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Drawstring fly/closure: cord through waistband, bow at center front -->
+  <g fill="currentColor" stroke="currentColor">
+    <!-- Trouser front body context -->
+    <path d="M62,50 L138,50 L144,92 L100,104 L56,92 Z" fill-opacity="0.04" stroke-width="1"/>
+    <!-- Elastic/drawstring waistband -->
+    <rect x="62" y="38" width="76" height="18" fill-opacity="0.08" stroke-width="1.5"/>
+    <!-- Channel stitch lines -->
+    <line x1="64" y1="43" x2="136" y2="43" stroke-width="1" stroke-dasharray="3,2"/>
+    <line x1="64" y1="50" x2="136" y2="50" stroke-width="1" stroke-dasharray="3,2"/>
+    <!-- Eyelets for drawstring -->
+    <circle cx="94" cy="38" r="2" fill-opacity="0.08" stroke-width="1"/>
+    <circle cx="106" cy="38" r="2" fill-opacity="0.08" stroke-width="1"/>
+    <!-- Drawstring cord emerging -->
+    <line x1="94" y1="36" x2="88" y2="30" stroke-width="1.5"/>
+    <line x1="106" y1="36" x2="112" y2="30" stroke-width="1.5"/>
+    <!-- Bow loops -->
+    <path d="M88,30 Q82,24 86,20 Q90,16 94,22 L100,28 L106,22 Q110,16 114,20 Q118,24 112,30" fill="none" stroke-width="1.5"/>
+    <!-- Bow knot center -->
+    <ellipse cx="100" cy="28" rx="3" ry="2" fill-opacity="0.07" stroke-width="1"/>
+    <!-- Cord tails -->
+    <line x1="96" y1="30" x2="90" y2="38" stroke-width="1.5"/>
+    <line x1="104" y1="30" x2="110" y2="38" stroke-width="1.5"/>
+  </g>
+</svg>

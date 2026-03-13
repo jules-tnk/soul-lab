@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Rolled cuff: sleeve rolled up showing inside fabric -->
+  <!-- Sleeve body -->
+  <path d="M38,190 L52,190 L52,220 L38,220 Z" fill="currentColor" fill-opacity="0.05" stroke="currentColor" stroke-width="1"/>
+  <!-- Roll fold showing fabric interior -->
+  <path d="M36,206 C36,202 38,198 44,198 C50,198 52,202 52,206 L52,218 L36,218 Z" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Roll edge highlight -->
+  <path d="M36,206 C36,202 38,200 44,200 C50,200 52,202 52,206" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right cuff -->
+  <path d="M148,190 L162,190 L162,220 L148,220 Z" fill="currentColor" fill-opacity="0.05" stroke="currentColor" stroke-width="1"/>
+  <path d="M148,206 C148,202 150,198 155,198 C160,198 162,202 162,206 L162,218 L148,218 Z" fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M148,206 C148,202 150,200 155,200 C160,200 162,202 162,206" fill="none" stroke="currentColor" stroke-width="1.5"/>
+</svg>

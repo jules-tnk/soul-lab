@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Off-shoulder: neckline below shoulders, exposed shoulders -->
+  <path d="M45,82 C60,76 78,72 100,70 C122,72 140,76 155,82 L155,90 C140,86 122,82 100,80 C78,82 60,86 45,90 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Exposed shoulder curve top -->
+  <path d="M45,82 C60,76 78,72 100,70 C122,72 140,76 155,82" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Stitch/elastic line -->
+  <path d="M47,85 C62,79 80,75 100,73 C120,75 138,79 153,85" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Sheath fitted bodice: close-fitting, minimal ease -->
+  <path d="M72,65 C68,68 62,74 60,90 C58,108 58,128 60,150 L140,150 C142,128 142,108 140,90 C138,74 132,68 128,65 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Side seam -->
+  <path d="M62,90 C61,110 61,130 62,150" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M138,90 C139,110 139,130 138,150" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Bust dart -->
+  <path d="M62,105 L82,100 L62,95" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M138,105 L118,100 L138,95" fill="none" stroke="currentColor" stroke-width="1"/>
+</svg>

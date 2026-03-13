@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Stand collar: taller standing collar band -->
+  <path d="M78,65 Q100,57 122,65 L120,47 Q100,40 80,47 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Mid-band crease line -->
+  <path d="M80,56 Q100,49 120,56"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Band stitching -->
+  <path d="M80,63 Q100,56 120,63"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Front center gap -->
+  <line x1="100" y1="40" x2="100" y2="65" stroke="currentColor" stroke-width="1"/>
+</svg>

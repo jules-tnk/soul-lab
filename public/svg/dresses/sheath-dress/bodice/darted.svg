@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Darted bodice: multiple fitting darts visible -->
+  <path d="M72,65 C68,68 62,74 60,90 C58,108 58,128 60,150 L140,150 C142,128 142,108 140,90 C138,74 132,68 128,65 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Bust darts from side seam -->
+  <path d="M62,100 L88,103 L62,107" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M138,100 L112,103 L138,107" fill="none" stroke="currentColor" stroke-width="1"/>
+  <!-- Waist darts from hem -->
+  <path d="M85,150 L88,128 L91,150" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M109,150 L112,128 L115,150" fill="none" stroke="currentColor" stroke-width="1"/>
+  <!-- Shoulder dart -->
+  <path d="M88,65 L90,78 L92,65" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M108,65 L110,78 L112,65" fill="none" stroke="currentColor" stroke-width="1"/>
+</svg>

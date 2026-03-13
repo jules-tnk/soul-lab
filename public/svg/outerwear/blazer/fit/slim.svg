@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Slim fit blazer: narrow silhouette, close taper from chest to hem -->
+  <path d="M70,65 L40,85 L36,110 L50,115 L53,260 L147,260 L150,115 L164,110 L160,85 L130,65 Q115,72 100,72 Q85,72 70,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Side seam taper lines indicating slim cut -->
+  <line x1="53" y1="135" x2="55" y2="255" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="147" y1="135" x2="145" y2="255" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Center front opening line -->
+  <line x1="100" y1="72" x2="100" y2="260" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

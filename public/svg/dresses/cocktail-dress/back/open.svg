@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Open back: fully open back view -->
+  <!-- Side seams visible from back view -->
+  <path d="M70,65 L68,150 M130,65 L132,150" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Back opening - very open, edges only -->
+  <path d="M70,65 C74,62 80,60 88,58" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M130,65 C126,62 120,60 112,58" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Open back area -->
+  <path d="M88,58 C90,55 95,52 100,50 C105,52 110,55 112,58" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Spine guide line -->
+  <line x1="100" y1="50" x2="100" y2="148" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Very open back area indicator -->
+  <path d="M88,58 L88,150 M112,58 L112,150" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="4,3"/>
+</svg>

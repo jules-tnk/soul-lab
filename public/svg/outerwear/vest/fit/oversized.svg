@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Oversized vest: very wide boxy shape -->
+  <path d="M68,65 L30,94 L28,225 L172,225 L170,94 L132,65 Q116,73 100,73 Q84,73 68,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Wide armhole curves -->
+  <path d="M68,65 Q48,80 30,94" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M132,65 Q152,80 170,94" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Center front line -->
+  <line x1="100" y1="73" x2="100" y2="225" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

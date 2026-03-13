@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Notch lapels on trench coat: classic notch -->
+  <!-- Left lapel -->
+  <path d="M100,70 L75,78 L58,105 L80,112 L100,98 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right lapel -->
+  <path d="M100,70 L125,78 L142,105 L120,112 L100,98 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Notch indentation -->
+  <line x1="80" y1="112" x2="88" y2="102" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="120" y1="112" x2="112" y2="102" stroke="currentColor" stroke-width="1.5"/>
+</svg>

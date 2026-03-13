@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Elastic hem band: gathered elastic waistband -->
+  <path d="M45,215 Q100,210 155,215 L155,240 Q100,245 45,240 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Elastic gather lines (horizontal undulating) -->
+  <path d="M47,220 Q60,218 75,220 Q90,222 105,220 Q120,218 135,220 Q148,222 153,220"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M47,227 Q60,225 75,227 Q90,229 105,227 Q120,225 135,227 Q148,229 153,227"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M47,234 Q60,232 75,234 Q90,236 105,234 Q120,232 135,234 Q148,236 153,234"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Band border lines -->
+  <line x1="45" y1="215" x2="155" y2="215" stroke="currentColor" stroke-width="1.5"/>
+</svg>

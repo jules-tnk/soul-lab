@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Peak lapels: pointed upward-facing lapel tips -->
+  <!-- Left peak lapel -->
+  <path d="M100,68 L72,72 L55,95 L78,88 L82,110 L100,95 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right peak lapel -->
+  <path d="M100,68 L128,72 L145,95 L122,88 L118,110 L100,95 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Peak tip emphasis lines -->
+  <line x1="55" y1="95" x2="78" y2="88" stroke="currentColor" stroke-width="1.5"/>
+  <line x1="145" y1="95" x2="122" y2="88" stroke="currentColor" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Bishop sleeves: full/puffed throughout, gathered at cuff -->
+  <!-- Left bishop sleeve -->
+  <path d="M58,75 C50,80 40,92 36,115 C32,138 32,175 34,195 L34,202 L52,202 L52,195 C54,175 54,138 56,115 C58,94 62,82 68,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Right bishop sleeve -->
+  <path d="M142,75 C150,80 160,92 164,115 C168,138 168,175 166,195 L166,202 L148,202 L148,195 C146,175 146,138 144,115 C142,94 138,82 132,78 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Full sleeve body lines -->
+  <path d="M40,110 C40,140 40,170 40,193" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M160,110 C160,140 160,170 160,193" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Cuff gather -->
+  <path d="M34,197 L52,197" fill="none" stroke="currentColor" stroke-width="1"/>
+  <path d="M148,197 L166,197" fill="none" stroke="currentColor" stroke-width="1"/>
+</svg>

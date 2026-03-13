@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Shawl collar cardigan: wide continuous rolled shawl -->
+  <!-- Left shawl collar -->
+  <path d="M100,60 Q80,65 64,80 Q52,96 56,116 Q70,122 88,114 L100,100 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right shawl collar -->
+  <path d="M100,60 Q120,65 136,80 Q148,96 144,116 Q130,122 112,114 L100,100 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Shawl roll line -->
+  <path d="M88,114 Q94,106 100,100 Q106,106 112,114"
+    fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

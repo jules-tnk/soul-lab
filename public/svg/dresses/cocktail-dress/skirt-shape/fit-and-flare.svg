@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Fit and flare: fitted through hips then dramatically flares -->
+  <path d="M68,150 C65,160 64,172 64,185 C55,190 44,200 38,220 L162,220 C156,200 145,190 136,185 C136,172 135,160 132,150 Z" fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Fitted hip section -->
+  <path d="M68,150 C65,165 64,175 64,185" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <path d="M132,150 C135,165 136,175 136,185" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Flare seam line -->
+  <path d="M64,185 C55,190 44,200 38,220" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M136,185 C145,190 156,200 162,220" fill="none" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M40,218 L160,218" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

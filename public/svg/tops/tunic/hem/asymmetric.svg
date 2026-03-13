@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Asymmetric hem: one side longer than the other, diagonal hemline -->
+  <path d="M44,244 L156,264 L156,274 L44,254 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <line x1="44" y1="249" x2="156" y2="269" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

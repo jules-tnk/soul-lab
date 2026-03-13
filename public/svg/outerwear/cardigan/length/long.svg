@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Long cardigan: hem past hip, near knee -->
+  <path d="M70,65 L36,88 L32,112 L48,117 L52,275 L148,275 L152,117 L168,112 L164,88 L130,65 Q115,71 100,71 Q85,71 70,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Ribbed hem band -->
+  <rect x="51" y="267" width="98" height="10" fill="currentColor" fill-opacity="0.1" stroke="currentColor" stroke-width="1"/>
+  <line x1="100" y1="71" x2="100" y2="275" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

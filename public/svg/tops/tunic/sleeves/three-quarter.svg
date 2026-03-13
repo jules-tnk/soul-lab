@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Three-quarter sleeves: sleeves ending between elbow and wrist -->
+  <!-- Left sleeve -->
+  <path d="M62,65 L33,86 L27,110 L40,116 L50,182 L66,182 L68,114 L68,86 L62,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right sleeve -->
+  <path d="M138,65 L167,86 L173,110 L160,116 L150,182 L134,182 L132,114 L132,86 L138,65 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Sleeve end lines -->
+  <line x1="40" y1="178" x2="66" y2="182" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <line x1="160" y1="178" x2="134" y2="182" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+</svg>

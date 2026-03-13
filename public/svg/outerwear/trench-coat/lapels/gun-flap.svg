@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Gun flap / storm flap: extra fabric panel on shoulder/chest -->
+  <!-- Left main lapel -->
+  <path d="M100,70 L75,78 L58,105 L80,112 L100,98 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Right main lapel -->
+  <path d="M100,70 L125,78 L142,105 L120,112 L100,98 Z"
+    fill="currentColor" fill-opacity="0.08" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Storm flap on right shoulder -->
+  <path d="M118,78 L148,82 L150,110 L128,110 L124,98 Z"
+    fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Storm flap stitching detail -->
+  <line x1="120" y1="80" x2="148" y2="84" stroke="currentColor" stroke-width="1" stroke-dasharray="3,2"/>
+  <!-- Storm flap button -->
+  <circle cx="138" cy="96" r="3" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1"/>
+</svg>

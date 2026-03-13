@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Halter neckline: straps from chest sides converging at neck center -->
+  <path d="M68,80 L95,46 L105,46 L132,80"
+    stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+  <path d="M68,80 L95,46 L105,46 L132,80 L129,80 L105,50 L95,50 L71,80 Z"
+    fill="currentColor" fill-opacity="0.07" stroke="none"/>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+  <!-- Flap pockets on parka -->
+  <!-- Left flap pocket -->
+  <rect x="44" y="162" width="42" height="30" rx="1"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Left flap -->
+  <path d="M44,162 L86,162 L86,172 L65,176 L44,172 Z"
+    fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right flap pocket -->
+  <rect x="114" y="162" width="42" height="30" rx="1"
+    fill="currentColor" fill-opacity="0.07" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Right flap -->
+  <path d="M114,162 L156,162 L156,172 L135,176 L114,172 Z"
+    fill="currentColor" fill-opacity="0.12" stroke="currentColor" stroke-width="1.5"/>
+  <!-- Button on flaps -->
+  <circle cx="65" cy="168" r="3" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1"/>
+  <circle cx="135" cy="168" r="3" fill="currentColor" fill-opacity="0.3" stroke="currentColor" stroke-width="1"/>
+</svg>
