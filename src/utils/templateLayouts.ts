@@ -62,6 +62,7 @@ export function createTemplateElements(garmentType: GarmentType): GarmentPartEle
         zIndex: part.layerOrder,
         locked: false,
         visible: true,
+        groupId: null,
       }
     })
 }

@@ -27,5 +27,13 @@ export async function parseImportFile(file: File): Promise<Design[]> {
       (d as any).version === 2
   )
   if (valid.length === 0) throw new Error('No valid designs found in file')
-  return valid
+  // Normalize groupId for imported designs
+  const normalized = valid.map((d: any) => ({
+    ...d,
+    elements: d.elements.map((el: any) => ({
+      ...el,
+      groupId: el.groupId ?? null,
+    })),
+  }))
+  return normalized
 }

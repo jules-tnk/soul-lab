@@ -83,6 +83,7 @@ export interface BaseCanvasElement {
   zIndex: number
   locked: boolean
   visible: boolean
+  groupId: string | null
 }
 
 export interface GarmentPartElement extends BaseCanvasElement {

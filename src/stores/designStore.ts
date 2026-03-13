@@ -104,6 +104,16 @@ export const useDesignStore = create<DesignState>()(
           state.designs = []
           state.currentDesignId = null
         }
+        // Ensure groupId exists on all elements (migration for pre-grouping designs)
+        if (state.designs) {
+          state.designs = state.designs.map(d => ({
+            ...d,
+            elements: d.elements.map(el => ({
+              ...el,
+              groupId: el.groupId ?? null,
+            })) as CanvasElement[],
+          }))
+        }
       },
     }
   )

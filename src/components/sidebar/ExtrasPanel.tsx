@@ -39,6 +39,7 @@ export default function ExtrasPanel() {
       zIndex: 100,
       locked: false,
       visible: true,
+      groupId: null,
     }
     addElement(el)
   }
@@ -62,6 +63,7 @@ export default function ExtrasPanel() {
       zIndex: 100,
       locked: false,
       visible: true,
+      groupId: null,
     }
     addElement(el)
   }
@@ -92,6 +94,7 @@ export default function ExtrasPanel() {
           zIndex: 100,
           locked: false,
           visible: true,
+          groupId: null,
         }
         addElement(el)
       }

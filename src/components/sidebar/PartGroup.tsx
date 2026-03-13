@@ -50,6 +50,7 @@ export default function PartGroup({ part, garmentTypeId }: Props) {
         zIndex: part.layerOrder,
         locked: false,
         visible: true,
+        groupId: null,
       }
       elements.push(newElement)
     }
