@@ -8,6 +8,7 @@ interface ViewportHandlers {
   onMouseMove: (e: Konva.KonvaEventObject<MouseEvent>) => void
   onMouseUp: () => void
   isPanning: boolean
+  isSpaceHeld: () => boolean
   screenToCanvas: (screenX: number, screenY: number, containerRect: DOMRect) => { x: number; y: number }
   fitAll: (elements: { x: number; y: number; scaleX: number; scaleY: number }[], containerW: number, containerH: number) => void
 }
@@ -152,12 +153,15 @@ export function useViewport(): ViewportHandlers {
     [setZoom, setPosition]
   )
 
+  const isSpaceHeld = useCallback(() => spaceHeldRef.current, [])
+
   return {
     onWheel,
     onMouseDown,
     onMouseMove,
     onMouseUp,
     isPanning,
+    isSpaceHeld,
     screenToCanvas,
     fitAll,
   }

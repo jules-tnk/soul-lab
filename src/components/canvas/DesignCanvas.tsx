@@ -1,6 +1,6 @@
 import { useRef, useCallback, useEffect, useState } from 'react'
 import { setSnapshotFn, clearSnapshotFn } from '../../stores/canvasHistoryRef'
-import { Stage, Layer } from 'react-konva'
+import { Stage, Layer, Rect } from 'react-konva'
 import { Box } from '@chakra-ui/react'
 import { useTranslation } from 'react-i18next'
 import { useDesignStore } from '../../stores/designStore'
@@ -17,12 +17,28 @@ import type { CanvasElement } from '../../types'
 import { v4 as uuid } from 'uuid'
 import Konva from 'konva'
 
+function getElementBounds(el: CanvasElement) {
+  let w = 100, h = 100
+  switch (el.type) {
+    case 'garment-part': w = 200; h = 200; break
+    case 'text': w = el.fontSize * Math.max(el.text.length * 0.6, 1); h = el.fontSize * 1.4; break
+    case 'shape': w = el.width; h = el.height; break
+    case 'image': w = el.width ?? 100; h = el.height ?? 100; break
+  }
+  return { x1: el.x, y1: el.y, x2: el.x + w * el.scaleX, y2: el.y + h * el.scaleY }
+}
+
 export default function DesignCanvas() {
   const { t } = useTranslation()
   const stageRef = useRef<Konva.Stage>(null)
   const containerRef = useRef<HTMLDivElement>(null)
   const [containerSize, setContainerSize] = useState({ w: 800, h: 600 })
   const [contextMenu, setContextMenu] = useState<{ x: number; y: number; onElement: boolean } | null>(null)
+
+  // Marquee selection state
+  const [selectionRect, setSelectionRect] = useState<{ x: number; y: number; w: number; h: number } | null>(null)
+  const marqueeStartRef = useRef<{ x: number; y: number } | null>(null)
+  const isSelectingRef = useRef(false)
 
   const design = useDesignStore(s => s.getCurrentDesign())
   const updateDesign = useDesignStore(s => s.updateCurrentDesign)
@@ -100,10 +116,82 @@ export default function DesignCanvas() {
   }, [elements, selectedIds, setSelected, toggleSelected])
 
   const handleStageClick = useCallback((e: any) => {
-    if (e.target === e.target.getStage()) {
+    // Don't clear selection if we just finished a marquee drag
+    if (e.target === e.target.getStage() && !isSelectingRef.current) {
       clearSelection()
     }
   }, [clearSelection])
+
+  // Wrapped Stage mouse handlers: coordinate viewport panning with marquee selection
+  const handleStageMouseDown = useCallback((e: Konva.KonvaEventObject<MouseEvent>) => {
+    viewport.onMouseDown(e)
+    // Start marquee on left-click on empty stage (not panning)
+    if (e.evt.button === 0 && !viewport.isSpaceHeld() && e.target === e.target.getStage()) {
+      const stage = e.target.getStage()
+      const pointer = stage?.getPointerPosition()
+      if (pointer) {
+        const cx = (pointer.x - position.x) / zoom
+        const cy = (pointer.y - position.y) / zoom
+        marqueeStartRef.current = { x: cx, y: cy }
+      }
+    }
+  }, [viewport, position, zoom])
+
+  const handleStageMouseMove = useCallback((e: Konva.KonvaEventObject<MouseEvent>) => {
+    viewport.onMouseMove(e)
+    // Update marquee if dragging started on empty stage
+    if (marqueeStartRef.current && !viewport.isPanning) {
+      const stage = e.target.getStage()
+      const pointer = stage?.getPointerPosition()
+      if (pointer) {
+        const cx = (pointer.x - position.x) / zoom
+        const cy = (pointer.y - position.y) / zoom
+        const start = marqueeStartRef.current
+        const dx = cx - start.x
+        const dy = cy - start.y
+        // Only activate marquee after a small drag threshold (5px in canvas space)
+        if (!isSelectingRef.current && (Math.abs(dx) > 5 || Math.abs(dy) > 5)) {
+          isSelectingRef.current = true
+        }
+        if (isSelectingRef.current) {
+          setSelectionRect({
+            x: Math.min(start.x, cx),
+            y: Math.min(start.y, cy),
+            w: Math.abs(dx),
+            h: Math.abs(dy),
+          })
+        }
+      }
+    }
+  }, [viewport, position, zoom])
+
+  const handleStageMouseUp = useCallback(() => {
+    viewport.onMouseUp()
+    if (isSelectingRef.current && selectionRect) {
+      // Find elements intersecting the selection rectangle
+      const sx1 = selectionRect.x
+      const sy1 = selectionRect.y
+      const sx2 = selectionRect.x + selectionRect.w
+      const sy2 = selectionRect.y + selectionRect.h
+      const matched: string[] = []
+      for (const el of elements) {
+        const bounds = getElementBounds(el)
+        // Check AABB intersection
+        if (bounds.x1 < sx2 && bounds.x2 > sx1 && bounds.y1 < sy2 && bounds.y2 > sy1) {
+          matched.push(el.id)
+        }
+      }
+      if (matched.length > 0) {
+        setSelected(matched)
+      }
+      setSelectionRect(null)
+      // Reset after a tick so handleStageClick doesn't immediately clear
+      requestAnimationFrame(() => { isSelectingRef.current = false })
+    } else {
+      isSelectingRef.current = false
+    }
+    marqueeStartRef.current = null
+  }, [viewport, selectionRect, elements, setSelected])
 
   const handleDblClick = useCallback((id: string) => {
     const element = elements.find(el => el.id === id)
@@ -400,9 +488,9 @@ export default function DesignCanvas() {
           onClick={handleStageClick}
           onTap={handleStageClick}
           onWheel={viewport.onWheel}
-          onMouseDown={viewport.onMouseDown}
-          onMouseMove={viewport.onMouseMove}
-          onMouseUp={viewport.onMouseUp}
+          onMouseDown={handleStageMouseDown}
+          onMouseMove={handleStageMouseMove}
+          onMouseUp={handleStageMouseUp}
         >
           <GridLayer
             viewportX={position.x}
@@ -422,6 +510,19 @@ export default function DesignCanvas() {
                 onDblClick={() => handleDblClick(el.id)}
               />
             ))}
+            {selectionRect && (
+              <Rect
+                x={selectionRect.x}
+                y={selectionRect.y}
+                width={selectionRect.w}
+                height={selectionRect.h}
+                fill="rgba(66, 153, 225, 0.1)"
+                stroke="#4299E1"
+                strokeWidth={1 / zoom}
+                dash={[6 / zoom, 3 / zoom]}
+                listening={false}
+              />
+            )}
           </Layer>
         </Stage>
         <Minimap

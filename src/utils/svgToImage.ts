@@ -38,8 +38,17 @@ function trimSvgViewBox(svgText: string): string {
     const h = bbox.height + pad * 2
 
     svg.setAttribute('viewBox', `${x} ${y} ${w} ${h}`)
-    svg.setAttribute('width', String(w))
-    svg.setAttribute('height', String(h))
+
+    // Scale width/height so the largest dimension normalizes to 200px.
+    // This keeps images at a usable natural size while the tight viewBox
+    // ensures the Transformer fits tightly around visible content.
+    const BASE = 200
+    const scale = BASE / Math.max(w, h)
+    svg.setAttribute('width', String(Math.round(w * scale)))
+    svg.setAttribute('height', String(Math.round(h * scale)))
+
+    // Remove measurement styles before serializing
+    svg.removeAttribute('style')
 
     const serializer = new XMLSerializer()
     const result = serializer.serializeToString(svg)
