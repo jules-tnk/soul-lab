@@ -1,7 +1,8 @@
 import type { Design, ExportEnvelope } from '../types'
 
 export function exportDesigns(designs: Design[]): void {
-  const envelope: ExportEnvelope = { version: 1, designs }
+  const stripped = designs.map(d => ({ ...d, thumbnail: '' }))
+  const envelope: ExportEnvelope = { version: 1, designs: stripped }
   const json = JSON.stringify(envelope, null, 2)
   const blob = new Blob([json], { type: 'application/json' })
   const url = URL.createObjectURL(blob)
@@ -20,7 +21,8 @@ export async function parseImportFile(file: File): Promise<Design[]> {
     throw new Error('Invalid export file format')
   const valid = data.designs.filter(
     (d: unknown): d is Design =>
-      typeof d === 'object' && d !== null && 'id' in d && 'garmentTypeId' in d && 'parts' in d
+      typeof d === 'object' && d !== null &&
+      'id' in d && 'garmentTypeId' in d && 'elements' in d
   )
   if (valid.length === 0) throw new Error('No valid designs found in file')
   return valid
