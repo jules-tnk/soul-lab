@@ -1,6 +1,16 @@
 import { create } from 'zustand'
 import type { CanvasElement } from '../types'
 
+const LOCALE_KEY = 'soul-lab-locale'
+
+function loadLocale(): 'fr' | 'en' {
+  try {
+    const v = localStorage.getItem(LOCALE_KEY)
+    if (v === 'en' || v === 'fr') return v
+  } catch { /* noop */ }
+  return 'fr'
+}
+
 interface UIState {
   locale: 'fr' | 'en'
   expandedParts: string[]
@@ -33,7 +43,7 @@ interface UIState {
 }
 
 export const useUIStore = create<UIState>((set) => ({
-  locale: 'fr',
+  locale: loadLocale(),
   expandedParts: [],
   selectedElementIds: [],
   tagFilter: [],
@@ -46,7 +56,11 @@ export const useUIStore = create<UIState>((set) => ({
   clipboardElements: [],
   pasteCount: 0,
 
-  toggleLocale: () => set(s => ({ locale: s.locale === 'fr' ? 'en' : 'fr' })),
+  toggleLocale: () => set(s => {
+    const next = s.locale === 'fr' ? 'en' : 'fr'
+    try { localStorage.setItem(LOCALE_KEY, next) } catch { /* noop */ }
+    return { locale: next }
+  }),
   togglePart: (partId) =>
     set(s => ({
       expandedParts: s.expandedParts.includes(partId)
