@@ -3,9 +3,6 @@ import type { TextElement } from '../../types'
 
 interface Props {
   element: TextElement
-  isSelected: boolean
-  onSelect: (e: any) => void
-  onChange: (attrs: Partial<TextElement>) => void
 }
 
 export default function TextNode({ element }: Props) {

@@ -3,9 +3,6 @@ import type { ShapeElement } from '../../types'
 
 interface Props {
   element: ShapeElement
-  isSelected: boolean
-  onSelect: (e: any) => void
-  onChange: (attrs: Partial<ShapeElement>) => void
 }
 
 export default function ShapeNode({ element }: Props) {

@@ -21,7 +21,6 @@ export default function DesignCanvas() {
   const clearSelection = useUIStore(s => s.clearSelection)
   const setDirty = useUIStore(s => s.setDirty)
   const zoom = useUIStore(s => s.canvasZoom)
-  const setZoom = useUIStore(s => s.setCanvasZoom)
 
   const history = useCanvasHistory()
 

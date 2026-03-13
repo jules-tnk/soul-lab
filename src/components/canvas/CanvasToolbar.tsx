@@ -55,9 +55,9 @@ export default function CanvasToolbar({ canUndo, canRedo, onUndo, onRedo }: Prop
           onClick={() => setZoom(zoom + 0.1)}
           isDisabled={zoom >= 3}
         />
-        <Tooltip label="Fit to View">
+        <Tooltip label="Reset Zoom">
           <IconButton
-            aria-label="Fit to View"
+            aria-label="Reset Zoom"
             icon={<ViewIcon />}
             size="xs"
             variant="ghost"

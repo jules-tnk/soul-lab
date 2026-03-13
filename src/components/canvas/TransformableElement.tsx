@@ -28,13 +28,13 @@ export default function TransformableElement({ element, isSelected, onSelect, on
   const renderNode = () => {
     switch (element.type) {
       case 'garment-part':
-        return <GarmentPartNode element={element} isSelected={isSelected} onSelect={onSelect} onChange={onChange} />
+        return <GarmentPartNode element={element} />
       case 'text':
-        return <TextNode element={element} isSelected={isSelected} onSelect={onSelect} onChange={onChange} />
+        return <TextNode element={element} />
       case 'shape':
-        return <ShapeNode element={element} isSelected={isSelected} onSelect={onSelect} onChange={onChange} />
+        return <ShapeNode element={element} />
       case 'image':
-        return <ImageNode element={element} isSelected={isSelected} onSelect={onSelect} onChange={onChange} />
+        return <ImageNode element={element} />
     }
   }
 

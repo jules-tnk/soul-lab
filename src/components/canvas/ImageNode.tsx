@@ -4,9 +4,6 @@ import type { ImageElement } from '../../types'
 
 interface Props {
   element: ImageElement
-  isSelected: boolean
-  onSelect: (e: any) => void
-  onChange: (attrs: Partial<ImageElement>) => void
 }
 
 export default function ImageNode({ element }: Props) {
@@ -15,6 +12,7 @@ export default function ImageNode({ element }: Props) {
   useEffect(() => {
     const img = new Image()
     img.onload = () => setImage(img)
+    img.onerror = () => setImage(null)
     img.src = element.dataUrl
   }, [element.dataUrl])
 

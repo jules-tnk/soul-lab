@@ -1,20 +1,15 @@
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState } from 'react'
 import { Image as KonvaImage } from 'react-konva'
 import type { GarmentPartElement } from '../../types'
 import { getGarmentType } from '../../catalog'
 import { loadSvgAsImage } from '../../utils/svgToImage'
-import Konva from 'konva'
 
 interface Props {
   element: GarmentPartElement
-  isSelected: boolean
-  onSelect: (e: Konva.KonvaEventObject<MouseEvent>) => void
-  onChange: (attrs: Partial<GarmentPartElement>) => void
 }
 
-export default function GarmentPartNode({ element, isSelected, onSelect, onChange }: Props) {
+export default function GarmentPartNode({ element }: Props) {
   const [image, setImage] = useState<HTMLImageElement | null>(null)
-  const imageRef = useRef<Konva.Image>(null)
 
   const garmentType = getGarmentType(element.garmentTypeId)
   const part = garmentType?.parts.find(p => p.id === element.partId)
@@ -36,7 +31,6 @@ export default function GarmentPartNode({ element, isSelected, onSelect, onChang
 
   return (
     <KonvaImage
-      ref={imageRef}
       image={image}
       x={0}
       y={0}
